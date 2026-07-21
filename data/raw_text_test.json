@@ -1,0 +1,1052 @@
+[
+  {
+    "text": "Ukrainian troops successfully recaptured the strategic eastern city of Lyman from Russian forces on October 1, 2022.",
+    "ground_truth": {
+      "entity1": "Ukraine",
+      "relation": "Recapture territory",
+      "entity2": "Russia",
+      "time": "2022-10-01",
+      "location": "Ukraine"
+    },
+    "source": "The Guardian"
+  },
+  {
+    "text": "The Constitutional Court of Russia formally declared the annexation of Southern and Eastern Ukraine as constitutional on October 2, 2022 in Moscow.",
+    "ground_truth": {
+      "entity1": "Russia",
+      "relation": "Declare annexation",
+      "entity2": "Ukraine",
+      "time": "2022-10-02",
+      "location": "Russia"
+    },
+    "source": "Wikipedia"
+  },
+  {
+    "text": "Ramzan Kadyrov called on the Russian government to introduce martial law and use nuclear weapons in Ukraine after the defeat in Lyman on October 2, 2022.",
+    "ground_truth": {
+      "entity1": "Ramzan Kadyrov",
+      "relation": "Call for action",
+      "entity2": "Russia",
+      "time": "2022-10-02",
+      "location": "Russia"
+    },
+    "source": "CNN"
+  },
+  {
+    "text": "The European Union sanctioned Iran's Islamic Revolutionary Guard Corps in response to the repression of the Mahsa Amini protests on October 3, 2022 in Brussels.",
+    "ground_truth": {
+      "entity1": "European Union",
+      "relation": "Sanction",
+      "entity2": "Iran",
+      "time": "2022-10-03",
+      "location": "Belgium"
+    },
+    "source": "i24 News"
+  },
+  {
+    "text": "Canada permanently banned 10,000 IRGC members from entering the country on October 7, 2022 in Ottawa.",
+    "ground_truth": {
+      "entity1": "Canada",
+      "relation": "Ban",
+      "entity2": "Iran",
+      "time": "2022-10-07",
+      "location": "Canada"
+    },
+    "source": "CTV News"
+  },
+  {
+    "text": "Belarusian activist Ales Bialiatski was awarded the Nobel Peace Prize on October 7, 2022 in Oslo, Norway.",
+    "ground_truth": {
+      "entity1": "Nobel Committee",
+      "relation": "Award",
+      "entity2": "Ales Bialiatski",
+      "time": "2022-10-07",
+      "location": "Norway"
+    },
+    "source": "DW"
+  },
+  {
+    "text": "Russia launched eight missiles at Mykolaiv on October 8, 2022, hitting a residential building and killing civilians including an 11-year-old boy.",
+    "ground_truth": {
+      "entity1": "Russia",
+      "relation": "Launch missiles",
+      "entity2": "Ukraine",
+      "time": "2022-10-08",
+      "location": "Ukraine"
+    },
+    "source": "NBC News"
+  },
+  {
+    "text": "Vladimir Putin ordered retaliatory missile strikes on Kyiv and other Ukrainian cities on October 10, 2022 from Moscow.",
+    "ground_truth": {
+      "entity1": "Vladimir Putin",
+      "relation": "Order military strikes",
+      "entity2": "Ukraine",
+      "time": "2022-10-10",
+      "location": "Ukraine"
+    },
+    "source": "Reuters"
+  },
+  {
+    "text": "The United Nations General Assembly voted to condemn Russia's annexation of four Ukrainian regions on October 12, 2022 in New York.",
+    "ground_truth": {
+      "entity1": "United Nations",
+      "relation": "Condemn",
+      "entity2": "Russia",
+      "time": "2022-10-12",
+      "location": "United States"
+    },
+    "source": "UN News"
+  },
+  {
+    "text": "Saudi Arabia denied responsibility for oil production cuts to the United States on October 13, 2022.",
+    "ground_truth": {
+      "entity1": "Saudi Arabia",
+      "relation": "Deny responsibility",
+      "entity2": "United States",
+      "time": "2022-10-13",
+      "location": "Saudi Arabia"
+    },
+    "source": "Reuters"
+  },
+  {
+    "text": "Kwasi Kwarteng was dismissed by Prime Minister Liz Truss as Chancellor of the Exchequer on October 14, 2022 in London.",
+    "ground_truth": {
+      "entity1": "Liz Truss",
+      "relation": "Dismiss",
+      "entity2": "Kwasi Kwarteng",
+      "time": "2022-10-14",
+      "location": "United Kingdom"
+    },
+    "source": "Financial Times"
+  },
+  {
+    "text": "Iranian police used force against mourners in Saqqez to mark the 40-day mourning period for Mahsa Amini on October 26, 2022.",
+    "ground_truth": {
+      "entity1": "Iran",
+      "relation": "Use force",
+      "entity2": "Protesters",
+      "time": "2022-10-26",
+      "location": "Iran"
+    },
+    "source": "BBC News"
+  },
+  {
+    "text": "Israel and Lebanon signed a historic maritime border agreement brokered by the United States on October 27, 2022.",
+    "ground_truth": {
+      "entity1": "Israel",
+      "relation": "Sign agreement",
+      "entity2": "Lebanon",
+      "time": "2022-10-27",
+      "location": "Israel"
+    },
+    "source": "AP"
+  },
+  {
+    "text": "The United States provided additional military aid worth $275 million to Ukraine on October 28, 2022 in Washington.",
+    "ground_truth": {
+      "entity1": "United States",
+      "relation": "Provide military aid",
+      "entity2": "Ukraine",
+      "time": "2022-10-28",
+      "location": "United States"
+    },
+    "source": "Reuters"
+  },
+  {
+    "text": "Russian Defence Minister Sergei Shoigu declared the completion of military mobilization on October 28, 2022 in Moscow.",
+    "ground_truth": {
+      "entity1": "Sergei Shoigu",
+      "relation": "Declare",
+      "entity2": "Russia",
+      "time": "2022-10-28",
+      "location": "Russia"
+    },
+    "source": "Reuters"
+  },
+  {
+    "text": "Luiz Inacio Lula da Silva won Brazil's presidential election by defeating Jair Bolsonaro on October 30, 2022 in Brasilia.",
+    "ground_truth": {
+      "entity1": "Lula da Silva",
+      "relation": "Win election",
+      "entity2": "Jair Bolsonaro",
+      "time": "2022-10-30",
+      "location": "Brazil"
+    },
+    "source": "BBC News"
+  },
+  {
+    "text": "Xi Jinping was elected as General Secretary of the Chinese Communist Party for an unprecedented third term on October 23, 2022 in Beijing.",
+    "ground_truth": {
+      "entity1": "Xi Jinping",
+      "relation": "Be elected",
+      "entity2": "Chinese Communist Party",
+      "time": "2022-10-23",
+      "location": "China"
+    },
+    "source": "Reuters"
+  },
+  {
+    "text": "Rishi Sunak became the Prime Minister of the United Kingdom on October 25, 2022 in London, becoming the first British Asian to hold the office.",
+    "ground_truth": {
+      "entity1": "Rishi Sunak",
+      "relation": "Become leader",
+      "entity2": "United Kingdom",
+      "time": "2022-10-25",
+      "location": "United Kingdom"
+    },
+    "source": "BBC News"
+  },
+  {
+    "text": "Russia vetoed a United Nations Security Council resolution declaring its Ukraine annexation illegal on October 22, 2022 in New York.",
+    "ground_truth": {
+      "entity1": "Russia",
+      "relation": "Veto",
+      "entity2": "United Nations",
+      "time": "2022-10-22",
+      "location": "United States"
+    },
+    "source": "UN News"
+  },
+  {
+    "text": "North Korea fired two short-range ballistic missiles into the East Sea on October 6, 2022 from Pyongyang.",
+    "ground_truth": {
+      "entity1": "North Korea",
+      "relation": "Fire missiles",
+      "entity2": "South Korea",
+      "time": "2022-10-06",
+      "location": "North Korea"
+    },
+    "source": "Yonhap"
+  },
+  {
+    "text": "Turkey's President Erdogan met with Russian President Putin in Astana, Kazakhstan on October 13, 2022 to discuss the grain deal.",
+    "ground_truth": {
+      "entity1": "Erdogan",
+      "relation": "Meet",
+      "entity2": "Vladimir Putin",
+      "time": "2022-10-13",
+      "location": "Kazakhstan"
+    },
+    "source": "AP"
+  },
+  {
+    "text": "South Korea and the United States conducted joint air drills involving B-1B bombers on October 19, 2022 over the Korean Peninsula.",
+    "ground_truth": {
+      "entity1": "South Korea",
+      "relation": "Conduct joint military drill",
+      "entity2": "United States",
+      "time": "2022-10-19",
+      "location": "South Korea"
+    },
+    "source": "Yonhap"
+  },
+  {
+    "text": "Venezuela released seven Americans including five Citgo executives in a prisoner exchange with the United States on October 1, 2022.",
+    "ground_truth": {
+      "entity1": "Venezuela",
+      "relation": "Release prisoners",
+      "entity2": "United States",
+      "time": "2022-10-01",
+      "location": "Venezuela"
+    },
+    "source": "Politico"
+  },
+  {
+    "text": "Germany announced a 200 billion euro energy relief package to shield consumers from rising costs on October 4, 2022 in Berlin.",
+    "ground_truth": {
+      "entity1": "Germany",
+      "relation": "Announce economic aid",
+      "entity2": "Germany",
+      "time": "2022-10-04",
+      "location": "Germany"
+    },
+    "source": "DW"
+  },
+  {
+    "text": "China condemned Nancy Pelosi's visit to Taiwan and launched military exercises around the island in August 2022.",
+    "ground_truth": {
+      "entity1": "China",
+      "relation": "Condemn",
+      "entity2": "United States",
+      "time": "2022-08-01",
+      "location": "China"
+    },
+    "source": "CFR"
+  },
+  {
+    "text": "Japan imposed additional sanctions on Russia over the invasion of Ukraine on October 7, 2022 in Tokyo.",
+    "ground_truth": {
+      "entity1": "Japan",
+      "relation": "Impose sanctions",
+      "entity2": "Russia",
+      "time": "2022-10-07",
+      "location": "Japan"
+    },
+    "source": "NHK"
+  },
+  {
+    "text": "The International Monetary Fund approved a bailout package for Pakistan to prevent economic collapse in August 2022 in Washington.",
+    "ground_truth": {
+      "entity1": "International Monetary Fund",
+      "relation": "Approve bailout",
+      "entity2": "Pakistan",
+      "time": "2022-08-01",
+      "location": "United States"
+    },
+    "source": "CFR"
+  },
+  {
+    "text": "India abstained from voting on the UN resolution condemning Russia's annexation of Ukrainian territories on October 12, 2022 in New York.",
+    "ground_truth": {
+      "entity1": "India",
+      "relation": "Abstain from vote",
+      "entity2": "United Nations",
+      "time": "2022-10-12",
+      "location": "United States"
+    },
+    "source": "Reuters"
+  },
+  {
+    "text": "France provided military equipment including Caesar howitzers to Ukraine on October 15, 2022.",
+    "ground_truth": {
+      "entity1": "France",
+      "relation": "Provide military aid",
+      "entity2": "Ukraine",
+      "time": "2022-10-15",
+      "location": "France"
+    },
+    "source": "Le Monde"
+  },
+  {
+    "text": "Australia announced new sanctions against Russia targeting luxury goods and gold on October 14, 2022 in Canberra.",
+    "ground_truth": {
+      "entity1": "Australia",
+      "relation": "Impose sanctions",
+      "entity2": "Russia",
+      "time": "2022-10-14",
+      "location": "Australia"
+    },
+    "source": "ABC News"
+  },
+  {
+    "text": "Volodymyr Zelensky addressed the European Council via video link requesting additional military support on October 20, 2022 from Kyiv.",
+    "ground_truth": {
+      "entity1": "Volodymyr Zelensky",
+      "relation": "Request military support",
+      "entity2": "European Union",
+      "time": "2022-10-20",
+      "location": "Ukraine"
+    },
+    "source": "Reuters"
+  },
+  {
+    "text": "Iran sent military drones to Russia for use in the Ukraine conflict according to reports on October 18, 2022.",
+    "ground_truth": {
+      "entity1": "Iran",
+      "relation": "Provide military aid",
+      "entity2": "Russia",
+      "time": "2022-10-18",
+      "location": "Iran"
+    },
+    "source": "CNN"
+  },
+  {
+    "text": "NATO Secretary General Jens Stoltenberg warned Russia of the dangers of nuclear escalation on October 12, 2022 in Brussels.",
+    "ground_truth": {
+      "entity1": "Jens Stoltenberg",
+      "relation": "Warn",
+      "entity2": "Russia",
+      "time": "2022-10-12",
+      "location": "Belgium"
+    },
+    "source": "NATO"
+  },
+  {
+    "text": "Egypt hosted a climate summit COP27 in Sharm el-Sheikh beginning on November 6, 2022.",
+    "ground_truth": {
+      "entity1": "Egypt",
+      "relation": "Host summit",
+      "entity2": "United Nations",
+      "time": "2022-11-06",
+      "location": "Egypt"
+    },
+    "source": "UN"
+  },
+  {
+    "text": "Mexico's President Lopez Obrador proposed a peace plan for the Russia-Ukraine conflict on October 5, 2022 in Mexico City.",
+    "ground_truth": {
+      "entity1": "Lopez Obrador",
+      "relation": "Propose peace plan",
+      "entity2": "Russia",
+      "time": "2022-10-05",
+      "location": "Mexico"
+    },
+    "source": "Reuters"
+  },
+  {
+    "text": "The United Kingdom expelled the Russian defense attache from London following espionage allegations on October 10, 2022.",
+    "ground_truth": {
+      "entity1": "United Kingdom",
+      "relation": "Expel",
+      "entity2": "Russia",
+      "time": "2022-10-10",
+      "location": "United Kingdom"
+    },
+    "source": "BBC"
+  },
+  {
+    "text": "Pakistan's former Prime Minister Imran Khan was shot during a protest march in Wazirabad on November 3, 2022.",
+    "ground_truth": {
+      "entity1": "Protesters",
+      "relation": "Shoot",
+      "entity2": "Imran Khan",
+      "time": "2022-11-03",
+      "location": "Pakistan"
+    },
+    "source": "BBC"
+  },
+  {
+    "text": "South Africa's President Ramaphosa met with Putin at the BRICS summit on October 18, 2022 in Moscow.",
+    "ground_truth": {
+      "entity1": "Ramaphosa",
+      "relation": "Meet",
+      "entity2": "Vladimir Putin",
+      "time": "2022-10-18",
+      "location": "Russia"
+    },
+    "source": "Reuters"
+  },
+  {
+    "text": "Finland and Sweden formally applied to join NATO after Russia's invasion of Ukraine on May 18, 2022 in Brussels.",
+    "ground_truth": {
+      "entity1": "Finland",
+      "relation": "Apply to join",
+      "entity2": "NATO",
+      "time": "2022-05-18",
+      "location": "Belgium"
+    },
+    "source": "NATO"
+  },
+  {
+    "text": "The European Central Bank raised interest rates by 75 basis points to combat inflation on October 27, 2022 in Frankfurt.",
+    "ground_truth": {
+      "entity1": "European Central Bank",
+      "relation": "Raise interest rates",
+      "entity2": "European Union",
+      "time": "2022-10-27",
+      "location": "Germany"
+    },
+    "source": "ECB"
+  },
+  {
+    "text": "Poland requested deployment of German Patriot missiles on its territory after a stray missile killed two people on November 15, 2022.",
+    "ground_truth": {
+      "entity1": "Poland",
+      "relation": "Request military deployment",
+      "entity2": "Germany",
+      "time": "2022-11-15",
+      "location": "Poland"
+    },
+    "source": "Reuters"
+  },
+  {
+    "text": "Brazil's newly elected President Lula da Silva pledged to end deforestation in the Amazon during COP27 on November 16, 2022 in Sharm el-Sheikh.",
+    "ground_truth": {
+      "entity1": "Lula da Silva",
+      "relation": "Pledge",
+      "entity2": "Brazil",
+      "time": "2022-11-16",
+      "location": "Egypt"
+    },
+    "source": "Reuters"
+  },
+  {
+    "text": "Indonesia hosted the G20 summit in Bali on November 15, 2022 where leaders discussed the global food and energy crisis.",
+    "ground_truth": {
+      "entity1": "Indonesia",
+      "relation": "Host summit",
+      "entity2": "G20",
+      "time": "2022-11-15",
+      "location": "Indonesia"
+    },
+    "source": "Reuters"
+  },
+  {
+    "text": "Elon Musk completed his acquisition of Twitter for $44 billion on October 27, 2022 in San Francisco.",
+    "ground_truth": {
+      "entity1": "Elon Musk",
+      "relation": "Acquire",
+      "entity2": "Twitter",
+      "time": "2022-10-27",
+      "location": "United States"
+    },
+    "source": "NYT"
+  },
+  {
+    "text": "The United States Treasury Department imposed new sanctions on Iranian officials involved in cracking down on protesters on October 6, 2022.",
+    "ground_truth": {
+      "entity1": "United States",
+      "relation": "Impose sanctions",
+      "entity2": "Iran",
+      "time": "2022-10-06",
+      "location": "United States"
+    },
+    "source": "Treasury"
+  },
+  {
+    "text": "China's foreign ministry criticized the United States for selling weapons to Taiwan on October 8, 2022 in Beijing.",
+    "ground_truth": {
+      "entity1": "China",
+      "relation": "Criticize",
+      "entity2": "United States",
+      "time": "2022-10-08",
+      "location": "China"
+    },
+    "source": "Xinhua"
+  },
+  {
+    "text": "Germany delivered the first IRIS-T air defense system to Ukraine on October 11, 2022.",
+    "ground_truth": {
+      "entity1": "Germany",
+      "relation": "Provide military aid",
+      "entity2": "Ukraine",
+      "time": "2022-10-11",
+      "location": "Germany"
+    },
+    "source": "DW"
+  },
+  {
+    "text": "Ethiopia's government and Tigray rebels agreed to a cessation of hostilities in Pretoria, South Africa on November 2, 2022.",
+    "ground_truth": {
+      "entity1": "Ethiopia",
+      "relation": "Agree to ceasefire",
+      "entity2": "Tigray",
+      "time": "2022-11-02",
+      "location": "South Africa"
+    },
+    "source": "AP"
+  },
+  {
+    "text": "The Philippines protested against China's aggressive actions in the South China Sea on October 24, 2022 in Manila.",
+    "ground_truth": {
+      "entity1": "Philippines",
+      "relation": "Protest",
+      "entity2": "China",
+      "time": "2022-10-24",
+      "location": "Philippines"
+    },
+    "source": "Reuters"
+  },
+  {
+    "text": "Joe Biden signed the CHIPS Act to boost domestic semiconductor manufacturing on August 9, 2022 in Washington.",
+    "ground_truth": {
+      "entity1": "Joe Biden",
+      "relation": "Sign legislation",
+      "entity2": "United States",
+      "time": "2022-08-09",
+      "location": "United States"
+    },
+    "source": "White House"
+  },
+  {
+    "text": "The United States and Japan agreed to strengthen their military alliance during a summit in Tokyo on January 13, 2023.",
+    "ground_truth": {
+      "entity1": "United States",
+      "relation": "Strengthen alliance",
+      "entity2": "Japan",
+      "time": "2023-01-13",
+      "location": "Japan"
+    }
+  },
+  {
+    "text": "Germany arrested a suspected Russian spy working in its intelligence service on December 22, 2022 in Berlin.",
+    "ground_truth": {
+      "entity1": "Germany",
+      "relation": "Arrest",
+      "entity2": "Russia",
+      "time": "2022-12-22",
+      "location": "Germany"
+    }
+  },
+  {
+    "text": "The African Union suspended Niger following the military coup against President Bazoum on July 28, 2023.",
+    "ground_truth": {
+      "entity1": "African Union",
+      "relation": "Suspend membership",
+      "entity2": "Niger",
+      "time": "2023-07-28",
+      "location": "Niger"
+    }
+  },
+  {
+    "text": "India launched its Chandrayaan-3 spacecraft to the Moon on July 14, 2023 from Sriharikota.",
+    "ground_truth": {
+      "entity1": "India",
+      "relation": "Launch spacecraft",
+      "entity2": "Chandrayaan-3",
+      "time": "2023-07-14",
+      "location": "India"
+    }
+  },
+  {
+    "text": "Argentina's Javier Milei won the presidential election defeating Sergio Massa on November 19, 2023 in Buenos Aires.",
+    "ground_truth": {
+      "entity1": "Javier Milei",
+      "relation": "Win election",
+      "entity2": "Sergio Massa",
+      "time": "2023-11-19",
+      "location": "Argentina"
+    }
+  },
+  {
+    "text": "NATO formally admitted Finland as its 31st member on April 4, 2023 in Brussels.",
+    "ground_truth": {
+      "entity1": "NATO",
+      "relation": "Admit member",
+      "entity2": "Finland",
+      "time": "2023-04-04",
+      "location": "Belgium"
+    }
+  },
+  {
+    "text": "Wagner Group leader Yevgeny Prigozhin launched a brief armed rebellion against Russian military leadership on June 24, 2023.",
+    "ground_truth": {
+      "entity1": "Yevgeny Prigozhin",
+      "relation": "Launch rebellion",
+      "entity2": "Russia",
+      "time": "2023-06-24",
+      "location": "Russia"
+    }
+  },
+  {
+    "text": "South Korea imposed unilateral sanctions on North Korea over its nuclear weapons program on February 10, 2023 in Seoul.",
+    "ground_truth": {
+      "entity1": "South Korea",
+      "relation": "Impose sanctions",
+      "entity2": "North Korea",
+      "time": "2023-02-10",
+      "location": "South Korea"
+    }
+  },
+  {
+    "text": "The International Criminal Court issued an arrest warrant for Vladimir Putin on March 17, 2023 in The Hague.",
+    "ground_truth": {
+      "entity1": "International Criminal Court",
+      "relation": "Issue arrest warrant",
+      "entity2": "Vladimir Putin",
+      "time": "2023-03-17",
+      "location": "Netherlands"
+    }
+  },
+  {
+    "text": "China brokered a diplomatic agreement between Saudi Arabia and Iran to restore relations on March 10, 2023 in Beijing.",
+    "ground_truth": {
+      "entity1": "China",
+      "relation": "Broker agreement",
+      "entity2": "Saudi Arabia",
+      "time": "2023-03-10",
+      "location": "China"
+    }
+  },
+  {
+    "text": "Ukraine received its first batch of Leopard 2 tanks from Germany on March 27, 2023.",
+    "ground_truth": {
+      "entity1": "Germany",
+      "relation": "Provide military aid",
+      "entity2": "Ukraine",
+      "time": "2023-03-27",
+      "location": "Ukraine"
+    }
+  },
+  {
+    "text": "Israel conducted a military raid on a Palestinian refugee camp in Jenin on July 3, 2023.",
+    "ground_truth": {
+      "entity1": "Israel",
+      "relation": "Conduct military raid",
+      "entity2": "Palestine",
+      "time": "2023-07-03",
+      "location": "Palestine"
+    }
+  },
+  {
+    "text": "The European Parliament approved the AI Act, the world's first comprehensive AI regulation, on June 14, 2023 in Strasbourg.",
+    "ground_truth": {
+      "entity1": "European Parliament",
+      "relation": "Approve legislation",
+      "entity2": "European Union",
+      "time": "2023-06-14",
+      "location": "France"
+    }
+  },
+  {
+    "text": "Turkey approved Sweden's NATO membership bid after months of negotiations on January 23, 2024 in Ankara.",
+    "ground_truth": {
+      "entity1": "Turkey",
+      "relation": "Approve membership",
+      "entity2": "Sweden",
+      "time": "2024-01-23",
+      "location": "Turkey"
+    }
+  },
+  {
+    "text": "North Korea declared South Korea a hostile state and abolished reunification agencies on January 15, 2024 in Pyongyang.",
+    "ground_truth": {
+      "entity1": "North Korea",
+      "relation": "Declare hostile",
+      "entity2": "South Korea",
+      "time": "2024-01-15",
+      "location": "North Korea"
+    }
+  },
+  {
+    "text": "Bangladesh Prime Minister Sheikh Hasina resigned and fled the country amid mass protests on August 5, 2024.",
+    "ground_truth": {
+      "entity1": "Sheikh Hasina",
+      "relation": "Resign",
+      "entity2": "Bangladesh",
+      "time": "2024-08-05",
+      "location": "Bangladesh"
+    }
+  },
+  {
+    "text": "Russia and China conducted joint naval exercises in the Sea of Japan on July 20, 2023.",
+    "ground_truth": {
+      "entity1": "Russia",
+      "relation": "Conduct joint military drill",
+      "entity2": "China",
+      "time": "2023-07-20",
+      "location": "Japan"
+    }
+  },
+  {
+    "text": "The United Kingdom signed a free trade agreement with Australia on December 16, 2022 in London.",
+    "ground_truth": {
+      "entity1": "United Kingdom",
+      "relation": "Sign agreement",
+      "entity2": "Australia",
+      "time": "2022-12-16",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "text": "France deployed additional troops to Niger before being expelled by the military junta on September 10, 2023.",
+    "ground_truth": {
+      "entity1": "France",
+      "relation": "Deploy troops",
+      "entity2": "Niger",
+      "time": "2023-09-10",
+      "location": "Niger"
+    }
+  },
+  {
+    "text": "SpaceX successfully launched the Starship rocket on its third test flight on March 14, 2024 from Boca Chica, Texas.",
+    "ground_truth": {
+      "entity1": "SpaceX",
+      "relation": "Launch",
+      "entity2": "Starship",
+      "time": "2024-03-14",
+      "location": "United States"
+    }
+  },
+  {
+    "text": "The World Health Organization declared the end of the COVID-19 global health emergency on May 5, 2023 in Geneva.",
+    "ground_truth": {
+      "entity1": "World Health Organization",
+      "relation": "Declare",
+      "entity2": "COVID-19",
+      "time": "2023-05-05",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "text": "Iran executed prominent protest leader Mohsen Shekari on December 8, 2022 in Tehran.",
+    "ground_truth": {
+      "entity1": "Iran",
+      "relation": "Execute",
+      "entity2": "Mohsen Shekari",
+      "time": "2022-12-08",
+      "location": "Iran"
+    }
+  },
+  {
+    "text": "Mexico nationalized its lithium reserves through a decree signed by President Lopez Obrador on February 22, 2023 in Mexico City.",
+    "ground_truth": {
+      "entity1": "Lopez Obrador",
+      "relation": "Nationalize",
+      "entity2": "Mexico",
+      "time": "2023-02-22",
+      "location": "Mexico"
+    }
+  },
+  {
+    "text": "Saudi Arabia and Russia agreed to extend oil production cuts through the end of 2023 on June 4, 2023.",
+    "ground_truth": {
+      "entity1": "Saudi Arabia",
+      "relation": "Agree to cooperate",
+      "entity2": "Russia",
+      "time": "2023-06-04",
+      "location": "Saudi Arabia"
+    }
+  },
+  {
+    "text": "Colombia signed a ceasefire agreement with the ELN rebel group on June 9, 2023 in Havana, Cuba.",
+    "ground_truth": {
+      "entity1": "Colombia",
+      "relation": "Sign ceasefire",
+      "entity2": "ELN",
+      "time": "2023-06-09",
+      "location": "Cuba"
+    }
+  },
+  {
+    "text": "The Philippines filed a diplomatic protest against China over a water cannon attack on its vessels in the South China Sea on August 6, 2023.",
+    "ground_truth": {
+      "entity1": "Philippines",
+      "relation": "File protest",
+      "entity2": "China",
+      "time": "2023-08-06",
+      "location": "Philippines"
+    }
+  },
+  {
+    "text": "Singapore executed a man for trafficking two pounds of cannabis on April 26, 2023 despite international outcry.",
+    "ground_truth": {
+      "entity1": "Singapore",
+      "relation": "Execute",
+      "entity2": "Prisoner",
+      "time": "2023-04-26",
+      "location": "Singapore"
+    }
+  },
+  {
+    "text": "Italy blocked ChatGPT over privacy concerns becoming the first Western country to ban the AI chatbot on March 31, 2023 in Rome.",
+    "ground_truth": {
+      "entity1": "Italy",
+      "relation": "Ban",
+      "entity2": "OpenAI",
+      "time": "2023-03-31",
+      "location": "Italy"
+    }
+  },
+  {
+    "text": "Morocco defeated Portugal 1-0 to become the first African team to reach the World Cup semi-finals on December 10, 2022 in Doha.",
+    "ground_truth": {
+      "entity1": "Morocco",
+      "relation": "Defeat",
+      "entity2": "Portugal",
+      "time": "2022-12-10",
+      "location": "Qatar"
+    }
+  },
+  {
+    "text": "Nvidia surpassed Apple to become the world's most valuable company with a market cap of $3.5 trillion on June 18, 2024.",
+    "ground_truth": {
+      "entity1": "Nvidia",
+      "relation": "Surpass",
+      "entity2": "Apple",
+      "time": "2024-06-18",
+      "location": "United States"
+    }
+  },
+  {
+    "text": "The Swiss government froze $8 billion in Russian assets as part of international sanctions on January 20, 2023 in Bern.",
+    "ground_truth": {
+      "entity1": "Switzerland",
+      "relation": "Freeze assets",
+      "entity2": "Russia",
+      "time": "2023-01-20",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "text": "Sudan's military clashed with the Rapid Support Forces in Khartoum on April 15, 2023, starting a civil war.",
+    "ground_truth": {
+      "entity1": "Sudan",
+      "relation": "Clash",
+      "entity2": "Rapid Support Forces",
+      "time": "2023-04-15",
+      "location": "Sudan"
+    }
+  },
+  {
+    "text": "New Zealand elected Christopher Luxon as Prime Minister after the National Party won elections on October 14, 2023 in Wellington.",
+    "ground_truth": {
+      "entity1": "Christopher Luxon",
+      "relation": "Win election",
+      "entity2": "New Zealand",
+      "time": "2023-10-14",
+      "location": "New Zealand"
+    }
+  },
+  {
+    "text": "Google laid off 12,000 employees as part of a major restructuring on January 20, 2023 announced from Mountain View.",
+    "ground_truth": {
+      "entity1": "Google",
+      "relation": "Lay off employees",
+      "entity2": "Employees",
+      "time": "2023-01-20",
+      "location": "United States"
+    }
+  },
+  {
+    "text": "Canada expelled a Chinese diplomat accused of targeting a Canadian member of parliament on May 8, 2023 in Ottawa.",
+    "ground_truth": {
+      "entity1": "Canada",
+      "relation": "Expel diplomat",
+      "entity2": "China",
+      "time": "2023-05-08",
+      "location": "Canada"
+    }
+  },
+  {
+    "text": "Thailand elected Srettha Thavisin as Prime Minister ending months of political deadlock on August 22, 2023 in Bangkok.",
+    "ground_truth": {
+      "entity1": "Srettha Thavisin",
+      "relation": "Win election",
+      "entity2": "Thailand",
+      "time": "2023-08-22",
+      "location": "Thailand"
+    }
+  },
+  {
+    "text": "The United Nations warned of a humanitarian catastrophe in Gaza following the Israeli military offensive on October 13, 2023.",
+    "ground_truth": {
+      "entity1": "United Nations",
+      "relation": "Warn",
+      "entity2": "Israel",
+      "time": "2023-10-13",
+      "location": "Palestine"
+    }
+  },
+  {
+    "text": "Norway announced a $1 billion aid package for Ukraine at a donors conference in Paris on December 13, 2022.",
+    "ground_truth": {
+      "entity1": "Norway",
+      "relation": "Provide aid",
+      "entity2": "Ukraine",
+      "time": "2022-12-13",
+      "location": "France"
+    }
+  },
+  {
+    "text": "Vietnam arrested a prominent climate activist on charges of tax evasion on September 15, 2023 in Hanoi.",
+    "ground_truth": {
+      "entity1": "Vietnam",
+      "relation": "Arrest",
+      "entity2": "Climate activist",
+      "time": "2023-09-15",
+      "location": "Vietnam"
+    }
+  },
+  {
+    "text": "Tesla CEO Elon Musk met with Israeli Prime Minister Netanyahu to discuss AI and technology cooperation on September 18, 2023.",
+    "ground_truth": {
+      "entity1": "Elon Musk",
+      "relation": "Meet",
+      "entity2": "Benjamin Netanyahu",
+      "time": "2023-09-18",
+      "location": "Israel"
+    }
+  },
+  {
+    "text": "Ecuador declared a state of internal armed conflict after gang violence erupted across the country on January 9, 2024 in Quito.",
+    "ground_truth": {
+      "entity1": "Ecuador",
+      "relation": "Declare emergency",
+      "entity2": "Ecuador",
+      "time": "2024-01-09",
+      "location": "Ecuador"
+    }
+  },
+  {
+    "text": "Taiwan's William Lai won the presidential election defeating KMT candidate Hou Yu-ih on January 13, 2024 in Taipei.",
+    "ground_truth": {
+      "entity1": "William Lai",
+      "relation": "Win election",
+      "entity2": "Hou Yu-ih",
+      "time": "2024-01-13",
+      "location": "Taiwan"
+    }
+  },
+  {
+    "text": "The European Union imposed a price cap on Russian crude oil at $60 per barrel on December 5, 2022 in Brussels.",
+    "ground_truth": {
+      "entity1": "European Union",
+      "relation": "Impose price cap",
+      "entity2": "Russia",
+      "time": "2022-12-05",
+      "location": "Belgium"
+    }
+  },
+  {
+    "text": "Kenya deployed troops to eastern Congo as part of an East African peacekeeping force on November 12, 2022.",
+    "ground_truth": {
+      "entity1": "Kenya",
+      "relation": "Deploy troops",
+      "entity2": "Congo",
+      "time": "2022-11-12",
+      "location": "Congo"
+    }
+  },
+  {
+    "text": "Alphabet CEO Sundar Pichai announced the launch of Google's AI model Gemini on December 6, 2023 in Mountain View.",
+    "ground_truth": {
+      "entity1": "Sundar Pichai",
+      "relation": "Launch product",
+      "entity2": "Gemini",
+      "time": "2023-12-06",
+      "location": "United States"
+    }
+  },
+  {
+    "text": "Peru declared a state of emergency in Lima after mass protests against President Boluarte on January 15, 2023.",
+    "ground_truth": {
+      "entity1": "Peru",
+      "relation": "Declare emergency",
+      "entity2": "Peru",
+      "time": "2023-01-15",
+      "location": "Peru"
+    }
+  },
+  {
+    "text": "The United States shot down a Chinese surveillance balloon over the Atlantic Ocean on February 4, 2023.",
+    "ground_truth": {
+      "entity1": "United States",
+      "relation": "Shoot down",
+      "entity2": "China",
+      "time": "2023-02-04",
+      "location": "United States"
+    }
+  },
+  {
+    "text": "South Africa hosted the BRICS summit where the bloc invited six new members on August 24, 2023 in Johannesburg.",
+    "ground_truth": {
+      "entity1": "South Africa",
+      "relation": "Host summit",
+      "entity2": "BRICS",
+      "time": "2023-08-24",
+      "location": "South Africa"
+    }
+  },
+  {
+    "text": "Myanmar's military junta extended the state of emergency for another six months on February 1, 2023 in Naypyidaw.",
+    "ground_truth": {
+      "entity1": "Myanmar",
+      "relation": "Extend emergency",
+      "entity2": "Myanmar",
+      "time": "2023-02-01",
+      "location": "Myanmar"
+    }
+  },
+  {
+    "text": "Denmark agreed to supply F-16 fighter jets to Ukraine on August 20, 2023 at a summit in The Hague.",
+    "ground_truth": {
+      "entity1": "Denmark",
+      "relation": "Provide military aid",
+      "entity2": "Ukraine",
+      "time": "2023-08-20",
+      "location": "Netherlands"
+    }
+  }
+]

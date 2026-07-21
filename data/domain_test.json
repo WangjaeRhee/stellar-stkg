@@ -1,0 +1,662 @@
+[
+  {
+    "domain": "business",
+    "text": "Microsoft completed its acquisition of Activision Blizzard for $69 billion on October 13, 2023 in Redmond, Washington.",
+    "ground_truth": {
+      "entity1": "Microsoft",
+      "relation": "Acquire",
+      "entity2": "Activision Blizzard",
+      "time": "2023-10-13",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Tesla announced the construction of a new Gigafactory in Mexico on March 1, 2023 during an investor event in Austin, Texas.",
+    "ground_truth": {
+      "entity1": "Tesla",
+      "relation": "Announce construction",
+      "entity2": "Gigafactory",
+      "time": "2023-03-01",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Samsung invested $17 billion in a new semiconductor plant in Taylor, Texas on November 2, 2022.",
+    "ground_truth": {
+      "entity1": "Samsung",
+      "relation": "Invest",
+      "entity2": "Semiconductor plant",
+      "time": "2022-11-02",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Amazon laid off 18,000 employees globally on January 5, 2023 as announced by CEO Andy Jassy in Seattle.",
+    "ground_truth": {
+      "entity1": "Amazon",
+      "relation": "Lay off employees",
+      "entity2": "Employees",
+      "time": "2023-01-05",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Apple launched the Vision Pro mixed reality headset on February 2, 2024 at its headquarters in Cupertino.",
+    "ground_truth": {
+      "entity1": "Apple",
+      "relation": "Launch product",
+      "entity2": "Vision Pro",
+      "time": "2024-02-02",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "TSMC began construction of its second chip fabrication plant in Kumamoto, Japan on February 24, 2024.",
+    "ground_truth": {
+      "entity1": "TSMC",
+      "relation": "Begin construction",
+      "entity2": "Chip plant",
+      "time": "2024-02-24",
+      "location": "Japan"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Google parent Alphabet reported record quarterly revenue of $86 billion on October 24, 2023 in Mountain View.",
+    "ground_truth": {
+      "entity1": "Alphabet",
+      "relation": "Report revenue",
+      "entity2": "Alphabet",
+      "time": "2023-10-24",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "BYD surpassed Tesla in global electric vehicle sales for the first time in Q4 2023 according to reports from Shenzhen.",
+    "ground_truth": {
+      "entity1": "BYD",
+      "relation": "Surpass in sales",
+      "entity2": "Tesla",
+      "time": "2023-12-01",
+      "location": "China"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "OpenAI CEO Sam Altman was fired by the board of directors on November 17, 2023 in San Francisco.",
+    "ground_truth": {
+      "entity1": "OpenAI",
+      "relation": "Fire",
+      "entity2": "Sam Altman",
+      "time": "2023-11-17",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Intel announced plans to build a $20 billion chip factory in Magdeburg, Germany on June 19, 2023.",
+    "ground_truth": {
+      "entity1": "Intel",
+      "relation": "Announce construction",
+      "entity2": "Chip factory",
+      "time": "2023-06-19",
+      "location": "Germany"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "SoftBank's Masayoshi Son committed $100 billion to invest in the United States during a meeting with President Trump on December 16, 2024 in New York.",
+    "ground_truth": {
+      "entity1": "Masayoshi Son",
+      "relation": "Commit investment",
+      "entity2": "United States",
+      "time": "2024-12-16",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Toyota partnered with Nvidia to develop autonomous driving technology announced on January 7, 2025 at CES in Las Vegas.",
+    "ground_truth": {
+      "entity1": "Toyota",
+      "relation": "Partner",
+      "entity2": "Nvidia",
+      "time": "2025-01-07",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "LVMH acquired a majority stake in Italian fashion house Valentino for $1.87 billion on December 18, 2024 in Paris.",
+    "ground_truth": {
+      "entity1": "LVMH",
+      "relation": "Acquire",
+      "entity2": "Valentino",
+      "time": "2024-12-18",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Hyundai Motor Group announced a $21 billion investment in South Korea for EV and AI development on November 20, 2024 in Seoul.",
+    "ground_truth": {
+      "entity1": "Hyundai Motor Group",
+      "relation": "Announce investment",
+      "entity2": "South Korea",
+      "time": "2024-11-20",
+      "location": "South Korea"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Boeing delivered the first 787 Dreamliner from its new production line in North Charleston on March 15, 2023.",
+    "ground_truth": {
+      "entity1": "Boeing",
+      "relation": "Deliver product",
+      "entity2": "787 Dreamliner",
+      "time": "2023-03-15",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "A magnitude 7.8 earthquake struck southern Turkey and northern Syria on February 6, 2023, killing over 50,000 people.",
+    "ground_truth": {
+      "entity1": "Earthquake",
+      "relation": "Strike",
+      "entity2": "Turkey",
+      "time": "2023-02-06",
+      "location": "Turkey"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Hurricane Otis made landfall as a Category 5 storm near Acapulco, Mexico on October 25, 2023.",
+    "ground_truth": {
+      "entity1": "Hurricane Otis",
+      "relation": "Strike",
+      "entity2": "Mexico",
+      "time": "2023-10-25",
+      "location": "Mexico"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Severe flooding devastated the city of Derna in eastern Libya on September 11, 2023, killing thousands.",
+    "ground_truth": {
+      "entity1": "Flooding",
+      "relation": "Devastate",
+      "entity2": "Libya",
+      "time": "2023-09-11",
+      "location": "Libya"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Wildfires destroyed the historic town of Lahaina in Maui, Hawaii on August 8, 2023.",
+    "ground_truth": {
+      "entity1": "Wildfires",
+      "relation": "Destroy",
+      "entity2": "Lahaina",
+      "time": "2023-08-08",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "A deadly volcanic eruption occurred on Mount Marapi in West Sumatra, Indonesia on December 3, 2023.",
+    "ground_truth": {
+      "entity1": "Mount Marapi",
+      "relation": "Erupt",
+      "entity2": "Indonesia",
+      "time": "2023-12-03",
+      "location": "Indonesia"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Japan issued a tsunami warning after a 7.6 magnitude earthquake hit the Noto Peninsula on January 1, 2024.",
+    "ground_truth": {
+      "entity1": "Japan",
+      "relation": "Issue warning",
+      "entity2": "Noto Peninsula",
+      "time": "2024-01-01",
+      "location": "Japan"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Cyclone Freddy became the longest-lasting tropical cyclone on record after crossing Mozambique on March 11, 2023.",
+    "ground_truth": {
+      "entity1": "Cyclone Freddy",
+      "relation": "Strike",
+      "entity2": "Mozambique",
+      "time": "2023-03-11",
+      "location": "Mozambique"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Canadian government declared a state of emergency over unprecedented wildfires across British Columbia on August 18, 2023 in Ottawa.",
+    "ground_truth": {
+      "entity1": "Canada",
+      "relation": "Declare emergency",
+      "entity2": "British Columbia",
+      "time": "2023-08-18",
+      "location": "Canada"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "A massive landslide buried a village in Papua New Guinea on May 24, 2024, with over 2,000 people feared dead.",
+    "ground_truth": {
+      "entity1": "Landslide",
+      "relation": "Strike",
+      "entity2": "Papua New Guinea",
+      "time": "2024-05-24",
+      "location": "Papua New Guinea"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "India's National Disaster Response Force rescued thousands of people from floods in Assam on June 20, 2023.",
+    "ground_truth": {
+      "entity1": "India",
+      "relation": "Rescue",
+      "entity2": "Flood victims",
+      "time": "2023-06-20",
+      "location": "India"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Greece experienced its worst wildfire season on record with fires burning across the island of Rhodes on July 22, 2023.",
+    "ground_truth": {
+      "entity1": "Wildfires",
+      "relation": "Burn",
+      "entity2": "Greece",
+      "time": "2023-07-22",
+      "location": "Greece"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The United Nations launched an emergency appeal for $1 billion in aid following the earthquake in Afghanistan on October 15, 2023.",
+    "ground_truth": {
+      "entity1": "United Nations",
+      "relation": "Launch aid appeal",
+      "entity2": "Afghanistan",
+      "time": "2023-10-15",
+      "location": "Afghanistan"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "South Korea deployed military helicopters to battle devastating forest fires in Gangwon Province on April 11, 2023.",
+    "ground_truth": {
+      "entity1": "South Korea",
+      "relation": "Deploy military",
+      "entity2": "Forest fires",
+      "time": "2023-04-11",
+      "location": "South Korea"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Brazil declared a climate emergency after record temperatures reached 62.3C heat index in Rio de Janeiro on November 18, 2023.",
+    "ground_truth": {
+      "entity1": "Brazil",
+      "relation": "Declare emergency",
+      "entity2": "Climate crisis",
+      "time": "2023-11-18",
+      "location": "Brazil"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Australia evacuated thousands of residents from Sydney suburbs due to severe flooding on March 28, 2024.",
+    "ground_truth": {
+      "entity1": "Australia",
+      "relation": "Evacuate",
+      "entity2": "Residents",
+      "time": "2024-03-28",
+      "location": "Australia"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Meta CEO Mark Zuckerberg announced a $10 billion investment in the metaverse division on October 26, 2022 in Menlo Park.",
+    "ground_truth": {
+      "entity1": "Mark Zuckerberg",
+      "relation": "Announce investment",
+      "entity2": "Meta",
+      "time": "2022-10-26",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Broadcom completed its $61 billion acquisition of VMware on November 22, 2023 in San Jose.",
+    "ground_truth": {
+      "entity1": "Broadcom",
+      "relation": "Acquire",
+      "entity2": "VMware",
+      "time": "2023-11-22",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "ASML restricted exports of advanced chipmaking equipment to China under pressure from the United States on January 27, 2023.",
+    "ground_truth": {
+      "entity1": "ASML",
+      "relation": "Restrict exports",
+      "entity2": "China",
+      "time": "2023-01-27",
+      "location": "Netherlands"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Alibaba announced the split of its business into six separate units on March 28, 2023 in Hangzhou.",
+    "ground_truth": {
+      "entity1": "Alibaba",
+      "relation": "Restructure",
+      "entity2": "Alibaba",
+      "time": "2023-03-28",
+      "location": "China"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Tata Motors agreed to build a new EV battery factory in the United Kingdom on July 19, 2023.",
+    "ground_truth": {
+      "entity1": "Tata Motors",
+      "relation": "Agree to build",
+      "entity2": "United Kingdom",
+      "time": "2023-07-19",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Disney CEO Bob Iger fired 7,000 employees as part of a cost-cutting plan on February 8, 2023 in Burbank.",
+    "ground_truth": {
+      "entity1": "Bob Iger",
+      "relation": "Lay off employees",
+      "entity2": "Disney",
+      "time": "2023-02-08",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Saudi Aramco reported a record annual profit of $161 billion on March 12, 2023 in Riyadh.",
+    "ground_truth": {
+      "entity1": "Saudi Aramco",
+      "relation": "Report profit",
+      "entity2": "Saudi Aramco",
+      "time": "2023-03-12",
+      "location": "Saudi Arabia"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Volkswagen invested $2.3 billion in a joint venture with Chinese EV maker Xpeng on July 26, 2023.",
+    "ground_truth": {
+      "entity1": "Volkswagen",
+      "relation": "Invest",
+      "entity2": "Xpeng",
+      "time": "2023-07-26",
+      "location": "China"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Microsoft invested $10 billion in OpenAI to expand its AI capabilities on January 23, 2023 in Seattle.",
+    "ground_truth": {
+      "entity1": "Microsoft",
+      "relation": "Invest",
+      "entity2": "OpenAI",
+      "time": "2023-01-23",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Credit Suisse was acquired by UBS in a government-brokered deal on March 19, 2023 in Zurich.",
+    "ground_truth": {
+      "entity1": "UBS",
+      "relation": "Acquire",
+      "entity2": "Credit Suisse",
+      "time": "2023-03-19",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "TikTok CEO Shou Zi Chew testified before the US Congress about data security concerns on March 23, 2023 in Washington.",
+    "ground_truth": {
+      "entity1": "Shou Zi Chew",
+      "relation": "Testify",
+      "entity2": "United States",
+      "time": "2023-03-23",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Amazon acquired One Medical for $3.9 billion to enter the healthcare market on February 22, 2023 in Seattle.",
+    "ground_truth": {
+      "entity1": "Amazon",
+      "relation": "Acquire",
+      "entity2": "One Medical",
+      "time": "2023-02-22",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Stellantis and Samsung SDI announced a $3.2 billion battery plant in Kokomo, Indiana on May 24, 2023.",
+    "ground_truth": {
+      "entity1": "Stellantis",
+      "relation": "Partner",
+      "entity2": "Samsung SDI",
+      "time": "2023-05-24",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "ARM Holdings raised $4.87 billion in the largest IPO of 2023 on September 14, 2023 in New York.",
+    "ground_truth": {
+      "entity1": "ARM Holdings",
+      "relation": "Launch IPO",
+      "entity2": "ARM Holdings",
+      "time": "2023-09-14",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "Sony and Honda launched a joint EV venture called Afeela at CES on January 5, 2023 in Las Vegas.",
+    "ground_truth": {
+      "entity1": "Sony",
+      "relation": "Launch venture",
+      "entity2": "Honda",
+      "time": "2023-01-05",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Tropical Storm Hilary brought record rainfall to Southern California causing widespread flooding on August 20, 2023.",
+    "ground_truth": {
+      "entity1": "Tropical Storm Hilary",
+      "relation": "Strike",
+      "entity2": "United States",
+      "time": "2023-08-20",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "A 6.8 magnitude earthquake struck Morocco near Marrakech killing nearly 3,000 people on September 8, 2023.",
+    "ground_truth": {
+      "entity1": "Earthquake",
+      "relation": "Strike",
+      "entity2": "Morocco",
+      "time": "2023-09-08",
+      "location": "Morocco"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Typhoon Doksuri caused devastating floods in Beijing and northern China on August 1, 2023.",
+    "ground_truth": {
+      "entity1": "Typhoon Doksuri",
+      "relation": "Cause flooding",
+      "entity2": "China",
+      "time": "2023-08-01",
+      "location": "China"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "New Zealand declared a state of emergency after Cyclone Gabrielle struck the North Island on February 14, 2023.",
+    "ground_truth": {
+      "entity1": "New Zealand",
+      "relation": "Declare emergency",
+      "entity2": "New Zealand",
+      "time": "2023-02-14",
+      "location": "New Zealand"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Italy experienced severe flooding in the Emilia-Romagna region killing 15 people on May 17, 2023.",
+    "ground_truth": {
+      "entity1": "Flooding",
+      "relation": "Strike",
+      "entity2": "Italy",
+      "time": "2023-05-17",
+      "location": "Italy"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Chilean government ordered evacuations after a volcanic eruption at Villarrica on March 30, 2023.",
+    "ground_truth": {
+      "entity1": "Chile",
+      "relation": "Order evacuation",
+      "entity2": "Chile",
+      "time": "2023-03-30",
+      "location": "Chile"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Hurricane Lee became one of the strongest Atlantic hurricanes on record as it approached the Caribbean on September 8, 2023.",
+    "ground_truth": {
+      "entity1": "Hurricane Lee",
+      "relation": "Threaten",
+      "entity2": "Caribbean",
+      "time": "2023-09-08",
+      "location": "Caribbean"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Bangladesh deployed the army to assist with rescue operations after monsoon flooding on August 25, 2023 in Dhaka.",
+    "ground_truth": {
+      "entity1": "Bangladesh",
+      "relation": "Deploy military",
+      "entity2": "Bangladesh",
+      "time": "2023-08-25",
+      "location": "Bangladesh"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "South Korea experienced its worst flooding in decades as record rain hit Seoul on April 10, 2023.",
+    "ground_truth": {
+      "entity1": "Flooding",
+      "relation": "Strike",
+      "entity2": "South Korea",
+      "time": "2023-04-10",
+      "location": "South Korea"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Iceland declared a state of emergency after a volcanic eruption near Grindavik on December 18, 2023.",
+    "ground_truth": {
+      "entity1": "Iceland",
+      "relation": "Declare emergency",
+      "entity2": "Iceland",
+      "time": "2023-12-18",
+      "location": "Iceland"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Philippines evacuated over 100,000 people as Typhoon Mawar approached on May 28, 2023.",
+    "ground_truth": {
+      "entity1": "Philippines",
+      "relation": "Evacuate",
+      "entity2": "Residents",
+      "time": "2023-05-28",
+      "location": "Philippines"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Russia experienced severe flooding in the Orenburg region after a dam burst on April 7, 2024.",
+    "ground_truth": {
+      "entity1": "Flooding",
+      "relation": "Strike",
+      "entity2": "Russia",
+      "time": "2024-04-07",
+      "location": "Russia"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Kenya Red Cross rescued thousands of people trapped by flash floods in Nairobi on April 24, 2024.",
+    "ground_truth": {
+      "entity1": "Kenya Red Cross",
+      "relation": "Rescue",
+      "entity2": "Flood victims",
+      "time": "2024-04-24",
+      "location": "Kenya"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Taiwan deployed military forces to assist with earthquake relief in Hualien after a 7.4 magnitude earthquake on April 3, 2024.",
+    "ground_truth": {
+      "entity1": "Taiwan",
+      "relation": "Deploy military",
+      "entity2": "Taiwan",
+      "time": "2024-04-03",
+      "location": "Taiwan"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Spain experienced catastrophic flooding in Valencia killing over 200 people on October 29, 2024.",
+    "ground_truth": {
+      "entity1": "Flooding",
+      "relation": "Strike",
+      "entity2": "Spain",
+      "time": "2024-10-29",
+      "location": "Spain"
+    }
+  }
+]
