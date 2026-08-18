@@ -1,56 +1,3742 @@
 [
-  {"domain": "sports", "text": "Lionel Messi led Argentina to victory in the FIFA World Cup final against France on December 18, 2022 in Lusail, Qatar.", "ground_truth": {"entity1": "Argentina", "relation": "Win", "entity2": "France", "time": "2022-12-18", "location": "Qatar"}},
-  {"domain": "sports", "text": "The International Olympic Committee selected Brisbane, Australia to host the 2032 Summer Olympics on July 21, 2021.", "ground_truth": {"entity1": "International Olympic Committee", "relation": "Select host", "entity2": "Australia", "time": "2021-07-21", "location": "Japan"}},
-  {"domain": "sports", "text": "FIFA banned Russia from all international football competitions on February 28, 2022 in Zurich.", "ground_truth": {"entity1": "FIFA", "relation": "Ban", "entity2": "Russia", "time": "2022-02-28", "location": "Switzerland"}},
-  {"domain": "sports", "text": "Usain Bolt's 100m world record was broken by Noah Lyles at the World Athletics Championships on August 20, 2023 in Budapest.", "ground_truth": {"entity1": "Noah Lyles", "relation": "Break record", "entity2": "Usain Bolt", "time": "2023-08-20", "location": "Hungary"}},
-  {"domain": "sports", "text": "Manchester City won the UEFA Champions League defeating Inter Milan 1-0 on June 10, 2023 in Istanbul.", "ground_truth": {"entity1": "Manchester City", "relation": "Defeat", "entity2": "Inter Milan", "time": "2023-06-10", "location": "Turkey"}},
-  {"domain": "sports", "text": "Novak Djokovic won his 24th Grand Slam title at the US Open on September 10, 2023 in New York.", "ground_truth": {"entity1": "Novak Djokovic", "relation": "Win title", "entity2": "US Open", "time": "2023-09-10", "location": "United States"}},
-  {"domain": "sports", "text": "Saudi Arabia's Public Investment Fund acquired Newcastle United Football Club on October 7, 2021 in London.", "ground_truth": {"entity1": "Saudi Arabia", "relation": "Acquire", "entity2": "Newcastle United", "time": "2021-10-07", "location": "United Kingdom"}},
-  {"domain": "sports", "text": "The World Anti-Doping Agency investigated Chinese swimmers for positive drug tests before the Tokyo Olympics on April 20, 2024.", "ground_truth": {"entity1": "World Anti-Doping Agency", "relation": "Investigate", "entity2": "China", "time": "2024-04-20", "location": "Switzerland"}},
-  {"domain": "sports", "text": "Real Madrid signed Kylian Mbappe from Paris Saint-Germain on June 3, 2024 in Madrid.", "ground_truth": {"entity1": "Real Madrid", "relation": "Sign player", "entity2": "Paris Saint-Germain", "time": "2024-06-03", "location": "Spain"}},
-  {"domain": "sports", "text": "India hosted and won the Cricket World Cup semi-final against New Zealand on November 15, 2023 in Mumbai.", "ground_truth": {"entity1": "India", "relation": "Defeat", "entity2": "New Zealand", "time": "2023-11-15", "location": "India"}},
-
-  {"domain": "science", "text": "NASA's James Webb Space Telescope captured its first deep field image on July 12, 2022 from Goddard Space Flight Center.", "ground_truth": {"entity1": "NASA", "relation": "Capture image", "entity2": "James Webb Telescope", "time": "2022-07-12", "location": "United States"}},
-  {"domain": "science", "text": "CERN scientists announced the discovery of a new type of pentaquark on July 5, 2022 in Geneva.", "ground_truth": {"entity1": "CERN", "relation": "Announce discovery", "entity2": "Pentaquark", "time": "2022-07-05", "location": "Switzerland"}},
-  {"domain": "science", "text": "China completed construction of its Tiangong space station on November 3, 2022.", "ground_truth": {"entity1": "China", "relation": "Complete construction", "entity2": "Tiangong", "time": "2022-11-03", "location": "China"}},
-  {"domain": "science", "text": "South Korea launched its first domestically built space rocket Nuri on June 21, 2022 from Naro Space Center.", "ground_truth": {"entity1": "South Korea", "relation": "Launch rocket", "entity2": "Nuri", "time": "2022-06-21", "location": "South Korea"}},
-  {"domain": "science", "text": "DeepMind's AlphaFold predicted the structure of nearly every known protein, published on July 28, 2022 in London.", "ground_truth": {"entity1": "DeepMind", "relation": "Predict structure", "entity2": "AlphaFold", "time": "2022-07-28", "location": "United Kingdom"}},
-  {"domain": "science", "text": "Japan's SLIM spacecraft achieved a precision landing on the Moon on January 19, 2024.", "ground_truth": {"entity1": "Japan", "relation": "Land spacecraft", "entity2": "SLIM", "time": "2024-01-19", "location": "Japan"}},
-  {"domain": "science", "text": "The European Space Agency launched the JUICE mission to Jupiter on April 14, 2023 from French Guiana.", "ground_truth": {"entity1": "European Space Agency", "relation": "Launch mission", "entity2": "JUICE", "time": "2023-04-14", "location": "France"}},
-  {"domain": "science", "text": "Scientists at Lawrence Livermore National Laboratory achieved nuclear fusion ignition on December 5, 2022 in California.", "ground_truth": {"entity1": "Lawrence Livermore Laboratory", "relation": "Achieve breakthrough", "entity2": "Nuclear fusion", "time": "2022-12-05", "location": "United States"}},
-  {"domain": "science", "text": "Russia withdrew from the International Space Station partnership agreement on July 26, 2022.", "ground_truth": {"entity1": "Russia", "relation": "Withdraw", "entity2": "International Space Station", "time": "2022-07-26", "location": "Russia"}},
-  {"domain": "science", "text": "Neuralink implanted its first brain chip in a human patient on January 29, 2024 in Austin, Texas.", "ground_truth": {"entity1": "Neuralink", "relation": "Implant device", "entity2": "Patient", "time": "2024-01-29", "location": "United States"}},
-
-  {"domain": "health", "text": "The WHO declared mpox a global health emergency on July 23, 2022 in Geneva.", "ground_truth": {"entity1": "World Health Organization", "relation": "Declare emergency", "entity2": "Mpox", "time": "2022-07-23", "location": "Switzerland"}},
-  {"domain": "health", "text": "Pfizer and BioNTech developed an updated COVID-19 vaccine targeting the Omicron variant released on September 1, 2022.", "ground_truth": {"entity1": "Pfizer", "relation": "Develop vaccine", "entity2": "BioNTech", "time": "2022-09-01", "location": "United States"}},
-  {"domain": "health", "text": "China lifted its zero-COVID policy after widespread protests on December 7, 2022 in Beijing.", "ground_truth": {"entity1": "China", "relation": "Lift policy", "entity2": "China", "time": "2022-12-07", "location": "China"}},
-  {"domain": "health", "text": "The European Medicines Agency approved Novavax's COVID-19 vaccine on December 20, 2021 in Amsterdam.", "ground_truth": {"entity1": "European Medicines Agency", "relation": "Approve vaccine", "entity2": "Novavax", "time": "2021-12-20", "location": "Netherlands"}},
-  {"domain": "health", "text": "Uganda declared an Ebola outbreak in the Mubende district on September 20, 2022.", "ground_truth": {"entity1": "Uganda", "relation": "Declare outbreak", "entity2": "Ebola", "time": "2022-09-20", "location": "Uganda"}},
-  {"domain": "health", "text": "Johnson & Johnson agreed to pay $8.9 billion to settle talcum powder cancer lawsuits on April 4, 2023.", "ground_truth": {"entity1": "Johnson & Johnson", "relation": "Settle lawsuit", "entity2": "Plaintiffs", "time": "2023-04-04", "location": "United States"}},
-  {"domain": "health", "text": "India provided 100 million COVID-19 vaccine doses to African nations through the COVAX program on March 15, 2022.", "ground_truth": {"entity1": "India", "relation": "Provide vaccines", "entity2": "African nations", "time": "2022-03-15", "location": "India"}},
-  {"domain": "health", "text": "The FDA approved the first CRISPR-based gene therapy treatment on December 8, 2023 in Washington.", "ground_truth": {"entity1": "FDA", "relation": "Approve treatment", "entity2": "CRISPR therapy", "time": "2023-12-08", "location": "United States"}},
-  {"domain": "health", "text": "North Korea reported its first COVID-19 outbreak on May 12, 2022 in Pyongyang.", "ground_truth": {"entity1": "North Korea", "relation": "Report outbreak", "entity2": "COVID-19", "time": "2022-05-12", "location": "North Korea"}},
-  {"domain": "health", "text": "Brazil's health ministry declared a dengue fever emergency affecting 1,000 cities on February 6, 2024.", "ground_truth": {"entity1": "Brazil", "relation": "Declare emergency", "entity2": "Dengue fever", "time": "2024-02-06", "location": "Brazil"}},
-
-  {"domain": "culture", "text": "South Korea's Squid Game became the most-watched Netflix series globally on October 12, 2021.", "ground_truth": {"entity1": "Squid Game", "relation": "Achieve record", "entity2": "Netflix", "time": "2021-10-12", "location": "South Korea"}},
-  {"domain": "culture", "text": "The British Museum suffered a major theft of 2,000 artifacts reported on August 16, 2023 in London.", "ground_truth": {"entity1": "British Museum", "relation": "Report theft", "entity2": "British Museum", "time": "2023-08-16", "location": "United Kingdom"}},
-  {"domain": "culture", "text": "UNESCO added Kyiv's historic center to its list of World Heritage Sites in Danger on January 25, 2023.", "ground_truth": {"entity1": "UNESCO", "relation": "Add to list", "entity2": "Kyiv", "time": "2023-01-25", "location": "France"}},
-  {"domain": "culture", "text": "Japan's Studio Ghibli won the Academy Award for Best Animated Feature with The Boy and the Heron on March 10, 2024 in Los Angeles.", "ground_truth": {"entity1": "Studio Ghibli", "relation": "Win award", "entity2": "Academy Awards", "time": "2024-03-10", "location": "United States"}},
-  {"domain": "culture", "text": "France returned 26 looted colonial artifacts to Benin on November 9, 2021 in Paris.", "ground_truth": {"entity1": "France", "relation": "Return artifacts", "entity2": "Benin", "time": "2021-11-09", "location": "France"}},
-  {"domain": "culture", "text": "Taylor Swift's Eras Tour became the highest-grossing concert tour in history surpassing $1 billion on December 8, 2023.", "ground_truth": {"entity1": "Taylor Swift", "relation": "Achieve record", "entity2": "Eras Tour", "time": "2023-12-08", "location": "United States"}},
-  {"domain": "culture", "text": "China banned effeminate men from appearing on television on September 2, 2021 in Beijing.", "ground_truth": {"entity1": "China", "relation": "Ban", "entity2": "Television industry", "time": "2021-09-02", "location": "China"}},
-  {"domain": "culture", "text": "The Louvre Museum in Paris reached a record 10 million visitors in 2023 announced on January 19, 2024.", "ground_truth": {"entity1": "Louvre Museum", "relation": "Achieve record", "entity2": "Louvre Museum", "time": "2024-01-19", "location": "France"}},
-  {"domain": "culture", "text": "Nigeria's Afrobeats artist Burna Boy performed at a sold-out concert at London Stadium on June 24, 2023.", "ground_truth": {"entity1": "Burna Boy", "relation": "Perform", "entity2": "London Stadium", "time": "2023-06-24", "location": "United Kingdom"}},
-  {"domain": "culture", "text": "Saudi Arabia announced plans to build a museum designed by architect Jean Nouvel in Riyadh on December 15, 2022.", "ground_truth": {"entity1": "Saudi Arabia", "relation": "Announce construction", "entity2": "Museum", "time": "2022-12-15", "location": "Saudi Arabia"}},
-
-  {"domain": "crime", "text": "Interpol arrested the world's most wanted drug trafficker in Colombia on October 22, 2022.", "ground_truth": {"entity1": "Interpol", "relation": "Arrest", "entity2": "Drug trafficker", "time": "2022-10-22", "location": "Colombia"}},
-  {"domain": "crime", "text": "The FBI raided former President Donald Trump's Mar-a-Lago estate on August 8, 2022 in Florida.", "ground_truth": {"entity1": "FBI", "relation": "Raid", "entity2": "Donald Trump", "time": "2022-08-08", "location": "United States"}},
-  {"domain": "crime", "text": "A New York jury found Donald Trump guilty on 34 felony counts on May 30, 2024.", "ground_truth": {"entity1": "New York jury", "relation": "Find guilty", "entity2": "Donald Trump", "time": "2024-05-30", "location": "United States"}},
-  {"domain": "crime", "text": "Mexico extradited drug lord Rafael Caro Quintero to the United States on July 15, 2022.", "ground_truth": {"entity1": "Mexico", "relation": "Extradite", "entity2": "United States", "time": "2022-07-15", "location": "Mexico"}},
-  {"domain": "crime", "text": "Australian police dismantled a major cybercrime syndicate operating across Southeast Asia on March 14, 2023.", "ground_truth": {"entity1": "Australian police", "relation": "Dismantle", "entity2": "Cybercrime syndicate", "time": "2023-03-14", "location": "Australia"}},
-  {"domain": "crime", "text": "The International Criminal Court convicted a Ugandan rebel commander for war crimes on February 4, 2021 in The Hague.", "ground_truth": {"entity1": "International Criminal Court", "relation": "Convict", "entity2": "Ugandan rebel commander", "time": "2021-02-04", "location": "Netherlands"}},
-  {"domain": "crime", "text": "Japan executed the former leader of the Aum Shinrikyo cult responsible for the Tokyo subway attack on July 6, 2018.", "ground_truth": {"entity1": "Japan", "relation": "Execute", "entity2": "Aum Shinrikyo leader", "time": "2018-07-06", "location": "Japan"}},
-  {"domain": "crime", "text": "El Salvador's President Bukele arrested over 60,000 gang members during a state of emergency declared on March 27, 2022.", "ground_truth": {"entity1": "Bukele", "relation": "Arrest", "entity2": "Gang members", "time": "2022-03-27", "location": "El Salvador"}},
-  {"domain": "crime", "text": "France convicted former President Nicolas Sarkozy of corruption on March 1, 2021 in Paris.", "ground_truth": {"entity1": "France", "relation": "Convict", "entity2": "Nicolas Sarkozy", "time": "2021-03-01", "location": "France"}},
-  {"domain": "crime", "text": "Europol shut down the world's largest dark web marketplace on April 5, 2022 in The Hague.", "ground_truth": {"entity1": "Europol", "relation": "Shut down", "entity2": "Dark web marketplace", "time": "2022-04-05", "location": "Netherlands"}}
+  {
+    "domain": "sports",
+    "text": "Lionel Messi led Argentina to victory in the FIFA World Cup final against France on December 18, 2022 in Lusail, Qatar.",
+    "ground_truth": {
+      "entity1": "Argentina",
+      "relation": "Win",
+      "entity2": "France",
+      "time": "2022-12-18",
+      "location": "Qatar"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "The International Olympic Committee selected Brisbane, Australia to host the 2032 Summer Olympics on July 21, 2021.",
+    "ground_truth": {
+      "entity1": "International Olympic Committee",
+      "relation": "Select host",
+      "entity2": "Australia",
+      "time": "2021-07-21",
+      "location": "Japan"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "FIFA banned Russia from all international football competitions on February 28, 2022 in Zurich.",
+    "ground_truth": {
+      "entity1": "FIFA",
+      "relation": "Ban",
+      "entity2": "Russia",
+      "time": "2022-02-28",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Usain Bolt's 100m world record was broken by Noah Lyles at the World Athletics Championships on August 20, 2023 in Budapest.",
+    "ground_truth": {
+      "entity1": "Noah Lyles",
+      "relation": "Break record",
+      "entity2": "Usain Bolt",
+      "time": "2023-08-20",
+      "location": "Hungary"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Manchester City won the UEFA Champions League defeating Inter Milan 1-0 on June 10, 2023 in Istanbul.",
+    "ground_truth": {
+      "entity1": "Manchester City",
+      "relation": "Defeat",
+      "entity2": "Inter Milan",
+      "time": "2023-06-10",
+      "location": "Turkey"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Novak Djokovic won his 24th Grand Slam title at the US Open on September 10, 2023 in New York.",
+    "ground_truth": {
+      "entity1": "Novak Djokovic",
+      "relation": "Win title",
+      "entity2": "US Open",
+      "time": "2023-09-10",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Saudi Arabia's Public Investment Fund acquired Newcastle United Football Club on October 7, 2021 in London.",
+    "ground_truth": {
+      "entity1": "Saudi Arabia",
+      "relation": "Acquire",
+      "entity2": "Newcastle United",
+      "time": "2021-10-07",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "The World Anti-Doping Agency investigated Chinese swimmers for positive drug tests before the Tokyo Olympics on April 20, 2024.",
+    "ground_truth": {
+      "entity1": "World Anti-Doping Agency",
+      "relation": "Investigate",
+      "entity2": "China",
+      "time": "2024-04-20",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Real Madrid signed Kylian Mbappe from Paris Saint-Germain on June 3, 2024 in Madrid.",
+    "ground_truth": {
+      "entity1": "Real Madrid",
+      "relation": "Sign player",
+      "entity2": "Paris Saint-Germain",
+      "time": "2024-06-03",
+      "location": "Spain"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "India hosted and won the Cricket World Cup semi-final against New Zealand on November 15, 2023 in Mumbai.",
+    "ground_truth": {
+      "entity1": "India",
+      "relation": "Defeat",
+      "entity2": "New Zealand",
+      "time": "2023-11-15",
+      "location": "India"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "NASA's James Webb Space Telescope captured its first deep field image on July 12, 2022 from Goddard Space Flight Center.",
+    "ground_truth": {
+      "entity1": "NASA",
+      "relation": "Capture image",
+      "entity2": "James Webb Telescope",
+      "time": "2022-07-12",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "CERN scientists announced the discovery of a new type of pentaquark on July 5, 2022 in Geneva.",
+    "ground_truth": {
+      "entity1": "CERN",
+      "relation": "Announce discovery",
+      "entity2": "Pentaquark",
+      "time": "2022-07-05",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "China completed construction of its Tiangong space station on November 3, 2022.",
+    "ground_truth": {
+      "entity1": "China",
+      "relation": "Complete construction",
+      "entity2": "Tiangong",
+      "time": "2022-11-03",
+      "location": "China"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "South Korea launched its first domestically built space rocket Nuri on June 21, 2022 from Naro Space Center.",
+    "ground_truth": {
+      "entity1": "South Korea",
+      "relation": "Launch rocket",
+      "entity2": "Nuri",
+      "time": "2022-06-21",
+      "location": "South Korea"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "DeepMind's AlphaFold predicted the structure of nearly every known protein, published on July 28, 2022 in London.",
+    "ground_truth": {
+      "entity1": "DeepMind",
+      "relation": "Predict structure",
+      "entity2": "AlphaFold",
+      "time": "2022-07-28",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "Japan's SLIM spacecraft achieved a precision landing on the Moon on January 19, 2024.",
+    "ground_truth": {
+      "entity1": "Japan",
+      "relation": "Land spacecraft",
+      "entity2": "SLIM",
+      "time": "2024-01-19",
+      "location": "Japan"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The European Space Agency launched the JUICE mission to Jupiter on April 14, 2023 from French Guiana.",
+    "ground_truth": {
+      "entity1": "European Space Agency",
+      "relation": "Launch mission",
+      "entity2": "JUICE",
+      "time": "2023-04-14",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "Scientists at Lawrence Livermore National Laboratory achieved nuclear fusion ignition on December 5, 2022 in California.",
+    "ground_truth": {
+      "entity1": "Lawrence Livermore Laboratory",
+      "relation": "Achieve breakthrough",
+      "entity2": "Nuclear fusion",
+      "time": "2022-12-05",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "Russia withdrew from the International Space Station partnership agreement on July 26, 2022.",
+    "ground_truth": {
+      "entity1": "Russia",
+      "relation": "Withdraw",
+      "entity2": "International Space Station",
+      "time": "2022-07-26",
+      "location": "Russia"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "Neuralink implanted its first brain chip in a human patient on January 29, 2024 in Austin, Texas.",
+    "ground_truth": {
+      "entity1": "Neuralink",
+      "relation": "Implant device",
+      "entity2": "Patient",
+      "time": "2024-01-29",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The WHO declared mpox a global health emergency on July 23, 2022 in Geneva.",
+    "ground_truth": {
+      "entity1": "World Health Organization",
+      "relation": "Declare emergency",
+      "entity2": "Mpox",
+      "time": "2022-07-23",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "Pfizer and BioNTech developed an updated COVID-19 vaccine targeting the Omicron variant released on September 1, 2022.",
+    "ground_truth": {
+      "entity1": "Pfizer",
+      "relation": "Develop vaccine",
+      "entity2": "BioNTech",
+      "time": "2022-09-01",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "China lifted its zero-COVID policy after widespread protests on December 7, 2022 in Beijing.",
+    "ground_truth": {
+      "entity1": "China",
+      "relation": "Lift policy",
+      "entity2": "China",
+      "time": "2022-12-07",
+      "location": "China"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The European Medicines Agency approved Novavax's COVID-19 vaccine on December 20, 2021 in Amsterdam.",
+    "ground_truth": {
+      "entity1": "European Medicines Agency",
+      "relation": "Approve",
+      "entity2": "Novavax",
+      "time": "2021-12-20",
+      "location": "Netherlands"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "Uganda declared an Ebola outbreak in the Mubende district on September 20, 2022.",
+    "ground_truth": {
+      "entity1": "Uganda",
+      "relation": "Declare outbreak",
+      "entity2": "Ebola",
+      "time": "2022-09-20",
+      "location": "Uganda"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "Johnson & Johnson agreed to pay $8.9 billion to settle talcum powder cancer lawsuits on April 4, 2023.",
+    "ground_truth": {
+      "entity1": "Johnson & Johnson",
+      "relation": "Settle lawsuit",
+      "entity2": "Plaintiffs",
+      "time": "2023-04-04",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "India provided 100 million COVID-19 vaccine doses to African nations through the COVAX program on March 15, 2022.",
+    "ground_truth": {
+      "entity1": "India",
+      "relation": "Provide vaccines",
+      "entity2": "African nations",
+      "time": "2022-03-15",
+      "location": "India"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The FDA approved the first CRISPR-based gene therapy treatment on December 8, 2023 in Washington.",
+    "ground_truth": {
+      "entity1": "FDA",
+      "relation": "Approve",
+      "entity2": "CRISPR therapy",
+      "time": "2023-12-08",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "North Korea reported its first COVID-19 outbreak on May 12, 2022 in Pyongyang.",
+    "ground_truth": {
+      "entity1": "North Korea",
+      "relation": "Report outbreak",
+      "entity2": "COVID-19",
+      "time": "2022-05-12",
+      "location": "North Korea"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "Brazil's health ministry declared a dengue fever emergency affecting 1,000 cities on February 6, 2024.",
+    "ground_truth": {
+      "entity1": "Brazil",
+      "relation": "Declare emergency",
+      "entity2": "Dengue fever",
+      "time": "2024-02-06",
+      "location": "Brazil"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "South Korea's Squid Game became the most-watched Netflix series globally on October 12, 2021.",
+    "ground_truth": {
+      "entity1": "Squid Game",
+      "relation": "Achieve record",
+      "entity2": "Netflix",
+      "time": "2021-10-12",
+      "location": "South Korea"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The British Museum suffered a major theft of 2,000 artifacts reported on August 16, 2023 in London.",
+    "ground_truth": {
+      "entity1": "British Museum",
+      "relation": "Report theft",
+      "entity2": "British Museum",
+      "time": "2023-08-16",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "UNESCO added Kyiv's historic center to its list of World Heritage Sites in Danger on January 25, 2023.",
+    "ground_truth": {
+      "entity1": "UNESCO",
+      "relation": "Add to list",
+      "entity2": "Kyiv",
+      "time": "2023-01-25",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "Japan's Studio Ghibli won the Academy Award for Best Animated Feature with The Boy and the Heron on March 10, 2024 in Los Angeles.",
+    "ground_truth": {
+      "entity1": "Studio Ghibli",
+      "relation": "Win award",
+      "entity2": "Academy Awards",
+      "time": "2024-03-10",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "France returned 26 looted colonial artifacts to Benin on November 9, 2021 in Paris.",
+    "ground_truth": {
+      "entity1": "France",
+      "relation": "Return artifacts",
+      "entity2": "Benin",
+      "time": "2021-11-09",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "Taylor Swift's Eras Tour became the highest-grossing concert tour in history surpassing $1 billion on December 8, 2023.",
+    "ground_truth": {
+      "entity1": "Taylor Swift",
+      "relation": "Achieve record",
+      "entity2": "Eras Tour",
+      "time": "2023-12-08",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "China banned effeminate men from appearing on television on September 2, 2021 in Beijing.",
+    "ground_truth": {
+      "entity1": "China",
+      "relation": "Ban",
+      "entity2": "Television industry",
+      "time": "2021-09-02",
+      "location": "China"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Louvre Museum in Paris reached a record 10 million visitors in 2023 announced on January 19, 2024.",
+    "ground_truth": {
+      "entity1": "Louvre Museum",
+      "relation": "Achieve record",
+      "entity2": "Louvre Museum",
+      "time": "2024-01-19",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "Nigeria's Afrobeats artist Burna Boy performed at a sold-out concert at London Stadium on June 24, 2023.",
+    "ground_truth": {
+      "entity1": "Burna Boy",
+      "relation": "Perform",
+      "entity2": "London Stadium",
+      "time": "2023-06-24",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "Saudi Arabia announced plans to build a museum designed by architect Jean Nouvel in Riyadh on December 15, 2022.",
+    "ground_truth": {
+      "entity1": "Saudi Arabia",
+      "relation": "Announce construction",
+      "entity2": "Museum",
+      "time": "2022-12-15",
+      "location": "Saudi Arabia"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "Interpol arrested the world's most wanted drug trafficker in Colombia on October 22, 2022.",
+    "ground_truth": {
+      "entity1": "Interpol",
+      "relation": "Arrest",
+      "entity2": "Drug trafficker",
+      "time": "2022-10-22",
+      "location": "Colombia"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The FBI raided former President Donald Trump's Mar-a-Lago estate on August 8, 2022 in Florida.",
+    "ground_truth": {
+      "entity1": "FBI",
+      "relation": "Raid",
+      "entity2": "Donald Trump",
+      "time": "2022-08-08",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "A New York jury found Donald Trump guilty on 34 felony counts on May 30, 2024.",
+    "ground_truth": {
+      "entity1": "New York jury",
+      "relation": "Find guilty",
+      "entity2": "Donald Trump",
+      "time": "2024-05-30",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "Mexico extradited drug lord Rafael Caro Quintero to the United States on July 15, 2022.",
+    "ground_truth": {
+      "entity1": "Mexico",
+      "relation": "Extradite",
+      "entity2": "United States",
+      "time": "2022-07-15",
+      "location": "Mexico"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "Australian police dismantled a major cybercrime syndicate operating across Southeast Asia on March 14, 2023.",
+    "ground_truth": {
+      "entity1": "Australian police",
+      "relation": "Dismantle",
+      "entity2": "Cybercrime syndicate",
+      "time": "2023-03-14",
+      "location": "Australia"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The International Criminal Court convicted a Ugandan rebel commander for war crimes on February 4, 2021 in The Hague.",
+    "ground_truth": {
+      "entity1": "International Criminal Court",
+      "relation": "Convict",
+      "entity2": "Ugandan rebel commander",
+      "time": "2021-02-04",
+      "location": "Netherlands"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "Japan executed the former leader of the Aum Shinrikyo cult responsible for the Tokyo subway attack on July 6, 2018.",
+    "ground_truth": {
+      "entity1": "Japan",
+      "relation": "Execute",
+      "entity2": "Aum Shinrikyo leader",
+      "time": "2018-07-06",
+      "location": "Japan"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "El Salvador's President Bukele arrested over 60,000 gang members during a state of emergency declared on March 27, 2022.",
+    "ground_truth": {
+      "entity1": "Bukele",
+      "relation": "Arrest",
+      "entity2": "Gang members",
+      "time": "2022-03-27",
+      "location": "El Salvador"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "France convicted former President Nicolas Sarkozy of corruption on March 1, 2021 in Paris.",
+    "ground_truth": {
+      "entity1": "France",
+      "relation": "Convict",
+      "entity2": "Nicolas Sarkozy",
+      "time": "2021-03-01",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "Europol shut down the world's largest dark web marketplace on April 5, 2022 in The Hague.",
+    "ground_truth": {
+      "entity1": "Europol",
+      "relation": "Shut down",
+      "entity2": "Dark web marketplace",
+      "time": "2022-04-05",
+      "location": "Netherlands"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "France defeated Croatia 4-2 on July 15, 2018, at Luzhniki Stadium in Moscow, Russia, securing the country's second FIFA World Cup title.",
+    "ground_truth": {
+      "entity1": "France",
+      "relation": "Defeat",
+      "entity2": "Croatia",
+      "time": "2018-07-15",
+      "location": "Russia"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Croatia defeated England 2-1 after extra time on July 11, 2018, at Luzhniki Stadium in Moscow, Russia, advancing to its first World Cup final.",
+    "ground_truth": {
+      "entity1": "Croatia",
+      "relation": "Defeat",
+      "entity2": "England",
+      "time": "2018-07-11",
+      "location": "Russia"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Belgium defeated England 2-0 on July 14, 2018, at Saint Petersburg Stadium in Russia, claiming third place at the FIFA World Cup.",
+    "ground_truth": {
+      "entity1": "Belgium",
+      "relation": "Defeat",
+      "entity2": "England",
+      "time": "2018-07-14",
+      "location": "Russia"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Naomi Osaka defeated Serena Williams 6-2, 6-4 on September 8, 2018, at Arthur Ashe Stadium in New York, United States, winning her first major title.",
+    "ground_truth": {
+      "entity1": "Naomi Osaka",
+      "relation": "Defeat",
+      "entity2": "Serena Williams",
+      "time": "2018-09-08",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Novak Djokovic defeated Kevin Anderson in straight sets on July 15, 2018, at Wimbledon in London, United Kingdom, capturing his fourth Wimbledon singles championship.",
+    "ground_truth": {
+      "entity1": "Novak Djokovic",
+      "relation": "Defeat",
+      "entity2": "Kevin Anderson",
+      "time": "2018-07-15",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Simona Halep defeated Sloane Stephens in three sets on June 9, 2018, at Roland Garros in Paris, France, earning her first Grand Slam singles title.",
+    "ground_truth": {
+      "entity1": "Simona Halep",
+      "relation": "Defeat",
+      "entity2": "Sloane Stephens",
+      "time": "2018-06-09",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "South Africa defeated England 32-12 on November 2, 2019, at International Stadium Yokohama in Japan, winning the Rugby World Cup for a third time.",
+    "ground_truth": {
+      "entity1": "South Africa",
+      "relation": "Defeat",
+      "entity2": "England",
+      "time": "2019-11-02",
+      "location": "Japan"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "England defeated New Zealand 19-7 on October 26, 2019, at International Stadium Yokohama in Japan, advancing to the Rugby World Cup final.",
+    "ground_truth": {
+      "entity1": "England",
+      "relation": "Defeat",
+      "entity2": "New Zealand",
+      "time": "2019-10-26",
+      "location": "Japan"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "The United States defeated the Netherlands 2-0 on July 7, 2019, at Stade de Lyon in France, winning a fourth FIFA Women's World Cup title.",
+    "ground_truth": {
+      "entity1": "United States",
+      "relation": "Defeat",
+      "entity2": "Netherlands",
+      "time": "2019-07-07",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Algeria defeated Senegal 1-0 on July 19, 2019, at Cairo International Stadium in Egypt, securing its second Africa Cup of Nations championship.",
+    "ground_truth": {
+      "entity1": "Algeria",
+      "relation": "Defeat",
+      "entity2": "Senegal",
+      "time": "2019-07-19",
+      "location": "Egypt"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Liverpool defeated Tottenham Hotspur 2-0 on June 1, 2019, at the Metropolitano Stadium in Madrid, Spain, winning its sixth European Cup.",
+    "ground_truth": {
+      "entity1": "Liverpool",
+      "relation": "Defeat",
+      "entity2": "Tottenham Hotspur",
+      "time": "2019-06-01",
+      "location": "Spain"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Bianca Andreescu defeated Serena Williams in straight sets on September 7, 2019, at Arthur Ashe Stadium in New York, United States, winning the US Open.",
+    "ground_truth": {
+      "entity1": "Bianca Andreescu",
+      "relation": "Defeat",
+      "entity2": "Serena Williams",
+      "time": "2019-09-07",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Bayern Munich defeated Paris Saint-Germain 1-0 on August 23, 2020, at the Estádio da Luz in Lisbon, Portugal, winning the UEFA Champions League.",
+    "ground_truth": {
+      "entity1": "Bayern Munich",
+      "relation": "Defeat",
+      "entity2": "Paris Saint-Germain",
+      "time": "2020-08-23",
+      "location": "Portugal"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Sevilla defeated Inter Milan 3-2 on August 21, 2020, at Stadion Köln in Cologne, Germany, capturing its sixth UEFA Cup or Europa League title.",
+    "ground_truth": {
+      "entity1": "Sevilla",
+      "relation": "Defeat",
+      "entity2": "Inter Milan",
+      "time": "2020-08-21",
+      "location": "Germany"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Dominic Thiem defeated Alexander Zverev in five sets on September 13, 2020, at Arthur Ashe Stadium in New York, United States, winning his first major.",
+    "ground_truth": {
+      "entity1": "Dominic Thiem",
+      "relation": "Defeat",
+      "entity2": "Alexander Zverev",
+      "time": "2020-09-13",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Iga Swiatek defeated Sofia Kenin in straight sets on October 10, 2020, at Roland Garros in Paris, France, becoming Poland's first Grand Slam singles champion.",
+    "ground_truth": {
+      "entity1": "Iga Swiatek",
+      "relation": "Defeat",
+      "entity2": "Sofia Kenin",
+      "time": "2020-10-10",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Novak Djokovic defeated Dominic Thiem in five sets on February 2, 2020, at Rod Laver Arena in Melbourne, Australia, winning his eighth Australian Open title.",
+    "ground_truth": {
+      "entity1": "Novak Djokovic",
+      "relation": "Defeat",
+      "entity2": "Dominic Thiem",
+      "time": "2020-02-02",
+      "location": "Australia"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Italy defeated England on penalties on July 11, 2021, at Wembley Stadium in London, United Kingdom, winning its second UEFA European Championship.",
+    "ground_truth": {
+      "entity1": "Italy",
+      "relation": "Defeat",
+      "entity2": "England",
+      "time": "2021-07-11",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Argentina defeated Brazil 1-0 on July 10, 2021, at Maracanã Stadium in Rio de Janeiro, Brazil, winning its first Copa América title since 1993.",
+    "ground_truth": {
+      "entity1": "Argentina",
+      "relation": "Defeat",
+      "entity2": "Brazil",
+      "time": "2021-07-10",
+      "location": "Brazil"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Chelsea defeated Manchester City 1-0 on May 29, 2021, at the Estádio do Dragão in Porto, Portugal, winning its second UEFA Champions League title.",
+    "ground_truth": {
+      "entity1": "Chelsea",
+      "relation": "Defeat",
+      "entity2": "Manchester City",
+      "time": "2021-05-29",
+      "location": "Portugal"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Daniil Medvedev defeated Novak Djokovic in straight sets on September 12, 2021, at Arthur Ashe Stadium in New York, United States, winning his first major title.",
+    "ground_truth": {
+      "entity1": "Daniil Medvedev",
+      "relation": "Defeat",
+      "entity2": "Novak Djokovic",
+      "time": "2021-09-12",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Emma Raducanu defeated Leylah Fernandez in straight sets on September 11, 2021, at Arthur Ashe Stadium in New York, United States, winning the US Open.",
+    "ground_truth": {
+      "entity1": "Emma Raducanu",
+      "relation": "Defeat",
+      "entity2": "Leylah Fernandez",
+      "time": "2021-09-11",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Canada defeated Sweden on penalties on August 6, 2021, at International Stadium Yokohama in Japan, winning its first Olympic gold medal in women's football.",
+    "ground_truth": {
+      "entity1": "Canada",
+      "relation": "Defeat",
+      "entity2": "Sweden",
+      "time": "2021-08-06",
+      "location": "Japan"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Argentina defeated France on penalties on December 18, 2022, at Lusail Stadium in Qatar, winning the country's third FIFA World Cup title.",
+    "ground_truth": {
+      "entity1": "Argentina",
+      "relation": "Defeat",
+      "entity2": "France",
+      "time": "2022-12-18",
+      "location": "Qatar"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Morocco defeated Portugal 1-0 on December 10, 2022, at Al Thumama Stadium in Doha, Qatar, becoming the first African World Cup semifinalist.",
+    "ground_truth": {
+      "entity1": "Morocco",
+      "relation": "Defeat",
+      "entity2": "Portugal",
+      "time": "2022-12-10",
+      "location": "Qatar"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "England defeated Pakistan by five wickets on November 13, 2022, at the Melbourne Cricket Ground in Australia, winning the ICC Men's T20 World Cup.",
+    "ground_truth": {
+      "entity1": "England",
+      "relation": "Defeat",
+      "entity2": "Pakistan",
+      "time": "2022-11-13",
+      "location": "Australia"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Rafael Nadal defeated Casper Ruud in straight sets on June 5, 2022, at Roland Garros in Paris, France, winning a record-extending fourteenth French Open title.",
+    "ground_truth": {
+      "entity1": "Rafael Nadal",
+      "relation": "Defeat",
+      "entity2": "Casper Ruud",
+      "time": "2022-06-05",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Iga Swiatek defeated Coco Gauff in straight sets on June 4, 2022, at Roland Garros in Paris, France, securing her second French Open singles title.",
+    "ground_truth": {
+      "entity1": "Iga Swiatek",
+      "relation": "Defeat",
+      "entity2": "Coco Gauff",
+      "time": "2022-06-04",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Real Madrid defeated Liverpool 1-0 on May 28, 2022, at Stade de France in Saint-Denis, France, winning its fourteenth European Cup.",
+    "ground_truth": {
+      "entity1": "Real Madrid",
+      "relation": "Defeat",
+      "entity2": "Liverpool",
+      "time": "2022-05-28",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Spain defeated England 1-0 on August 20, 2023, at Stadium Australia in Sydney, Australia, winning its first FIFA Women's World Cup title.",
+    "ground_truth": {
+      "entity1": "Spain",
+      "relation": "Defeat",
+      "entity2": "England",
+      "time": "2023-08-20",
+      "location": "Australia"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "South Africa defeated New Zealand 12-11 on October 28, 2023, at Stade de France in Saint-Denis, France, winning a record fourth Rugby World Cup.",
+    "ground_truth": {
+      "entity1": "South Africa",
+      "relation": "Defeat",
+      "entity2": "New Zealand",
+      "time": "2023-10-28",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Australia defeated India by six wickets on November 19, 2023, at Narendra Modi Stadium in Ahmedabad, India, winning its sixth ICC Cricket World Cup.",
+    "ground_truth": {
+      "entity1": "Australia",
+      "relation": "Defeat",
+      "entity2": "India",
+      "time": "2023-11-19",
+      "location": "India"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Novak Djokovic defeated Daniil Medvedev in straight sets on September 10, 2023, at Arthur Ashe Stadium in New York, United States, winning his twenty-fourth major.",
+    "ground_truth": {
+      "entity1": "Novak Djokovic",
+      "relation": "Defeat",
+      "entity2": "Daniil Medvedev",
+      "time": "2023-09-10",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Coco Gauff defeated Aryna Sabalenka in three sets on September 9, 2023, at Arthur Ashe Stadium in New York, United States, winning her first major title.",
+    "ground_truth": {
+      "entity1": "Coco Gauff",
+      "relation": "Defeat",
+      "entity2": "Aryna Sabalenka",
+      "time": "2023-09-09",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Manchester City defeated Inter Milan 1-0 on June 10, 2023, at Atatürk Olympic Stadium in Istanbul, Turkey, winning its first UEFA Champions League title.",
+    "ground_truth": {
+      "entity1": "Manchester City",
+      "relation": "Defeat",
+      "entity2": "Inter Milan",
+      "time": "2023-06-10",
+      "location": "Turkey"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Spain defeated England 2-1 on July 14, 2024, at the Olympiastadion in Berlin, Germany, winning a record fourth UEFA European Championship.",
+    "ground_truth": {
+      "entity1": "Spain",
+      "relation": "Defeat",
+      "entity2": "England",
+      "time": "2024-07-14",
+      "location": "Germany"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Real Madrid defeated Borussia Dortmund 2-0 on June 1, 2024, at Wembley Stadium in London, United Kingdom, winning its fifteenth European Cup.",
+    "ground_truth": {
+      "entity1": "Real Madrid",
+      "relation": "Defeat",
+      "entity2": "Borussia Dortmund",
+      "time": "2024-06-01",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Carlos Alcaraz defeated Novak Djokovic in straight sets on July 14, 2024, at Wimbledon in London, United Kingdom, successfully defending his men's singles title.",
+    "ground_truth": {
+      "entity1": "Carlos Alcaraz",
+      "relation": "Defeat",
+      "entity2": "Novak Djokovic",
+      "time": "2024-07-14",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Barbora Krejcikova defeated Jasmine Paolini in three sets on July 13, 2024, at Wimbledon in London, United Kingdom, winning her second Grand Slam singles title.",
+    "ground_truth": {
+      "entity1": "Barbora Krejcikova",
+      "relation": "Defeat",
+      "entity2": "Jasmine Paolini",
+      "time": "2024-07-13",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "sports",
+    "text": "Oleksandr Usyk defeated Tyson Fury by split decision on May 18, 2024, at Kingdom Arena in Riyadh, Saudi Arabia, becoming the undisputed heavyweight champion.",
+    "ground_truth": {
+      "entity1": "Oleksandr Usyk",
+      "relation": "Defeat",
+      "entity2": "Tyson Fury",
+      "time": "2024-05-18",
+      "location": "Saudi Arabia"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Royal Swedish Academy of Sciences awarded a share of the 2018 Nobel Prize in Physics to Donna Strickland on October 2, 2018, in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Royal Swedish Academy of Sciences",
+      "relation": "Award prize",
+      "entity2": "Donna Strickland",
+      "time": "2018-10-02",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Royal Swedish Academy of Sciences awarded a share of the 2018 Nobel Prize in Chemistry to Frances H. Arnold on October 3, 2018, in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Royal Swedish Academy of Sciences",
+      "relation": "Award prize",
+      "entity2": "Frances H. Arnold",
+      "time": "2018-10-03",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Royal Swedish Academy of Sciences awarded a share of the 2019 Nobel Prize in Physics to James Peebles on October 8, 2019, in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Royal Swedish Academy of Sciences",
+      "relation": "Award prize",
+      "entity2": "James Peebles",
+      "time": "2019-10-08",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Royal Swedish Academy of Sciences awarded a share of the 2019 Nobel Prize in Chemistry to John B. Goodenough on October 9, 2019, in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Royal Swedish Academy of Sciences",
+      "relation": "Award prize",
+      "entity2": "John B. Goodenough",
+      "time": "2019-10-09",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Royal Swedish Academy of Sciences awarded a share of the 2020 Nobel Prize in Physics to Roger Penrose on October 6, 2020, in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Royal Swedish Academy of Sciences",
+      "relation": "Award prize",
+      "entity2": "Roger Penrose",
+      "time": "2020-10-06",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Royal Swedish Academy of Sciences awarded a share of the 2020 Nobel Prize in Chemistry to Emmanuelle Charpentier on October 7, 2020, in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Royal Swedish Academy of Sciences",
+      "relation": "Award prize",
+      "entity2": "Emmanuelle Charpentier",
+      "time": "2020-10-07",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Royal Swedish Academy of Sciences awarded a share of the 2021 Nobel Prize in Physics to Syukuro Manabe on October 5, 2021, in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Royal Swedish Academy of Sciences",
+      "relation": "Award prize",
+      "entity2": "Syukuro Manabe",
+      "time": "2021-10-05",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Royal Swedish Academy of Sciences awarded a share of the 2021 Nobel Prize in Chemistry to Benjamin List on October 6, 2021, in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Royal Swedish Academy of Sciences",
+      "relation": "Award prize",
+      "entity2": "Benjamin List",
+      "time": "2021-10-06",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Royal Swedish Academy of Sciences awarded a share of the 2022 Nobel Prize in Physics to Alain Aspect on October 4, 2022, in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Royal Swedish Academy of Sciences",
+      "relation": "Award prize",
+      "entity2": "Alain Aspect",
+      "time": "2022-10-04",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Royal Swedish Academy of Sciences awarded a share of the 2022 Nobel Prize in Chemistry to Carolyn R. Bertozzi on October 5, 2022, in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Royal Swedish Academy of Sciences",
+      "relation": "Award prize",
+      "entity2": "Carolyn R. Bertozzi",
+      "time": "2022-10-05",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Royal Swedish Academy of Sciences awarded a share of the 2023 Nobel Prize in Physics to Pierre Agostini on October 3, 2023, in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Royal Swedish Academy of Sciences",
+      "relation": "Award prize",
+      "entity2": "Pierre Agostini",
+      "time": "2023-10-03",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Royal Swedish Academy of Sciences awarded a share of the 2023 Nobel Prize in Chemistry to Moungi G. Bawendi on October 4, 2023, in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Royal Swedish Academy of Sciences",
+      "relation": "Award prize",
+      "entity2": "Moungi G. Bawendi",
+      "time": "2023-10-04",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Royal Swedish Academy of Sciences awarded a share of the 2024 Nobel Prize in Physics to John J. Hopfield on October 8, 2024, in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Royal Swedish Academy of Sciences",
+      "relation": "Award prize",
+      "entity2": "John J. Hopfield",
+      "time": "2024-10-08",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Royal Swedish Academy of Sciences awarded a share of the 2024 Nobel Prize in Chemistry to David Baker on October 9, 2024, in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Royal Swedish Academy of Sciences",
+      "relation": "Award prize",
+      "entity2": "David Baker",
+      "time": "2024-10-09",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "United Launch Alliance launched Mars lander for NASA on May 5, 2018, from Vandenberg Air Force Base in California, United States, sending the InSight mission toward Mars.",
+    "ground_truth": {
+      "entity1": "United Launch Alliance",
+      "relation": "Launch Mars lander",
+      "entity2": "NASA",
+      "time": "2018-05-05",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "United Launch Alliance launched solar probe for NASA on August 12, 2018, from Cape Canaveral in Florida, United States, beginning the Parker Solar Probe mission.",
+    "ground_truth": {
+      "entity1": "United Launch Alliance",
+      "relation": "Launch solar probe",
+      "entity2": "NASA",
+      "time": "2018-08-12",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "SpaceX launched crew test for NASA on March 2, 2019, from Kennedy Space Center in Florida, United States, beginning the uncrewed Demo-1 flight.",
+    "ground_truth": {
+      "entity1": "SpaceX",
+      "relation": "Launch crew test",
+      "entity2": "NASA",
+      "time": "2019-03-02",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "Indian Space Research Organisation launched lunar mission for India on July 22, 2019, from the Satish Dhawan Space Centre in Sriharikota, India, sending Chandrayaan-2 toward the Moon.",
+    "ground_truth": {
+      "entity1": "Indian Space Research Organisation",
+      "relation": "Launch lunar mission",
+      "entity2": "India",
+      "time": "2019-07-22",
+      "location": "India"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "SpaceX launched astronauts for NASA on May 30, 2020, from Kennedy Space Center in Florida, United States, beginning the Demo-2 crewed orbital mission.",
+    "ground_truth": {
+      "entity1": "SpaceX",
+      "relation": "Launch astronauts",
+      "entity2": "NASA",
+      "time": "2020-05-30",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "United Launch Alliance launched Mars mission for NASA on July 30, 2020, from Cape Canaveral in Florida, United States, sending the Perseverance rover toward Mars.",
+    "ground_truth": {
+      "entity1": "United Launch Alliance",
+      "relation": "Launch Mars mission",
+      "entity2": "NASA",
+      "time": "2020-07-30",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "SpaceX launched astronauts for NASA on November 15, 2020, from Kennedy Space Center in Florida, United States, beginning the operational Crew-1 mission.",
+    "ground_truth": {
+      "entity1": "SpaceX",
+      "relation": "Launch astronauts",
+      "entity2": "NASA",
+      "time": "2020-11-15",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "SpaceX launched astronauts for NASA on April 23, 2021, from Kennedy Space Center in Florida, United States, beginning the Crew-2 rotation mission.",
+    "ground_truth": {
+      "entity1": "SpaceX",
+      "relation": "Launch astronauts",
+      "entity2": "NASA",
+      "time": "2021-04-23",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "United Launch Alliance launched asteroid mission for NASA on October 16, 2021, from Cape Canaveral in Florida, United States, sending Lucy toward Jupiter's Trojan asteroids.",
+    "ground_truth": {
+      "entity1": "United Launch Alliance",
+      "relation": "Launch asteroid mission",
+      "entity2": "NASA",
+      "time": "2021-10-16",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "Arianespace launched space telescope for NASA on December 25, 2021, from Kourou in French Guiana, France, sending the James Webb Space Telescope into space.",
+    "ground_truth": {
+      "entity1": "Arianespace",
+      "relation": "Launch space telescope",
+      "entity2": "NASA",
+      "time": "2021-12-25",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "SpaceX launched astronauts for NASA on April 27, 2022, from Kennedy Space Center in Florida, United States, beginning the Crew-4 rotation mission.",
+    "ground_truth": {
+      "entity1": "SpaceX",
+      "relation": "Launch astronauts",
+      "entity2": "NASA",
+      "time": "2022-04-27",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "NASA launched lunar mission with European Space Agency on November 16, 2022, from Kennedy Space Center in Florida, United States, beginning the uncrewed Artemis I flight.",
+    "ground_truth": {
+      "entity1": "NASA",
+      "relation": "Launch lunar mission",
+      "entity2": "European Space Agency",
+      "time": "2022-11-16",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "Indian Space Research Organisation launched lunar mission for India on July 14, 2023, from the Satish Dhawan Space Centre in Sriharikota, India, sending Chandrayaan-3 toward the Moon.",
+    "ground_truth": {
+      "entity1": "Indian Space Research Organisation",
+      "relation": "Launch lunar mission",
+      "entity2": "India",
+      "time": "2023-07-14",
+      "location": "India"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "SpaceX launched astronauts for NASA on August 26, 2023, from Kennedy Space Center in Florida, United States, beginning the international Crew-7 mission.",
+    "ground_truth": {
+      "entity1": "SpaceX",
+      "relation": "Launch astronauts",
+      "entity2": "NASA",
+      "time": "2023-08-26",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "SpaceX launched asteroid mission for NASA on October 13, 2023, from Kennedy Space Center in Florida, United States, sending the Psyche spacecraft toward a metal-rich asteroid.",
+    "ground_truth": {
+      "entity1": "SpaceX",
+      "relation": "Launch asteroid mission",
+      "entity2": "NASA",
+      "time": "2023-10-13",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "SpaceX launched planetary mission for NASA on October 14, 2024, from Kennedy Space Center in Florida, United States, sending Europa Clipper toward Jupiter.",
+    "ground_truth": {
+      "entity1": "SpaceX",
+      "relation": "Launch planetary mission",
+      "entity2": "NASA",
+      "time": "2024-10-14",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The European Commission imposed antitrust fine on Google on July 18, 2018, in Brussels, Belgium, over restrictions involving Android mobile devices and search services.",
+    "ground_truth": {
+      "entity1": "European Commission",
+      "relation": "Impose fine",
+      "entity2": "Google",
+      "time": "2018-07-18",
+      "location": "Belgium"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The European Commission imposed antitrust fine on Google on March 20, 2019, in Brussels, Belgium, over abusive practices involving online search advertising contracts.",
+    "ground_truth": {
+      "entity1": "European Commission",
+      "relation": "Impose fine",
+      "entity2": "Google",
+      "time": "2019-03-20",
+      "location": "Belgium"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The European Commission opened antitrust investigation into Amazon on July 17, 2019, in Brussels, Belgium, examining its use of data from independent marketplace sellers.",
+    "ground_truth": {
+      "entity1": "European Commission",
+      "relation": "Open investigation",
+      "entity2": "Amazon",
+      "time": "2019-07-17",
+      "location": "Belgium"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Federal Trade Commission filed antitrust lawsuit against Facebook on December 9, 2020, in Washington, United States, alleging illegal monopolization of personal social networking services.",
+    "ground_truth": {
+      "entity1": "Federal Trade Commission",
+      "relation": "File lawsuit",
+      "entity2": "Facebook",
+      "time": "2020-12-09",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The European Commission approved acquisition by Google on December 17, 2020, in Brussels, Belgium, allowing its purchase of Fitbit subject to extensive conditions.",
+    "ground_truth": {
+      "entity1": "European Commission",
+      "relation": "Approve acquisition",
+      "entity2": "Google",
+      "time": "2020-12-17",
+      "location": "Belgium"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The European Commission sent formal objections to Apple on April 30, 2021, in Brussels, Belgium, alleging that App Store rules distorted competition in music streaming.",
+    "ground_truth": {
+      "entity1": "European Commission",
+      "relation": "Send objections",
+      "entity2": "Apple",
+      "time": "2021-04-30",
+      "location": "Belgium"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The French Data Protection Authority announced privacy fine against Google on January 6, 2022, in Paris, France, over cookie-consent practices on the company's websites.",
+    "ground_truth": {
+      "entity1": "French Data Protection Authority",
+      "relation": "Announce privacy fine",
+      "entity2": "Google",
+      "time": "2022-01-06",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Federal Trade Commission sought to block Microsoft on December 8, 2022, in Washington, United States, challenging its proposed acquisition of video-game publisher Activision Blizzard.",
+    "ground_truth": {
+      "entity1": "Federal Trade Commission",
+      "relation": "Seek to block",
+      "entity2": "Microsoft",
+      "time": "2022-12-08",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The Data Protection Commission announced data-transfer fine against Meta on May 22, 2023, in Dublin, Ireland, after investigating Facebook's transfers of European user data.",
+    "ground_truth": {
+      "entity1": "Data Protection Commission",
+      "relation": "Announce data-transfer fine",
+      "entity2": "Meta",
+      "time": "2023-05-22",
+      "location": "Ireland"
+    }
+  },
+  {
+    "domain": "science",
+    "text": "The European Commission imposed competition fine on Apple on March 4, 2024, in Brussels, Belgium, over App Store restrictions affecting rival music-streaming providers.",
+    "ground_truth": {
+      "entity1": "European Commission",
+      "relation": "Impose fine",
+      "entity2": "Apple",
+      "time": "2024-03-04",
+      "location": "Belgium"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Nobel Assembly at Karolinska Institutet awarded a share of the 2018 Nobel Prize in Physiology or Medicine to James P. Allison on October 1, 2018, in Solna, Sweden.",
+    "ground_truth": {
+      "entity1": "Nobel Assembly at Karolinska Institutet",
+      "relation": "Award prize",
+      "entity2": "James P. Allison",
+      "time": "2018-10-01",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Nobel Assembly at Karolinska Institutet awarded a share of the 2019 Nobel Prize in Physiology or Medicine to William G. Kaelin Jr. on October 7, 2019, in Solna, Sweden.",
+    "ground_truth": {
+      "entity1": "Nobel Assembly at Karolinska Institutet",
+      "relation": "Award prize",
+      "entity2": "William G. Kaelin Jr.",
+      "time": "2019-10-07",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Nobel Assembly at Karolinska Institutet awarded a share of the 2020 Nobel Prize in Physiology or Medicine to Harvey J. Alter on October 5, 2020, in Solna, Sweden.",
+    "ground_truth": {
+      "entity1": "Nobel Assembly at Karolinska Institutet",
+      "relation": "Award prize",
+      "entity2": "Harvey J. Alter",
+      "time": "2020-10-05",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Nobel Assembly at Karolinska Institutet awarded a share of the 2021 Nobel Prize in Physiology or Medicine to David Julius on October 4, 2021, in Solna, Sweden.",
+    "ground_truth": {
+      "entity1": "Nobel Assembly at Karolinska Institutet",
+      "relation": "Award prize",
+      "entity2": "David Julius",
+      "time": "2021-10-04",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Nobel Assembly at Karolinska Institutet awarded the 2022 Nobel Prize in Physiology or Medicine to Svante Pääbo on October 3, 2022, in Solna, Sweden.",
+    "ground_truth": {
+      "entity1": "Nobel Assembly at Karolinska Institutet",
+      "relation": "Award prize",
+      "entity2": "Svante Pääbo",
+      "time": "2022-10-03",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Nobel Assembly at Karolinska Institutet awarded a share of the 2023 Nobel Prize in Physiology or Medicine to Katalin Karikó on October 2, 2023, in Solna, Sweden.",
+    "ground_truth": {
+      "entity1": "Nobel Assembly at Karolinska Institutet",
+      "relation": "Award prize",
+      "entity2": "Katalin Karikó",
+      "time": "2023-10-02",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Nobel Assembly at Karolinska Institutet awarded a share of the 2024 Nobel Prize in Physiology or Medicine to Victor Ambros on October 7, 2024, in Solna, Sweden.",
+    "ground_truth": {
+      "entity1": "Nobel Assembly at Karolinska Institutet",
+      "relation": "Award prize",
+      "entity2": "Victor Ambros",
+      "time": "2024-10-07",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Food and Drug Administration approved migraine treatment from Amgen on May 17, 2018, in Silver Spring, Maryland, United States, authorizing Aimovig as a preventive treatment for adults.",
+    "ground_truth": {
+      "entity1": "Food and Drug Administration",
+      "relation": "Approve",
+      "entity2": "Amgen",
+      "time": "2018-05-17",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Food and Drug Administration approved epilepsy treatment from GW Pharmaceuticals on June 25, 2018, in Silver Spring, Maryland, United States, authorizing Epidiolex for two rare seizure disorders.",
+    "ground_truth": {
+      "entity1": "Food and Drug Administration",
+      "relation": "Approve",
+      "entity2": "GW Pharmaceuticals",
+      "time": "2018-06-25",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Food and Drug Administration approved heart treatment from Pfizer on May 3, 2019, in Silver Spring, Maryland, United States, authorizing tafamidis for transthyretin-mediated cardiomyopathy.",
+    "ground_truth": {
+      "entity1": "Food and Drug Administration",
+      "relation": "Approve",
+      "entity2": "Pfizer",
+      "time": "2019-05-03",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Food and Drug Administration approved Ebola vaccine from Merck on December 19, 2019, in Silver Spring, Maryland, United States, authorizing Ervebo for adults at risk of infection.",
+    "ground_truth": {
+      "entity1": "Food and Drug Administration",
+      "relation": "Approve",
+      "entity2": "Merck",
+      "time": "2019-12-19",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Medicines and Healthcare products Regulatory Agency authorized vaccine from Pfizer-BioNTech on December 2, 2020, in London, United Kingdom, allowing emergency use of its COVID-19 vaccine.",
+    "ground_truth": {
+      "entity1": "Medicines and Healthcare products Regulatory Agency",
+      "relation": "Authorize vaccine",
+      "entity2": "Pfizer-BioNTech",
+      "time": "2020-12-02",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Food and Drug Administration authorized vaccine from Pfizer-BioNTech on December 11, 2020, in Silver Spring, Maryland, United States, allowing emergency use of its COVID-19 vaccine.",
+    "ground_truth": {
+      "entity1": "Food and Drug Administration",
+      "relation": "Authorize vaccine",
+      "entity2": "Pfizer-BioNTech",
+      "time": "2020-12-11",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Food and Drug Administration authorized vaccine from Moderna on December 18, 2020, in Silver Spring, Maryland, United States, allowing emergency use of its COVID-19 vaccine.",
+    "ground_truth": {
+      "entity1": "Food and Drug Administration",
+      "relation": "Authorize vaccine",
+      "entity2": "Moderna",
+      "time": "2020-12-18",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The European Medicines Agency recommended vaccine authorization for Moderna on January 6, 2021, in Amsterdam, Netherlands, supporting conditional approval of its COVID-19 vaccine.",
+    "ground_truth": {
+      "entity1": "European Medicines Agency",
+      "relation": "Recommend authorization",
+      "entity2": "Moderna",
+      "time": "2021-01-06",
+      "location": "Netherlands"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The European Medicines Agency recommended vaccine authorization for AstraZeneca on January 29, 2021, in Amsterdam, Netherlands, supporting conditional approval of its COVID-19 vaccine.",
+    "ground_truth": {
+      "entity1": "European Medicines Agency",
+      "relation": "Recommend authorization",
+      "entity2": "AstraZeneca",
+      "time": "2021-01-29",
+      "location": "Netherlands"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Food and Drug Administration approved Alzheimer's treatment from Biogen on June 7, 2021, in Silver Spring, Maryland, United States, authorizing Aduhelm through the accelerated approval pathway.",
+    "ground_truth": {
+      "entity1": "Food and Drug Administration",
+      "relation": "Approve",
+      "entity2": "Biogen",
+      "time": "2021-06-07",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Food and Drug Administration approved HIV prevention treatment from ViiV Healthcare on December 20, 2021, in Silver Spring, Maryland, United States, authorizing the injectable medicine Apretude.",
+    "ground_truth": {
+      "entity1": "Food and Drug Administration",
+      "relation": "Approve",
+      "entity2": "ViiV Healthcare",
+      "time": "2021-12-20",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Food and Drug Administration authorized vaccine from Novavax on July 13, 2022, in Silver Spring, Maryland, United States, allowing emergency use of its protein-based COVID-19 vaccine.",
+    "ground_truth": {
+      "entity1": "Food and Drug Administration",
+      "relation": "Authorize vaccine",
+      "entity2": "Novavax",
+      "time": "2022-07-13",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Food and Drug Administration approved Alzheimer's treatment from Eisai on January 6, 2023, in Silver Spring, Maryland, United States, authorizing Leqembi through the accelerated approval pathway.",
+    "ground_truth": {
+      "entity1": "Food and Drug Administration",
+      "relation": "Approve",
+      "entity2": "Eisai",
+      "time": "2023-01-06",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Food and Drug Administration approved RSV vaccine from GSK on May 3, 2023, in Silver Spring, Maryland, United States, authorizing Arexvy for adults aged sixty and older.",
+    "ground_truth": {
+      "entity1": "Food and Drug Administration",
+      "relation": "Approve",
+      "entity2": "GSK",
+      "time": "2023-05-03",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Food and Drug Administration approved gene therapy from Vertex Pharmaceuticals on December 8, 2023, in Silver Spring, Maryland, United States, authorizing Casgevy for sickle cell disease.",
+    "ground_truth": {
+      "entity1": "Food and Drug Administration",
+      "relation": "Approve",
+      "entity2": "Vertex Pharmaceuticals",
+      "time": "2023-12-08",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Food and Drug Administration approved Alzheimer's treatment from Eli Lilly on July 2, 2024, in Silver Spring, Maryland, United States, authorizing Kisunla for adults with early symptomatic disease.",
+    "ground_truth": {
+      "entity1": "Food and Drug Administration",
+      "relation": "Approve",
+      "entity2": "Eli Lilly",
+      "time": "2024-07-02",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Food and Drug Administration approved nasal epinephrine from ARS Pharmaceuticals on August 9, 2024, in Silver Spring, Maryland, United States, authorizing Neffy for severe allergic reactions.",
+    "ground_truth": {
+      "entity1": "Food and Drug Administration",
+      "relation": "Approve",
+      "entity2": "ARS Pharmaceuticals",
+      "time": "2024-08-09",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The World Health Organization signed health partnership with FIFA on October 4, 2019, in Geneva, Switzerland, promoting healthier lifestyles through football.",
+    "ground_truth": {
+      "entity1": "World Health Organization",
+      "relation": "Sign partnership",
+      "entity2": "FIFA",
+      "time": "2019-10-04",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The World Health Organization prequalified Ebola vaccine from Merck on November 12, 2019, in Geneva, Switzerland, clearing Ervebo for procurement by United Nations agencies.",
+    "ground_truth": {
+      "entity1": "World Health Organization",
+      "relation": "Prequalify vaccine",
+      "entity2": "Merck",
+      "time": "2019-11-12",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The World Health Organization sent a technical mission to China on February 16, 2020, in Beijing, China, beginning a joint assessment of the coronavirus outbreak.",
+    "ground_truth": {
+      "entity1": "World Health Organization",
+      "relation": "Send mission",
+      "entity2": "China",
+      "time": "2020-02-16",
+      "location": "China"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The World Health Organization signed health agreement with International Olympic Committee on May 16, 2020, in Geneva, Switzerland, expanding cooperation on health promotion through sport.",
+    "ground_truth": {
+      "entity1": "World Health Organization",
+      "relation": "Sign agreement",
+      "entity2": "International Olympic Committee",
+      "time": "2020-05-16",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The World Health Organization granted emergency listing to Pfizer-BioNTech on December 31, 2020, in Geneva, Switzerland, clearing its COVID-19 vaccine for wider international use.",
+    "ground_truth": {
+      "entity1": "World Health Organization",
+      "relation": "Grant emergency listing",
+      "entity2": "Pfizer-BioNTech",
+      "time": "2020-12-31",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The World Health Organization granted emergency listing to AstraZeneca on February 15, 2021, in Geneva, Switzerland, clearing two versions of its COVID-19 vaccine.",
+    "ground_truth": {
+      "entity1": "World Health Organization",
+      "relation": "Grant emergency listing",
+      "entity2": "AstraZeneca",
+      "time": "2021-02-15",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The COVAX delivered COVID-19 vaccines to Ghana on February 24, 2021, in Accra, Ghana, completing the initiative's first international shipment.",
+    "ground_truth": {
+      "entity1": "COVAX",
+      "relation": "Deliver vaccines",
+      "entity2": "Ghana",
+      "time": "2021-02-24",
+      "location": "Ghana"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The COVAX delivered COVID-19 vaccines to Côte d'Ivoire on February 26, 2021, in Abidjan, Côte d'Ivoire, supporting the country's national vaccination campaign.",
+    "ground_truth": {
+      "entity1": "COVAX",
+      "relation": "Deliver vaccines",
+      "entity2": "Côte d'Ivoire",
+      "time": "2021-02-26",
+      "location": "Côte d'Ivoire"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The World Health Organization granted emergency listing to Johnson & Johnson on March 12, 2021, in Geneva, Switzerland, clearing its single-dose COVID-19 vaccine for international use.",
+    "ground_truth": {
+      "entity1": "World Health Organization",
+      "relation": "Grant emergency listing",
+      "entity2": "Johnson & Johnson",
+      "time": "2021-03-12",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The World Health Organization granted emergency listing to Moderna on April 30, 2021, in Geneva, Switzerland, clearing its COVID-19 vaccine for international use.",
+    "ground_truth": {
+      "entity1": "World Health Organization",
+      "relation": "Grant emergency listing",
+      "entity2": "Moderna",
+      "time": "2021-04-30",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The World Health Organization granted emergency listing to Sinopharm on May 7, 2021, in Geneva, Switzerland, clearing its COVID-19 vaccine for international use.",
+    "ground_truth": {
+      "entity1": "World Health Organization",
+      "relation": "Grant emergency listing",
+      "entity2": "Sinopharm",
+      "time": "2021-05-07",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The Gavi signed vaccine agreement with Johnson & Johnson on May 21, 2021, in Geneva, Switzerland, securing doses for distribution through the COVAX Facility.",
+    "ground_truth": {
+      "entity1": "Gavi",
+      "relation": "Sign agreement",
+      "entity2": "Johnson & Johnson",
+      "time": "2021-05-21",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The World Health Organization granted emergency listing to Sinovac on June 1, 2021, in Geneva, Switzerland, clearing its COVID-19 vaccine for international use.",
+    "ground_truth": {
+      "entity1": "World Health Organization",
+      "relation": "Grant emergency listing",
+      "entity2": "Sinovac",
+      "time": "2021-06-01",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The World Health Organization recommended malaria vaccination to African countries on October 6, 2021, in Geneva, Switzerland, endorsing broad use of the RTS,S vaccine among children.",
+    "ground_truth": {
+      "entity1": "World Health Organization",
+      "relation": "Recommend vaccination",
+      "entity2": "African countries",
+      "time": "2021-10-06",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The World Health Organization declared health emergency for member countries on July 23, 2022, in Geneva, Switzerland, responding to the multinational outbreak of mpox.",
+    "ground_truth": {
+      "entity1": "World Health Organization",
+      "relation": "Declare emergency",
+      "entity2": "member countries",
+      "time": "2022-07-23",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "health",
+    "text": "The World Health Organization recommended malaria vaccination to African countries on October 2, 2023, in Geneva, Switzerland, endorsing the R21 vaccine for children at risk.",
+    "ground_truth": {
+      "entity1": "World Health Organization",
+      "relation": "Recommend vaccination",
+      "entity2": "African countries",
+      "time": "2023-10-02",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Academy of Motion Picture Arts and Sciences awarded best director to Guillermo del Toro on March 4, 2018, during the Oscars ceremony in Los Angeles, United States, recognizing his work on The Shape of Water.",
+    "ground_truth": {
+      "entity1": "Academy of Motion Picture Arts and Sciences",
+      "relation": "Award prize",
+      "entity2": "Guillermo del Toro",
+      "time": "2018-03-04",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Academy of Motion Picture Arts and Sciences awarded best director to Alfonso Cuarón on February 24, 2019, during the Oscars ceremony in Los Angeles, United States, recognizing his work on Roma.",
+    "ground_truth": {
+      "entity1": "Academy of Motion Picture Arts and Sciences",
+      "relation": "Award prize",
+      "entity2": "Alfonso Cuarón",
+      "time": "2019-02-24",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Academy of Motion Picture Arts and Sciences awarded best director to Bong Joon-ho on February 9, 2020, during the Oscars ceremony in Los Angeles, United States, recognizing his work on Parasite.",
+    "ground_truth": {
+      "entity1": "Academy of Motion Picture Arts and Sciences",
+      "relation": "Award prize",
+      "entity2": "Bong Joon-ho",
+      "time": "2020-02-09",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Academy of Motion Picture Arts and Sciences awarded best director to Chloé Zhao on April 25, 2021, during the Oscars ceremony in Los Angeles, United States, recognizing her work on Nomadland.",
+    "ground_truth": {
+      "entity1": "Academy of Motion Picture Arts and Sciences",
+      "relation": "Award prize",
+      "entity2": "Chloé Zhao",
+      "time": "2021-04-25",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Academy of Motion Picture Arts and Sciences awarded best director to Jane Campion on March 27, 2022, during the Oscars ceremony in Los Angeles, United States, recognizing her work on The Power of the Dog.",
+    "ground_truth": {
+      "entity1": "Academy of Motion Picture Arts and Sciences",
+      "relation": "Award prize",
+      "entity2": "Jane Campion",
+      "time": "2022-03-27",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Academy of Motion Picture Arts and Sciences awarded best actress to Michelle Yeoh on March 12, 2023, during the Oscars ceremony in Los Angeles, United States, recognizing her performance in Everything Everywhere All at Once.",
+    "ground_truth": {
+      "entity1": "Academy of Motion Picture Arts and Sciences",
+      "relation": "Award prize",
+      "entity2": "Michelle Yeoh",
+      "time": "2023-03-12",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Academy of Motion Picture Arts and Sciences awarded best director to Christopher Nolan on March 10, 2024, during the Oscars ceremony in Los Angeles, United States, recognizing his work on Oppenheimer.",
+    "ground_truth": {
+      "entity1": "Academy of Motion Picture Arts and Sciences",
+      "relation": "Award prize",
+      "entity2": "Christopher Nolan",
+      "time": "2024-03-10",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Recording Academy awarded Album of the Year to Bruno Mars on January 28, 2018, during the Grammy Awards in New York, United States, honoring the album 24K Magic.",
+    "ground_truth": {
+      "entity1": "Recording Academy",
+      "relation": "Award prize",
+      "entity2": "Bruno Mars",
+      "time": "2018-01-28",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Recording Academy awarded Album of the Year to Kacey Musgraves on February 10, 2019, during the Grammy Awards in Los Angeles, United States, honoring the album Golden Hour.",
+    "ground_truth": {
+      "entity1": "Recording Academy",
+      "relation": "Award prize",
+      "entity2": "Kacey Musgraves",
+      "time": "2019-02-10",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Recording Academy awarded Album of the Year to Billie Eilish on January 26, 2020, during the Grammy Awards in Los Angeles, United States, honoring the album When We All Fall Asleep, Where Do We Go?.",
+    "ground_truth": {
+      "entity1": "Recording Academy",
+      "relation": "Award prize",
+      "entity2": "Billie Eilish",
+      "time": "2020-01-26",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Recording Academy awarded Album of the Year to Taylor Swift on March 14, 2021, during the Grammy Awards in Los Angeles, United States, honoring the album Folklore.",
+    "ground_truth": {
+      "entity1": "Recording Academy",
+      "relation": "Award prize",
+      "entity2": "Taylor Swift",
+      "time": "2021-03-14",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Recording Academy awarded Album of the Year to Jon Batiste on April 3, 2022, during the Grammy Awards in Las Vegas, United States, honoring the album We Are.",
+    "ground_truth": {
+      "entity1": "Recording Academy",
+      "relation": "Award prize",
+      "entity2": "Jon Batiste",
+      "time": "2022-04-03",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Recording Academy awarded Album of the Year to Harry Styles on February 5, 2023, during the Grammy Awards in Los Angeles, United States, honoring the album Harry's House.",
+    "ground_truth": {
+      "entity1": "Recording Academy",
+      "relation": "Award prize",
+      "entity2": "Harry Styles",
+      "time": "2023-02-05",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Recording Academy awarded Album of the Year to Taylor Swift on February 4, 2024, during the Grammy Awards in Los Angeles, United States, honoring the album Midnights.",
+    "ground_truth": {
+      "entity1": "Recording Academy",
+      "relation": "Award prize",
+      "entity2": "Taylor Swift",
+      "time": "2024-02-04",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Swedish Academy awarded the 2018 Nobel Prize in Literature to Olga Tokarczuk on October 10, 2019, during its official announcement in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Swedish Academy",
+      "relation": "Award prize",
+      "entity2": "Olga Tokarczuk",
+      "time": "2019-10-10",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Swedish Academy awarded the 2019 Nobel Prize in Literature to Peter Handke on October 10, 2019, during its official announcement in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Swedish Academy",
+      "relation": "Award prize",
+      "entity2": "Peter Handke",
+      "time": "2019-10-10",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Swedish Academy awarded the 2020 Nobel Prize in Literature to Louise Glück on October 8, 2020, during its official announcement in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Swedish Academy",
+      "relation": "Award prize",
+      "entity2": "Louise Glück",
+      "time": "2020-10-08",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Swedish Academy awarded the 2021 Nobel Prize in Literature to Abdulrazak Gurnah on October 7, 2021, during its official announcement in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Swedish Academy",
+      "relation": "Award prize",
+      "entity2": "Abdulrazak Gurnah",
+      "time": "2021-10-07",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Swedish Academy awarded the 2022 Nobel Prize in Literature to Annie Ernaux on October 6, 2022, during its official announcement in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Swedish Academy",
+      "relation": "Award prize",
+      "entity2": "Annie Ernaux",
+      "time": "2022-10-06",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Swedish Academy awarded the 2023 Nobel Prize in Literature to Jon Fosse on October 5, 2023, during its official announcement in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Swedish Academy",
+      "relation": "Award prize",
+      "entity2": "Jon Fosse",
+      "time": "2023-10-05",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Swedish Academy awarded the 2024 Nobel Prize in Literature to Han Kang on October 10, 2024, during its official announcement in Stockholm, Sweden.",
+    "ground_truth": {
+      "entity1": "Swedish Academy",
+      "relation": "Award prize",
+      "entity2": "Han Kang",
+      "time": "2024-10-10",
+      "location": "Sweden"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Booker Prize Foundation awarded the Booker Prize to Anna Burns on October 16, 2018, during a ceremony in London, United Kingdom, honoring the novel Milkman.",
+    "ground_truth": {
+      "entity1": "Booker Prize Foundation",
+      "relation": "Award prize",
+      "entity2": "Anna Burns",
+      "time": "2018-10-16",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Booker Prize Foundation awarded the Booker Prize to Bernardine Evaristo on October 14, 2019, during a ceremony in London, United Kingdom, honoring the novel Girl, Woman, Other.",
+    "ground_truth": {
+      "entity1": "Booker Prize Foundation",
+      "relation": "Award prize",
+      "entity2": "Bernardine Evaristo",
+      "time": "2019-10-14",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Booker Prize Foundation awarded the Booker Prize to Douglas Stuart on November 19, 2020, during a ceremony in London, United Kingdom, honoring the novel Shuggie Bain.",
+    "ground_truth": {
+      "entity1": "Booker Prize Foundation",
+      "relation": "Award prize",
+      "entity2": "Douglas Stuart",
+      "time": "2020-11-19",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Booker Prize Foundation awarded the Booker Prize to Damon Galgut on November 3, 2021, during a ceremony in London, United Kingdom, honoring the novel The Promise.",
+    "ground_truth": {
+      "entity1": "Booker Prize Foundation",
+      "relation": "Award prize",
+      "entity2": "Damon Galgut",
+      "time": "2021-11-03",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Booker Prize Foundation awarded the Booker Prize to Shehan Karunatilaka on October 17, 2022, during a ceremony in London, United Kingdom, honoring the novel The Seven Moons of Maali Almeida.",
+    "ground_truth": {
+      "entity1": "Booker Prize Foundation",
+      "relation": "Award prize",
+      "entity2": "Shehan Karunatilaka",
+      "time": "2022-10-17",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Booker Prize Foundation awarded the Booker Prize to Paul Lynch on November 26, 2023, during a ceremony in London, United Kingdom, honoring the novel Prophet Song.",
+    "ground_truth": {
+      "entity1": "Booker Prize Foundation",
+      "relation": "Award prize",
+      "entity2": "Paul Lynch",
+      "time": "2023-11-26",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Booker Prize Foundation awarded the Booker Prize to Samantha Harvey on November 12, 2024, during a ceremony in London, United Kingdom, honoring the novel Orbital.",
+    "ground_truth": {
+      "entity1": "Booker Prize Foundation",
+      "relation": "Award prize",
+      "entity2": "Samantha Harvey",
+      "time": "2024-11-12",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Cannes Film Festival jury awarded best actress to Samal Yeslyamova on May 19, 2018, during the closing ceremony in Cannes, France, for her performance in Ayka.",
+    "ground_truth": {
+      "entity1": "Cannes Film Festival jury",
+      "relation": "Award prize",
+      "entity2": "Samal Yeslyamova",
+      "time": "2018-05-19",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Cannes Film Festival jury awarded best actor to Antonio Banderas on May 25, 2019, during the closing ceremony in Cannes, France, for his performance in Pain and Glory.",
+    "ground_truth": {
+      "entity1": "Cannes Film Festival jury",
+      "relation": "Award prize",
+      "entity2": "Antonio Banderas",
+      "time": "2019-05-25",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Venice Film Festival jury awarded best actress to Vanessa Kirby on September 12, 2020, during the closing ceremony in Venice, Italy, for her performance in Pieces of a Woman.",
+    "ground_truth": {
+      "entity1": "Venice Film Festival jury",
+      "relation": "Award prize",
+      "entity2": "Vanessa Kirby",
+      "time": "2020-09-12",
+      "location": "Italy"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Cannes Film Festival jury awarded best actor to Caleb Landry Jones on July 17, 2021, during the closing ceremony in Cannes, France, for his performance in Nitram.",
+    "ground_truth": {
+      "entity1": "Cannes Film Festival jury",
+      "relation": "Award prize",
+      "entity2": "Caleb Landry Jones",
+      "time": "2021-07-17",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Cannes Film Festival jury awarded best actress to Zar Amir Ebrahimi on May 28, 2022, during the closing ceremony in Cannes, France, for her performance in Holy Spider.",
+    "ground_truth": {
+      "entity1": "Cannes Film Festival jury",
+      "relation": "Award prize",
+      "entity2": "Zar Amir Ebrahimi",
+      "time": "2022-05-28",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Cannes Film Festival jury awarded best actress to Merve Dizdar on May 27, 2023, during the closing ceremony in Cannes, France, for her performance in About Dry Grasses.",
+    "ground_truth": {
+      "entity1": "Cannes Film Festival jury",
+      "relation": "Award prize",
+      "entity2": "Merve Dizdar",
+      "time": "2023-05-27",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The Cannes Film Festival jury awarded best actor to Jesse Plemons on May 25, 2024, during the closing ceremony in Cannes, France, for his performance in Kinds of Kindness.",
+    "ground_truth": {
+      "entity1": "Cannes Film Festival jury",
+      "relation": "Award prize",
+      "entity2": "Jesse Plemons",
+      "time": "2024-05-25",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The British Academy of Film and Television Arts awarded best director to Guillermo del Toro on February 18, 2018, during its film awards ceremony in London, United Kingdom, for The Shape of Water.",
+    "ground_truth": {
+      "entity1": "British Academy of Film and Television Arts",
+      "relation": "Award prize",
+      "entity2": "Guillermo del Toro",
+      "time": "2018-02-18",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The British Academy of Film and Television Arts awarded best director to Alfonso Cuarón on February 10, 2019, during its film awards ceremony in London, United Kingdom, for Roma.",
+    "ground_truth": {
+      "entity1": "British Academy of Film and Television Arts",
+      "relation": "Award prize",
+      "entity2": "Alfonso Cuarón",
+      "time": "2019-02-10",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The British Academy of Film and Television Arts awarded best actress to Renée Zellweger on February 2, 2020, during its film awards ceremony in London, United Kingdom, for Judy.",
+    "ground_truth": {
+      "entity1": "British Academy of Film and Television Arts",
+      "relation": "Award prize",
+      "entity2": "Renée Zellweger",
+      "time": "2020-02-02",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The British Academy of Film and Television Arts awarded best director to Chloé Zhao on April 11, 2021, during its film awards ceremony in London, United Kingdom, for Nomadland.",
+    "ground_truth": {
+      "entity1": "British Academy of Film and Television Arts",
+      "relation": "Award prize",
+      "entity2": "Chloé Zhao",
+      "time": "2021-04-11",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "culture",
+    "text": "The British Academy of Film and Television Arts awarded best actor to Will Smith on March 13, 2022, during its film awards ceremony in London, United Kingdom, for King Richard.",
+    "ground_truth": {
+      "entity1": "British Academy of Film and Television Arts",
+      "relation": "Award prize",
+      "entity2": "Will Smith",
+      "time": "2022-03-13",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Malaysian Anti-Corruption Commission arrested Najib Razak on July 3, 2018, in Kuala Lumpur, Malaysia, over allegations linked to the 1MDB corruption investigation.",
+    "ground_truth": {
+      "entity1": "Malaysian Anti-Corruption Commission",
+      "relation": "Arrest",
+      "entity2": "Najib Razak",
+      "time": "2018-07-03",
+      "location": "Malaysia"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The United States Department of Justice charged twelve Russian intelligence officers on July 13, 2018, in Washington, United States, over alleged interference in the 2016 United States election.",
+    "ground_truth": {
+      "entity1": "United States Department of Justice",
+      "relation": "File charges",
+      "entity2": "twelve Russian intelligence officers",
+      "time": "2018-07-13",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Securities and Exchange Commission filed fraud charges against Elon Musk on September 27, 2018, in New York, United States, over statements concerning a possible Tesla privatization.",
+    "ground_truth": {
+      "entity1": "Securities and Exchange Commission",
+      "relation": "File charges",
+      "entity2": "Elon Musk",
+      "time": "2018-09-27",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The United States Department of Justice charged Fujian Jinhua Integrated Circuit on November 1, 2018, in San Jose, United States, with conspiring to steal trade secrets from Micron Technology.",
+    "ground_truth": {
+      "entity1": "United States Department of Justice",
+      "relation": "File charges",
+      "entity2": "Fujian Jinhua Integrated Circuit",
+      "time": "2018-11-01",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Tokyo District Public Prosecutors Office arrested Carlos Ghosn on November 19, 2018, in Tokyo, Japan, over allegations that he underreported compensation.",
+    "ground_truth": {
+      "entity1": "Tokyo District Public Prosecutors Office",
+      "relation": "Arrest",
+      "entity2": "Carlos Ghosn",
+      "time": "2018-11-19",
+      "location": "Japan"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Royal Canadian Mounted Police arrested Meng Wanzhou on December 1, 2018, in Vancouver, Canada, acting on a provisional extradition request from the United States.",
+    "ground_truth": {
+      "entity1": "Royal Canadian Mounted Police",
+      "relation": "Arrest",
+      "entity2": "Meng Wanzhou",
+      "time": "2018-12-01",
+      "location": "Canada"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The United States Department of Justice filed criminal charges against Huawei Technologies on January 28, 2019, in Washington, United States, alleging bank fraud, sanctions violations, and theft of trade secrets.",
+    "ground_truth": {
+      "entity1": "United States Department of Justice",
+      "relation": "File charges",
+      "entity2": "Huawei Technologies",
+      "time": "2019-01-28",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The New Zealand Police charged Brenton Tarrant on March 16, 2019, in Christchurch, New Zealand, with murder following the attacks on two mosques.",
+    "ground_truth": {
+      "entity1": "New Zealand Police",
+      "relation": "File charges",
+      "entity2": "Brenton Tarrant",
+      "time": "2019-03-16",
+      "location": "New Zealand"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Metropolitan Police arrested Julian Assange on April 11, 2019, in London, United Kingdom, after Ecuador withdrew asylum protections at its embassy.",
+    "ground_truth": {
+      "entity1": "Metropolitan Police",
+      "relation": "Arrest",
+      "entity2": "Julian Assange",
+      "time": "2019-04-11",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Federal Bureau of Investigation arrested Jeffrey Epstein on July 6, 2019, in Teterboro, New Jersey, United States, on federal sex-trafficking charges filed in New York.",
+    "ground_truth": {
+      "entity1": "Federal Bureau of Investigation",
+      "relation": "Arrest",
+      "entity2": "Jeffrey Epstein",
+      "time": "2019-07-06",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The United States District Court sentenced Joaquín Guzmán on July 17, 2019, in New York, United States, to life imprisonment following his drug-trafficking conviction.",
+    "ground_truth": {
+      "entity1": "United States District Court",
+      "relation": "Impose sentence",
+      "entity2": "Joaquín Guzmán",
+      "time": "2019-07-17",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The United States Department of Justice filed criminal charges against Nicolás Maduro on March 26, 2020, in Washington, United States, alleging narcoterrorism and cocaine-trafficking conspiracies.",
+    "ground_truth": {
+      "entity1": "United States Department of Justice",
+      "relation": "File charges",
+      "entity2": "Nicolás Maduro",
+      "time": "2020-03-26",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The French police arrested Félicien Kabuga on May 16, 2020, in Asnières-sur-Seine, France, ending a long international search for the Rwandan genocide suspect.",
+    "ground_truth": {
+      "entity1": "French police",
+      "relation": "Arrest",
+      "entity2": "Félicien Kabuga",
+      "time": "2020-05-16",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Manila Regional Trial Court convicted Maria Ressa on June 15, 2020, in Manila, Philippines, of cyber libel alongside former Rappler researcher Reynaldo Santos Jr..",
+    "ground_truth": {
+      "entity1": "Manila Regional Trial Court",
+      "relation": "Convict",
+      "entity2": "Maria Ressa",
+      "time": "2020-06-15",
+      "location": "Philippines"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The German prosecutors arrested Markus Braun on June 22, 2020, in Munich, Germany, during the investigation into the collapse of payments company Wirecard.",
+    "ground_truth": {
+      "entity1": "German prosecutors",
+      "relation": "Arrest",
+      "entity2": "Markus Braun",
+      "time": "2020-06-22",
+      "location": "Germany"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Federal Bureau of Investigation arrested Ghislaine Maxwell on July 2, 2020, in Bradford, New Hampshire, United States, on charges related to Jeffrey Epstein's sexual-abuse scheme.",
+    "ground_truth": {
+      "entity1": "Federal Bureau of Investigation",
+      "relation": "Arrest",
+      "entity2": "Ghislaine Maxwell",
+      "time": "2020-07-02",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Hong Kong Police arrested Jimmy Lai on August 10, 2020, in Hong Kong, China, under the territory's national security law.",
+    "ground_truth": {
+      "entity1": "Hong Kong Police",
+      "relation": "Arrest",
+      "entity2": "Jimmy Lai",
+      "time": "2020-08-10",
+      "location": "China"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Spanish National Police arrested John McAfee on October 3, 2020, in Barcelona, Spain, on a United States warrant alleging tax evasion.",
+    "ground_truth": {
+      "entity1": "Spanish National Police",
+      "relation": "Arrest",
+      "entity2": "John McAfee",
+      "time": "2020-10-03",
+      "location": "Spain"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Russian police arrested Alexei Navalny on January 17, 2021, in Moscow, Russia, immediately after the opposition politician returned from Germany.",
+    "ground_truth": {
+      "entity1": "Russian police",
+      "relation": "Arrest",
+      "entity2": "Alexei Navalny",
+      "time": "2021-01-17",
+      "location": "Russia"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Dutch police arrested Tse Chi Lop on January 22, 2021, in Amsterdam, Netherlands, on an Australian warrant alleging leadership of a major drug syndicate.",
+    "ground_truth": {
+      "entity1": "Dutch police",
+      "relation": "Arrest",
+      "entity2": "Tse Chi Lop",
+      "time": "2021-01-22",
+      "location": "Netherlands"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Myanmar military detained Aung San Suu Kyi on February 1, 2021, in Naypyidaw, Myanmar, during a coup that removed the country's elected government.",
+    "ground_truth": {
+      "entity1": "Myanmar military",
+      "relation": "Detain",
+      "entity2": "Aung San Suu Kyi",
+      "time": "2021-02-01",
+      "location": "Myanmar"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Minneapolis jury convicted Derek Chauvin on April 20, 2021, in Minneapolis, United States, on murder and manslaughter charges in George Floyd's death.",
+    "ground_truth": {
+      "entity1": "Minneapolis jury",
+      "relation": "Convict",
+      "entity2": "Derek Chauvin",
+      "time": "2021-04-20",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The South African police took into custody Jacob Zuma on July 7, 2021, in Estcourt, South Africa, after the former president began serving a contempt sentence.",
+    "ground_truth": {
+      "entity1": "South African police",
+      "relation": "Arrest",
+      "entity2": "Jacob Zuma",
+      "time": "2021-07-07",
+      "location": "South Africa"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Federal Bureau of Investigation arrested Ilya Lichtenstein on February 8, 2022, in New York, United States, over an alleged conspiracy to launder stolen cryptocurrency.",
+    "ground_truth": {
+      "entity1": "Federal Bureau of Investigation",
+      "relation": "Arrest",
+      "entity2": "Ilya Lichtenstein",
+      "time": "2022-02-08",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Southwark Crown Court sentenced Boris Becker on April 29, 2022, in London, United Kingdom, to imprisonment for offenses committed during bankruptcy proceedings.",
+    "ground_truth": {
+      "entity1": "Southwark Crown Court",
+      "relation": "Impose sentence",
+      "entity2": "Boris Becker",
+      "time": "2022-04-29",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Brooklyn federal court sentenced R. Kelly on June 29, 2022, in New York, United States, to thirty years in prison following racketeering and sex-trafficking convictions.",
+    "ground_truth": {
+      "entity1": "Brooklyn federal court",
+      "relation": "Impose sentence",
+      "entity2": "R. Kelly",
+      "time": "2022-06-29",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Japanese police arrested Tetsuya Yamagami on July 8, 2022, in Nara, Japan, following the fatal shooting of former prime minister Shinzo Abe.",
+    "ground_truth": {
+      "entity1": "Japanese police",
+      "relation": "Arrest",
+      "entity2": "Tetsuya Yamagami",
+      "time": "2022-07-08",
+      "location": "Japan"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Dutch authorities arrested Alexey Pertsev on August 10, 2022, in Amsterdam, Netherlands, over suspected involvement in laundering funds through Tornado Cash.",
+    "ground_truth": {
+      "entity1": "Dutch authorities",
+      "relation": "Arrest",
+      "entity2": "Alexey Pertsev",
+      "time": "2022-08-10",
+      "location": "Netherlands"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The California federal court sentenced Elizabeth Holmes on November 18, 2022, in San Jose, United States, to more than eleven years in prison for defrauding Theranos investors.",
+    "ground_truth": {
+      "entity1": "California federal court",
+      "relation": "Impose sentence",
+      "entity2": "Elizabeth Holmes",
+      "time": "2022-11-18",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Royal Bahamas Police Force arrested Sam Bankman-Fried on December 12, 2022, in Nassau, Bahamas, after United States prosecutors filed criminal charges linked to FTX.",
+    "ground_truth": {
+      "entity1": "Royal Bahamas Police Force",
+      "relation": "Arrest",
+      "entity2": "Sam Bankman-Fried",
+      "time": "2022-12-12",
+      "location": "Bahamas"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Iranian authorities arrested Taraneh Alidoosti on December 17, 2022, in Tehran, Iran, after the actor criticized executions connected to nationwide protests.",
+    "ground_truth": {
+      "entity1": "Iranian authorities",
+      "relation": "Arrest",
+      "entity2": "Taraneh Alidoosti",
+      "time": "2022-12-17",
+      "location": "Iran"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Montenegro police arrested Do Kwon on March 23, 2023, in Podgorica, Montenegro, after identifying the cryptocurrency entrepreneur traveling with falsified documents.",
+    "ground_truth": {
+      "entity1": "Montenegro police",
+      "relation": "Arrest",
+      "entity2": "Do Kwon",
+      "time": "2023-03-23",
+      "location": "Montenegro"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Federal Bureau of Investigation arrested Jack Teixeira on April 13, 2023, in Dighton, Massachusetts, United States, over the alleged disclosure of classified military documents.",
+    "ground_truth": {
+      "entity1": "Federal Bureau of Investigation",
+      "relation": "Arrest",
+      "entity2": "Jack Teixeira",
+      "time": "2023-04-13",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Metropolitan Police arrested Daniel Khalife on September 9, 2023, in London, United Kingdom, after the terrorism suspect escaped from Wandsworth Prison.",
+    "ground_truth": {
+      "entity1": "Metropolitan Police",
+      "relation": "Arrest",
+      "entity2": "Daniel Khalife",
+      "time": "2023-09-09",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "Mexico extradited Ovidio Guzmán to the United States on September 15, 2023, from a federal facility in Mexico, transferring him for prosecution on drug-trafficking charges.",
+    "ground_truth": {
+      "entity1": "Mexico",
+      "relation": "Extradite",
+      "entity2": "United States",
+      "time": "2023-09-15",
+      "location": "Mexico"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The New York jury convicted Sam Bankman-Fried on November 2, 2023, in New York, United States, on fraud and conspiracy charges arising from the collapse of FTX.",
+    "ground_truth": {
+      "entity1": "New York jury",
+      "relation": "Convict",
+      "entity2": "Sam Bankman-Fried",
+      "time": "2023-11-02",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The German police arrested Daniela Klette on February 26, 2024, in Berlin, Germany, ending a decades-long search for the former Red Army Faction member.",
+    "ground_truth": {
+      "entity1": "German police",
+      "relation": "Arrest",
+      "entity2": "Daniela Klette",
+      "time": "2024-02-26",
+      "location": "Germany"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The Manhattan jury convicted Donald Trump on May 30, 2024, in New York, United States, on thirty-four felony counts involving falsified business records.",
+    "ground_truth": {
+      "entity1": "Manhattan jury",
+      "relation": "Convict",
+      "entity2": "Donald Trump",
+      "time": "2024-05-30",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The United States authorities arrested Ismael Zambada García on July 25, 2024, in El Paso, Texas, United States, after the alleged Sinaloa cartel leader arrived by aircraft.",
+    "ground_truth": {
+      "entity1": "United States authorities",
+      "relation": "Arrest",
+      "entity2": "Ismael Zambada García",
+      "time": "2024-07-25",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "crime",
+    "text": "The French authorities arrested Pavel Durov on August 24, 2024, in Le Bourget, France, as prosecutors investigated alleged criminal activity facilitated through Telegram.",
+    "ground_truth": {
+      "entity1": "French authorities",
+      "relation": "Arrest",
+      "entity2": "Pavel Durov",
+      "time": "2024-08-24",
+      "location": "France"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The International Monetary Fund approved financing package for Argentina on June 20, 2018, at its headquarters in Washington, United States, supporting a stabilization program under a three-year stand-by arrangement.",
+    "ground_truth": {
+      "entity1": "International Monetary Fund",
+      "relation": "Approve financing",
+      "entity2": "Argentina",
+      "time": "2018-06-20",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The International Monetary Fund approved financing program for Angola on December 7, 2018, at its headquarters in Washington, United States, supporting economic reforms through an extended arrangement.",
+    "ground_truth": {
+      "entity1": "International Monetary Fund",
+      "relation": "Approve financing",
+      "entity2": "Angola",
+      "time": "2018-12-07",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The International Monetary Fund approved financing program for Pakistan on July 3, 2019, at its headquarters in Washington, United States, supporting economic stabilization under an extended arrangement.",
+    "ground_truth": {
+      "entity1": "International Monetary Fund",
+      "relation": "Approve financing",
+      "entity2": "Pakistan",
+      "time": "2019-07-03",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The International Monetary Fund approved financing program for Ethiopia on December 20, 2019, at its headquarters in Washington, United States, supporting reforms through combined credit and extended arrangements.",
+    "ground_truth": {
+      "entity1": "International Monetary Fund",
+      "relation": "Approve financing",
+      "entity2": "Ethiopia",
+      "time": "2019-12-20",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The International Monetary Fund approved emergency financing for Pakistan on April 16, 2020, at its headquarters in Washington, United States, addressing urgent needs created by the COVID-19 pandemic.",
+    "ground_truth": {
+      "entity1": "International Monetary Fund",
+      "relation": "Approve financing",
+      "entity2": "Pakistan",
+      "time": "2020-04-16",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The International Monetary Fund approved stand-by arrangement for Egypt on June 26, 2020, at its headquarters in Washington, United States, supporting economic stability during the COVID-19 pandemic.",
+    "ground_truth": {
+      "entity1": "International Monetary Fund",
+      "relation": "Approve financing",
+      "entity2": "Egypt",
+      "time": "2020-06-26",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The International Monetary Fund approved financing arrangements for Kenya on April 2, 2021, at its headquarters in Washington, United States, supporting reforms and the country's pandemic recovery.",
+    "ground_truth": {
+      "entity1": "International Monetary Fund",
+      "relation": "Approve financing",
+      "entity2": "Kenya",
+      "time": "2021-04-02",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The International Monetary Fund approved emergency financing for Ukraine on March 9, 2022, at its headquarters in Washington, United States, addressing urgent balance-of-payments needs during the Russian invasion.",
+    "ground_truth": {
+      "entity1": "International Monetary Fund",
+      "relation": "Approve financing",
+      "entity2": "Ukraine",
+      "time": "2022-03-09",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The International Monetary Fund approved financing arrangement for Zambia on August 31, 2022, at its headquarters in Washington, United States, supporting debt restructuring and economic reforms.",
+    "ground_truth": {
+      "entity1": "International Monetary Fund",
+      "relation": "Approve financing",
+      "entity2": "Zambia",
+      "time": "2022-08-31",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The International Monetary Fund approved financing program for Sri Lanka on March 20, 2023, at its headquarters in Washington, United States, supporting economic stabilization under an extended arrangement.",
+    "ground_truth": {
+      "entity1": "International Monetary Fund",
+      "relation": "Approve financing",
+      "entity2": "Sri Lanka",
+      "time": "2023-03-20",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The Bank of England raised interest rates for United Kingdom on August 2, 2018, during a policy meeting in London, United Kingdom, increasing Bank Rate to 0.75 percent.",
+    "ground_truth": {
+      "entity1": "Bank of England",
+      "relation": "Raise interest rate",
+      "entity2": "United Kingdom",
+      "time": "2018-08-02",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The Reserve Bank of India cut policy rate for India on February 7, 2019, during a policy meeting in Mumbai, India, reducing the repo rate by twenty-five basis points.",
+    "ground_truth": {
+      "entity1": "Reserve Bank of India",
+      "relation": "Cut interest rate",
+      "entity2": "India",
+      "time": "2019-02-07",
+      "location": "India"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The Reserve Bank of Australia cut cash rate for Australia on March 3, 2020, during a policy meeting in Sydney, Australia, responding to economic risks from the coronavirus outbreak.",
+    "ground_truth": {
+      "entity1": "Reserve Bank of Australia",
+      "relation": "Cut interest rate",
+      "entity2": "Australia",
+      "time": "2020-03-03",
+      "location": "Australia"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The Bank of Canada cut overnight rate for Canada on March 4, 2020, during a policy meeting in Ottawa, Canada, responding to economic risks from the coronavirus outbreak.",
+    "ground_truth": {
+      "entity1": "Bank of Canada",
+      "relation": "Cut interest rate",
+      "entity2": "Canada",
+      "time": "2020-03-04",
+      "location": "Canada"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The Bank of Korea cut base rate for South Korea on March 16, 2020, during a policy meeting in Seoul, South Korea, responding to economic disruption caused by the coronavirus pandemic.",
+    "ground_truth": {
+      "entity1": "Bank of Korea",
+      "relation": "Cut interest rate",
+      "entity2": "South Korea",
+      "time": "2020-03-16",
+      "location": "South Korea"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The Central Bank of Brazil raised policy rate for Brazil on March 17, 2021, during a policy meeting in Brasília, Brazil, beginning a tightening cycle as inflation pressures increased.",
+    "ground_truth": {
+      "entity1": "Central Bank of Brazil",
+      "relation": "Raise interest rate",
+      "entity2": "Brazil",
+      "time": "2021-03-17",
+      "location": "Brazil"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The Bank of England raised interest rates for United Kingdom on December 16, 2021, during a policy meeting in London, United Kingdom, lifting Bank Rate from its pandemic-era low.",
+    "ground_truth": {
+      "entity1": "Bank of England",
+      "relation": "Raise interest rate",
+      "entity2": "United Kingdom",
+      "time": "2021-12-16",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The Federal Reserve raised interest rates for United States on March 16, 2022, during a policy meeting in Washington, United States, beginning a tightening cycle to address elevated inflation.",
+    "ground_truth": {
+      "entity1": "Federal Reserve",
+      "relation": "Raise interest rate",
+      "entity2": "United States",
+      "time": "2022-03-16",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The Bank of Japan ended negative rates for Japan on March 19, 2024, during a policy meeting in Tokyo, Japan, concluding its long-running negative interest-rate policy.",
+    "ground_truth": {
+      "entity1": "Bank of Japan",
+      "relation": "End negative rates",
+      "entity2": "Japan",
+      "time": "2024-03-19",
+      "location": "Japan"
+    }
+  },
+  {
+    "domain": "business",
+    "text": "The Swiss National Bank cut policy rate for Switzerland on March 21, 2024, during a policy meeting in Zurich, Switzerland, becoming the first major central bank to ease that year.",
+    "ground_truth": {
+      "entity1": "Swiss National Bank",
+      "relation": "Cut interest rate",
+      "entity2": "Switzerland",
+      "time": "2024-03-21",
+      "location": "Switzerland"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "United States declared major disaster for United States on November 12, 2018, in Washington, United States, authorizing federal assistance after destructive wildfires in California.",
+    "ground_truth": {
+      "entity1": "United States",
+      "relation": "Declare disaster",
+      "entity2": "United States",
+      "time": "2018-11-12",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The World Bank announced disaster support for Mozambique on May 3, 2019, at its headquarters in Washington, United States, supporting recovery after Cyclones Idai and Kenneth.",
+    "ground_truth": {
+      "entity1": "World Bank",
+      "relation": "Announce support",
+      "entity2": "Mozambique",
+      "time": "2019-05-03",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "Australia deployed military across Australia on January 4, 2020, in Canberra, Australia, supporting evacuations and relief operations during catastrophic bushfires.",
+    "ground_truth": {
+      "entity1": "Australia",
+      "relation": "Deploy forces",
+      "entity2": "Australia",
+      "time": "2020-01-04",
+      "location": "Australia"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "Mauritius declared environmental emergency for Mauritius on August 7, 2020, in Port Louis, Mauritius, responding to oil leaking from the grounded Wakashio vessel.",
+    "ground_truth": {
+      "entity1": "Mauritius",
+      "relation": "Declare emergency",
+      "entity2": "Mauritius",
+      "time": "2020-08-07",
+      "location": "Mauritius"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "Germany deployed armed forces across Germany on July 14, 2021, in Rhineland-Palatinate, Germany, supporting widespread rescue operations after catastrophic flooding.",
+    "ground_truth": {
+      "entity1": "Germany",
+      "relation": "Deploy forces",
+      "entity2": "Germany",
+      "time": "2021-07-14",
+      "location": "Germany"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "Haiti declared emergency for Haiti on August 14, 2021, in Port-au-Prince, Haiti, mobilizing assistance after a powerful earthquake struck the country's southwest.",
+    "ground_truth": {
+      "entity1": "Haiti",
+      "relation": "Declare emergency",
+      "entity2": "Haiti",
+      "time": "2021-08-14",
+      "location": "Haiti"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "New Zealand deployed surveillance aircraft to Tonga on January 17, 2022, over Nuku'alofa, Tonga, assessing damage after the volcanic eruption and tsunami.",
+    "ground_truth": {
+      "entity1": "New Zealand",
+      "relation": "Deploy aircraft",
+      "entity2": "Tonga",
+      "time": "2022-01-17",
+      "location": "Tonga"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "United States declared major disaster for United States on September 29, 2022, in Washington, United States, authorizing federal assistance after Hurricane Ian struck Florida.",
+    "ground_truth": {
+      "entity1": "United States",
+      "relation": "Declare disaster",
+      "entity2": "United States",
+      "time": "2022-09-29",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "Turkey declared emergency for Turkey on February 7, 2023, in Ankara, Turkey, mobilizing national resources after devastating earthquakes in the country's south.",
+    "ground_truth": {
+      "entity1": "Turkey",
+      "relation": "Declare emergency",
+      "entity2": "Turkey",
+      "time": "2023-02-07",
+      "location": "Turkey"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "Spain deployed rescue personnel to Morocco on September 10, 2023, in Marrakesh, Morocco, supporting searches after the Al Haouz earthquake.",
+    "ground_truth": {
+      "entity1": "Spain",
+      "relation": "Deploy rescue personnel",
+      "entity2": "Morocco",
+      "time": "2023-09-10",
+      "location": "Morocco"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "Japan deployed defense forces across Japan on January 1, 2024, in Ishikawa Prefecture, Japan, supporting rescue operations after the Noto Peninsula earthquake.",
+    "ground_truth": {
+      "entity1": "Japan",
+      "relation": "Deploy forces",
+      "entity2": "Japan",
+      "time": "2024-01-01",
+      "location": "Japan"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "Papua New Guinea requested assistance from United Nations on May 26, 2024, in Enga Province, Papua New Guinea, seeking international help after a massive landslide buried communities.",
+    "ground_truth": {
+      "entity1": "Papua New Guinea",
+      "relation": "Request assistance",
+      "entity2": "United Nations",
+      "time": "2024-05-26",
+      "location": "Papua New Guinea"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The Environmental Protection Agency reached emissions settlement with Fiat Chrysler Automobiles on January 10, 2019, in Washington, United States, resolving claims involving diesel vehicles equipped with unlawful defeat devices.",
+    "ground_truth": {
+      "entity1": "Environmental Protection Agency",
+      "relation": "Reach settlement",
+      "entity2": "Fiat Chrysler Automobiles",
+      "time": "2019-01-10",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The Environmental Protection Agency announced emissions settlement with Daimler on September 14, 2020, in Washington, United States, resolving claims involving diesel vehicles equipped with unlawful defeat devices.",
+    "ground_truth": {
+      "entity1": "Environmental Protection Agency",
+      "relation": "Announce settlement",
+      "entity2": "Daimler",
+      "time": "2020-09-14",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The Environmental Protection Agency secured civil penalty from Toyota Motor Corporation on January 14, 2021, in Washington, United States, resolving violations of federal emissions-reporting requirements.",
+    "ground_truth": {
+      "entity1": "Environmental Protection Agency",
+      "relation": "Secure penalty",
+      "entity2": "Toyota Motor Corporation",
+      "time": "2021-01-14",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "United States rejoined climate framework with United Nations on February 19, 2021, in Washington, United States, restoring the country's participation in the Paris Agreement.",
+    "ground_truth": {
+      "entity1": "United States",
+      "relation": "Rejoin climate framework",
+      "entity2": "United Nations",
+      "time": "2021-02-19",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "Germany pledged environmental funding to Brazil on January 30, 2023, in Brasília, Brazil, supporting protection of the Amazon rainforest and Indigenous communities.",
+    "ground_truth": {
+      "entity1": "Germany",
+      "relation": "Pledge funding",
+      "entity2": "Brazil",
+      "time": "2023-01-30",
+      "location": "Brazil"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The European Union signed green alliance with Norway on April 24, 2023, in Brussels, Belgium, expanding cooperation on climate action, clean energy, and industrial transformation.",
+    "ground_truth": {
+      "entity1": "European Union",
+      "relation": "Sign alliance",
+      "entity2": "Norway",
+      "time": "2023-04-24",
+      "location": "Belgium"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The European Union signed green partnership with South Korea on May 22, 2023, in Seoul, South Korea, expanding cooperation on climate action and environmental protection.",
+    "ground_truth": {
+      "entity1": "European Union",
+      "relation": "Sign partnership",
+      "entity2": "South Korea",
+      "time": "2023-05-22",
+      "location": "South Korea"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "United States issued climate declaration with China on November 14, 2023, in Sunnylands, California, United States, renewing bilateral cooperation on methane, renewable energy, and emissions reductions.",
+    "ground_truth": {
+      "entity1": "United States",
+      "relation": "Issue declaration",
+      "entity2": "China",
+      "time": "2023-11-14",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The European Commission adopted a plastics strategy for the European Union on January 16, 2018, in Brussels, Belgium, outlining measures to improve recycling and reduce plastic waste.",
+    "ground_truth": {
+      "entity1": "European Commission",
+      "relation": "Adopt plastics strategy",
+      "entity2": "European Union",
+      "time": "2018-01-16",
+      "location": "Belgium"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The International Maritime Organization adopted an emissions strategy for the International Maritime Organization on April 13, 2018, at its headquarters in London, United Kingdom, targeting shipping pollution.",
+    "ground_truth": {
+      "entity1": "International Maritime Organization",
+      "relation": "Adopt emissions strategy",
+      "entity2": "International Maritime Organization",
+      "time": "2018-04-13",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "France co-hosted a solar alliance conference with India on March 11, 2018, in New Delhi, India, bringing international leaders together to accelerate solar energy deployment.",
+    "ground_truth": {
+      "entity1": "France",
+      "relation": "Co-host conference",
+      "entity2": "India",
+      "time": "2018-03-11",
+      "location": "India"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The European Union signed a circular economy memorandum with China on July 16, 2018, in Beijing, China, establishing cooperation on resource efficiency, recycling, and sustainable production.",
+    "ground_truth": {
+      "entity1": "European Union",
+      "relation": "Sign memorandum",
+      "entity2": "China",
+      "time": "2018-07-16",
+      "location": "China"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The European Commission presented a climate-neutral strategy for the European Union on November 28, 2018, in Brussels, Belgium, proposing a pathway toward net-zero greenhouse gas emissions by 2050.",
+    "ground_truth": {
+      "entity1": "European Commission",
+      "relation": "Present strategy",
+      "entity2": "European Union",
+      "time": "2018-11-28",
+      "location": "Belgium"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "Singapore implemented a carbon tax for Singapore on January 1, 2019, in the city-state, introducing Southeast Asia's first national carbon-pricing system for major industrial emitters.",
+    "ground_truth": {
+      "entity1": "Singapore",
+      "relation": "Implement carbon tax",
+      "entity2": "Singapore",
+      "time": "2019-01-01",
+      "location": "Singapore"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The United Kingdom Parliament set a net-zero target for the United Kingdom on June 27, 2019, in London, United Kingdom, legally requiring carbon neutrality by 2050.",
+    "ground_truth": {
+      "entity1": "United Kingdom Parliament",
+      "relation": "Set target",
+      "entity2": "United Kingdom",
+      "time": "2019-06-27",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The New Zealand Parliament passed a climate law for New Zealand on November 7, 2019, in Wellington, New Zealand, establishing a framework for reaching net-zero carbon emissions.",
+    "ground_truth": {
+      "entity1": "New Zealand Parliament",
+      "relation": "Pass climate law",
+      "entity2": "New Zealand",
+      "time": "2019-11-07",
+      "location": "New Zealand"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The European Commission presented the Green Deal for the European Union on December 11, 2019, in Brussels, Belgium, setting a roadmap for climate neutrality and resource efficiency.",
+    "ground_truth": {
+      "entity1": "European Commission",
+      "relation": "Present Green Deal",
+      "entity2": "European Union",
+      "time": "2019-12-11",
+      "location": "Belgium"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The European Commission adopted a biodiversity strategy for the European Union on May 20, 2020, in Brussels, Belgium, proposing expanded protected areas and ecosystem restoration by 2030.",
+    "ground_truth": {
+      "entity1": "European Commission",
+      "relation": "Adopt biodiversity strategy",
+      "entity2": "European Union",
+      "time": "2020-05-20",
+      "location": "Belgium"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The United Kingdom government announced a green industrial plan for the United Kingdom on November 18, 2020, in London, United Kingdom, supporting clean energy, transport, and employment.",
+    "ground_truth": {
+      "entity1": "United Kingdom government",
+      "relation": "Announce green plan",
+      "entity2": "United Kingdom",
+      "time": "2020-11-18",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "Denmark ended future oil licensing for Denmark on December 3, 2020, in Copenhagen, Denmark, cancelling forthcoming North Sea licensing rounds and setting a 2050 production deadline.",
+    "ground_truth": {
+      "entity1": "Denmark",
+      "relation": "End oil licensing",
+      "entity2": "Denmark",
+      "time": "2020-12-03",
+      "location": "Denmark"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The Council of the European Union adopted a climate law for the European Union on June 28, 2021, in Luxembourg City, Luxembourg, making climate neutrality by 2050 legally binding.",
+    "ground_truth": {
+      "entity1": "Council of the European Union",
+      "relation": "Adopt climate law",
+      "entity2": "European Union",
+      "time": "2021-06-28",
+      "location": "Luxembourg"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The Canadian Parliament enacted an accountability law for Canada on June 29, 2021, in Ottawa, Canada, requiring federal planning and reporting toward net-zero emissions by 2050.",
+    "ground_truth": {
+      "entity1": "Canadian Parliament",
+      "relation": "Enact law",
+      "entity2": "Canada",
+      "time": "2021-06-29",
+      "location": "Canada"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The European Union launched an energy partnership with South Africa on November 2, 2021, in Glasgow, United Kingdom, mobilizing international finance for a transition away from coal.",
+    "ground_truth": {
+      "entity1": "European Union",
+      "relation": "Launch energy partnership",
+      "entity2": "South Africa",
+      "time": "2021-11-02",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The United States issued a climate declaration with China on November 10, 2021, in Glasgow, United Kingdom, committing both countries to stronger emissions reductions during the 2020s.",
+    "ground_truth": {
+      "entity1": "United States",
+      "relation": "Issue declaration",
+      "entity2": "China",
+      "time": "2021-11-10",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The European Union launched a methane pledge with the United States on November 2, 2021, in Glasgow, United Kingdom, seeking a collective 30-percent emissions reduction by 2030.",
+    "ground_truth": {
+      "entity1": "European Union",
+      "relation": "Launch methane pledge",
+      "entity2": "United States",
+      "time": "2021-11-02",
+      "location": "United Kingdom"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The United Nations Environment Assembly adopted a plastics resolution for United Nations member states on March 2, 2022, in Nairobi, Kenya, opening negotiations for a legally binding pollution agreement.",
+    "ground_truth": {
+      "entity1": "United Nations Environment Assembly",
+      "relation": "Adopt plastics resolution",
+      "entity2": "United Nations member states",
+      "time": "2022-03-02",
+      "location": "Kenya"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The European Commission launched an energy plan for the European Union on May 18, 2022, in Brussels, Belgium, accelerating renewable deployment and reducing dependence on Russian fossil fuels.",
+    "ground_truth": {
+      "entity1": "European Commission",
+      "relation": "Launch energy plan",
+      "entity2": "European Union",
+      "time": "2022-05-18",
+      "location": "Belgium"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The United Nations General Assembly adopted an environmental-rights resolution for the United Nations on July 28, 2022, in New York, United States, recognizing a clean environment as a universal right.",
+    "ground_truth": {
+      "entity1": "United Nations General Assembly",
+      "relation": "Adopt environmental resolution",
+      "entity2": "United Nations",
+      "time": "2022-07-28",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "Joe Biden signed a climate investment law for the United States on August 16, 2022, in Washington, United States, directing major federal spending toward clean energy and emissions reduction.",
+    "ground_truth": {
+      "entity1": "Joe Biden",
+      "relation": "Sign law",
+      "entity2": "United States",
+      "time": "2022-08-16",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The Australian Parliament legislated an emissions target for Australia on September 8, 2022, in Canberra, Australia, requiring a 43-percent reduction from 2005 levels by 2030.",
+    "ground_truth": {
+      "entity1": "Australian Parliament",
+      "relation": "Legislate emissions target",
+      "entity2": "Australia",
+      "time": "2022-09-08",
+      "location": "Australia"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The European Union signed a green partnership with Morocco on October 18, 2022, in Rabat, Morocco, expanding cooperation on renewable energy, biodiversity, climate adaptation, and environmental protection.",
+    "ground_truth": {
+      "entity1": "European Union",
+      "relation": "Sign partnership",
+      "entity2": "Morocco",
+      "time": "2022-10-18",
+      "location": "Morocco"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "G7 partners launched an energy partnership with Indonesia on November 15, 2022, in Bali, Indonesia, pledging international finance to accelerate renewable power and reduce coal dependence.",
+    "ground_truth": {
+      "entity1": "G7 partners",
+      "relation": "Launch energy partnership",
+      "entity2": "Indonesia",
+      "time": "2022-11-15",
+      "location": "Indonesia"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The United Nations General Assembly requested a climate opinion from the International Court of Justice on March 29, 2023, in New York, United States, concerning countries' legal obligations.",
+    "ground_truth": {
+      "entity1": "United Nations General Assembly",
+      "relation": "Request opinion",
+      "entity2": "International Court of Justice",
+      "time": "2023-03-29",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The Council of the European Union adopted deforestation rules for the European Union on May 16, 2023, in Brussels, Belgium, restricting commodities associated with recent forest loss.",
+    "ground_truth": {
+      "entity1": "Council of the European Union",
+      "relation": "Adopt deforestation rules",
+      "entity2": "European Union",
+      "time": "2023-05-16",
+      "location": "Belgium"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "Brazil launched a deforestation plan for Brazil on June 5, 2023, in Brasília, Brazil, restoring a federal framework to prevent and control forest loss across the Legal Amazon.",
+    "ground_truth": {
+      "entity1": "Brazil",
+      "relation": "Launch deforestation plan",
+      "entity2": "Brazil",
+      "time": "2023-06-05",
+      "location": "Brazil"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "G7 climate ministers agreed a coal phaseout for G7 countries on April 30, 2024, in Turin, Italy, committing to end unabated coal-fired power during the first half of the 2030s.",
+    "ground_truth": {
+      "entity1": "G7 climate ministers",
+      "relation": "Agree coal phaseout",
+      "entity2": "G7 countries",
+      "time": "2024-04-30",
+      "location": "Italy"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "The Council of the European Union adopted a restoration law for the European Union on June 17, 2024, in Luxembourg City, Luxembourg, setting binding targets for degraded ecosystems.",
+    "ground_truth": {
+      "entity1": "Council of the European Union",
+      "relation": "Adopt restoration law",
+      "entity2": "European Union",
+      "time": "2024-06-17",
+      "location": "Luxembourg"
+    }
+  },
+  {
+    "domain": "environment",
+    "text": "UNFCCC parties adopted a climate-finance goal for the United Nations Framework Convention on Climate Change on November 24, 2024, in Baku, Azerbaijan, increasing annual support for developing countries.",
+    "ground_truth": {
+      "entity1": "UNFCCC parties",
+      "relation": "Adopt climate-finance goal",
+      "entity2": "United Nations Framework Convention on Climate Change",
+      "time": "2024-11-24",
+      "location": "Azerbaijan"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Sulawesi earthquake devastated parts of Indonesia on September 28, 2018, near Palu, triggering a destructive tsunami and widespread liquefaction across Central Sulawesi.",
+    "ground_truth": {
+      "entity1": "Sulawesi earthquake",
+      "relation": "Devastate",
+      "entity2": "Indonesia",
+      "time": "2018-09-28",
+      "location": "Indonesia"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Camp Fire ravaged communities in the United States on November 8, 2018, destroying much of Paradise after igniting in Butte County, California.",
+    "ground_truth": {
+      "entity1": "Camp Fire",
+      "relation": "Ravage",
+      "entity2": "United States",
+      "time": "2018-11-08",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Sunda Strait tsunami struck coastal areas of Indonesia on December 22, 2018, after Anak Krakatau collapsed, inundating communities in Banten and Lampung provinces.",
+    "ground_truth": {
+      "entity1": "Sunda Strait tsunami",
+      "relation": "Strike",
+      "entity2": "Indonesia",
+      "time": "2018-12-22",
+      "location": "Indonesia"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Cyclone Idai made landfall in Mozambique on March 14, 2019, near Beira, bringing destructive winds, torrential rain, and severe flooding to central districts.",
+    "ground_truth": {
+      "entity1": "Cyclone Idai",
+      "relation": "Make landfall",
+      "entity2": "Mozambique",
+      "time": "2019-03-14",
+      "location": "Mozambique"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Ridgecrest earthquake shook southern areas of the United States on July 5, 2019, striking near Ridgecrest, California, and damaging roads, buildings, and utilities.",
+    "ground_truth": {
+      "entity1": "Ridgecrest earthquake",
+      "relation": "Shake",
+      "entity2": "United States",
+      "time": "2019-07-05",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Taal Volcano eruption forced evacuations across the Philippines on January 12, 2020, after an ash plume rose above Batangas and disrupted communities near the crater.",
+    "ground_truth": {
+      "entity1": "Taal Volcano eruption",
+      "relation": "Force evacuation",
+      "entity2": "Philippines",
+      "time": "2020-01-12",
+      "location": "Philippines"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Cyclone Amphan made landfall in India on May 20, 2020, striking West Bengal with powerful winds, storm surge, and heavy rainfall around Kolkata and coastal districts.",
+    "ground_truth": {
+      "entity1": "Cyclone Amphan",
+      "relation": "Make landfall",
+      "entity2": "India",
+      "time": "2020-05-20",
+      "location": "India"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Aegean Sea earthquake shook coastal areas of Greece on October 30, 2020, damaging buildings on Samos and generating a tsunami along the island's shoreline.",
+    "ground_truth": {
+      "entity1": "Aegean Sea earthquake",
+      "relation": "Shake",
+      "entity2": "Greece",
+      "time": "2020-10-30",
+      "location": "Greece"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "La Soufrière eruption blanketed parts of Saint Vincent and the Grenadines on April 9, 2021, sending a towering ash plume over northern Saint Vincent.",
+    "ground_truth": {
+      "entity1": "La Soufrière eruption",
+      "relation": "Blanket",
+      "entity2": "Saint Vincent and the Grenadines",
+      "time": "2021-04-09",
+      "location": "Saint Vincent and the Grenadines"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Western European floods inundated western regions of Germany on July 14, 2021, overwhelming towns in Rhineland-Palatinate and North Rhine-Westphalia after extreme rainfall.",
+    "ground_truth": {
+      "entity1": "Western European floods",
+      "relation": "Inundate",
+      "entity2": "Germany",
+      "time": "2021-07-14",
+      "location": "Germany"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Haiti earthquake devastated southern areas of Haiti on August 14, 2021, collapsing buildings and damaging roads across the Nippes, Sud, and Grand'Anse departments.",
+    "ground_truth": {
+      "entity1": "Haiti earthquake",
+      "relation": "Devastate",
+      "entity2": "Haiti",
+      "time": "2021-08-14",
+      "location": "Haiti"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Hunga Tonga eruption triggered tsunami waves across Tonga on January 15, 2022, flooding coastal communities and covering parts of the Pacific island nation with ash.",
+    "ground_truth": {
+      "entity1": "Hunga Tonga eruption",
+      "relation": "Trigger tsunami",
+      "entity2": "Tonga",
+      "time": "2022-01-15",
+      "location": "Tonga"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Hurricane Ian made landfall in the United States on September 28, 2022, striking southwestern Florida with destructive winds, storm surge, and widespread flooding.",
+    "ground_truth": {
+      "entity1": "Hurricane Ian",
+      "relation": "Make landfall",
+      "entity2": "United States",
+      "time": "2022-09-28",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Cyclone Mocha made landfall in Myanmar on May 14, 2023, striking near Sittwe with powerful winds and storm surge that damaged communities across Rakhine State.",
+    "ground_truth": {
+      "entity1": "Cyclone Mocha",
+      "relation": "Make landfall",
+      "entity2": "Myanmar",
+      "time": "2023-05-14",
+      "location": "Myanmar"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Maui wildfires ravaged communities in the United States on August 8, 2023, destroying neighborhoods in Lahaina, Hawaii, as strong winds accelerated several fast-moving fires.",
+    "ground_truth": {
+      "entity1": "Maui wildfires",
+      "relation": "Ravage",
+      "entity2": "United States",
+      "time": "2023-08-08",
+      "location": "United States"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Al Haouz earthquake shook central Morocco on September 8, 2023, damaging mountain communities south of Marrakesh after striking the High Atlas region late at night.",
+    "ground_truth": {
+      "entity1": "Al Haouz earthquake",
+      "relation": "Shake",
+      "entity2": "Morocco",
+      "time": "2023-09-08",
+      "location": "Morocco"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Hualien earthquake shook eastern Taiwan on April 3, 2024, damaging buildings, triggering landslides, and disrupting transport links near Hualien City and Taroko Gorge.",
+    "ground_truth": {
+      "entity1": "Hualien earthquake",
+      "relation": "Shake",
+      "entity2": "Taiwan",
+      "time": "2024-04-03",
+      "location": "Taiwan"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Rio Grande do Sul floods inundated southern Brazil on April 29, 2024, after prolonged rainfall caused rivers to overflow across Porto Alegre and surrounding municipalities.",
+    "ground_truth": {
+      "entity1": "Rio Grande do Sul floods",
+      "relation": "Inundate",
+      "entity2": "Brazil",
+      "time": "2024-04-29",
+      "location": "Brazil"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "The Enga landslide buried communities in Papua New Guinea on May 24, 2024, engulfing homes in Yambali village under massive debris in the country's northern highlands.",
+    "ground_truth": {
+      "entity1": "Enga landslide",
+      "relation": "Bury",
+      "entity2": "Papua New Guinea",
+      "time": "2024-05-24",
+      "location": "Papua New Guinea"
+    }
+  },
+  {
+    "domain": "disaster",
+    "text": "Hurricane Beryl made landfall in Grenada on July 1, 2024, striking Carriacou Island with Category 4 winds and causing extensive damage across the Grenadine islands.",
+    "ground_truth": {
+      "entity1": "Hurricane Beryl",
+      "relation": "Make landfall",
+      "entity2": "Grenada",
+      "time": "2024-07-01",
+      "location": "Grenada"
+    }
+  }
 ]

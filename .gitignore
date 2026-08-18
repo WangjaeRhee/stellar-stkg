@@ -27,3 +27,10 @@ results/extracted/*.json
 # OS
 .DS_Store
 Thumbs.db
+
+# Figures (reproducible)
+results/figures/*.png
+
+# Paper drafts (not for public)
+experiment_log.md
+paper_draft.md

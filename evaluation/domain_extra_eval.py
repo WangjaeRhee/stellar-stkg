@@ -1,6 +1,8 @@
 """
-다양한 도메인 테스트 (프롬프트 수정 없이)
-스포츠, 과학, 보건, 문화, 범죄
+9개 도메인 테스트 (프롬프트 수정 없이)
+politics(100) + business(50) + disaster(50) +
+sports(50) + science(50) + health(50) +
+culture(50) + crime(50) + environment(50)
 """
 
 import json
@@ -39,7 +41,6 @@ Rules for FAIL:
 - Completely different entity
 - Missing value
 - Wrong entity type
-- No meaningful connection
 
 Answer with ONLY "PASS" or "FAIL":"""
 
@@ -54,15 +55,14 @@ Answer with ONLY "PASS" or "FAIL":"""
     except:
         return False
 
-def evaluate_domain(test_cases, domain_name):
-    cases = [c for c in test_cases if c['domain'] == domain_name]
+def evaluate_domain(all_cases, domain_name, extractor):
+    cases = [c for c in all_cases if c['domain'] == domain_name]
     total = len(cases)
     if total == 0:
         return None
 
     fields = ['entity1', 'relation', 'entity2', 'time', 'location']
     passed = {f: 0 for f in fields + ['overall']}
-    extractor = STKGExtractor()
 
     for case in tqdm(cases, desc=domain_name):
         quintuples = extractor.extract_quintuples(case['text'])
@@ -101,70 +101,85 @@ def evaluate_domain(test_cases, domain_name):
     return scores
 
 def main():
-    with open(r'data\domain_extra_test.json', 'r',
-              encoding='utf-8') as f:
-        test_cases = json.load(f)
+    # 모든 데이터 로드
+    all_cases = []
 
-    domains = ['sports', 'science', 'health', 'culture', 'crime']
+    # politics (raw_text_test.json)
+    with open(r'data\raw_text_test.json', 'r', encoding='utf-8') as f:
+        for case in json.load(f):
+            case['domain'] = 'politics'
+            all_cases.append(case)
 
-    print(f"=== 다양한 도메인 테스트 (프롬프트 수정 없이) ===",
+    # business + disaster (domain_test.json)
+    with open(r'data\domain_test.json', 'r', encoding='utf-8') as f:
+        for case in json.load(f):
+            all_cases.append(case)
+
+    # 나머지 (domain_extra_test.json)
+    with open(r'data\domain_extra_test.json', 'r', encoding='utf-8') as f:
+        for case in json.load(f):
+            all_cases.append(case)
+
+    # 도메인별 집계
+    from collections import Counter
+    domain_counts = Counter(c['domain'] for c in all_cases)
+
+    domains = ['politics', 'business', 'disaster', 'sports',
+               'science', 'health', 'culture', 'crime', 'environment']
+
+    print(f"=== 9개 도메인 테스트 (프롬프트 수정 없이) ===",
           flush=True)
-    print(f"도메인: {domains}", flush=True)
-    print(f"각 도메인 10개씩\n", flush=True)
+    print(f"총 {len(all_cases)}개\n", flush=True)
+    for d in domains:
+        print(f"  {d}: {domain_counts.get(d, 0)}개", flush=True)
+    print(flush=True)
 
+    extractor = STKGExtractor()
     all_scores = {}
 
     for domain in domains:
-        scores = evaluate_domain(test_cases, domain)
+        count = domain_counts.get(domain, 0)
+        if count == 0:
+            continue
+        scores = evaluate_domain(all_cases, domain, extractor)
         if scores:
             all_scores[domain] = scores
+            all_scores[domain]['count'] = count
 
     # 최종 비교
-    print(f"\n{'=' * 80}", flush=True)
-    print(f"=== 8개 도메인 비교 (프롬프트 수정 없이) ===", flush=True)
-    print(f"{'=' * 80}\n", flush=True)
-
-    # 기존 3개 도메인 추가
-    all_scores['politics'] = {
-        'entity1': 94.7, 'relation': 72.7,
-        'entity2': 79.7, 'time': 97.7,
-        'location': 89.7, 'overall': 51.0
-    }
-    all_scores['business'] = {
-        'entity1': 90.0, 'relation': 73.3,
-        'entity2': 73.3, 'time': 96.7,
-        'location': 83.3, 'overall': 43.3
-    }
-    all_scores['disaster'] = {
-        'entity1': 86.7, 'relation': 66.7,
-        'entity2': 66.7, 'time': 96.7,
-        'location': 93.3, 'overall': 36.7
-    }
+    print(f"\n{'=' * 100}", flush=True)
+    print(f"=== 9개 도메인 비교 (프롬프트 수정 없이) ===", flush=True)
+    print(f"{'=' * 100}\n", flush=True)
 
     fields = ['entity1', 'relation', 'entity2', 'time',
               'location', 'overall']
 
-    domain_order = ['politics', 'business', 'disaster',
-                    'sports', 'science', 'health',
-                    'culture', 'crime']
-
     header = f"{'요소':<12}"
-    for d in domain_order:
-        header += f" {d:>10}"
+    for d in domains:
+        if d in all_scores:
+            header += f" {d:>12}"
     print(header, flush=True)
-    print("-" * (12 + 11 * len(domain_order)), flush=True)
+    print("-" * (12 + 13 * len(all_scores)), flush=True)
 
     for field in fields:
         row = f"{field:<12}"
-        for d in domain_order:
-            val = all_scores.get(d, {}).get(field, 0)
-            row += f" {val:>9.1f}%"
+        for d in domains:
+            if d in all_scores:
+                val = all_scores[d].get(field, 0)
+                row += f" {val:>11.1f}%"
         print(row, flush=True)
+
+    # 샘플 수
+    row = f"{'(n)':<12}"
+    for d in domains:
+        if d in all_scores:
+            row += f" {all_scores[d]['count']:>11}"
+    print(row, flush=True)
 
     # 평균 계산
     print(f"\n--- 전체 평균 ---", flush=True)
     for field in fields:
-        vals = [all_scores[d][field] for d in domain_order
+        vals = [all_scores[d][field] for d in domains
                 if d in all_scores]
         avg = sum(vals) / len(vals)
         print(f"  {field}: {avg:.1f}%", flush=True)
