@@ -2,20 +2,20 @@
 
 **Spatio-Temporal Extraction via LLM-Automated Reasoning**
 
-A framework for automatically extracting spatio-temporal quintuples from unstructured text using LLMs.
+A framework for automatically extracting spatio-temporal quintuples from unstructured text using large language models.
 
 ---
 
 ## Overview
 
-STELLAR extracts **spatio-temporal quintuples (Entity1, Relation, Entity2, Time, Location)** from unstructured text. Existing LLM-based knowledge graph construction focuses on triples or temporal quadruples; STELLAR extends this to include explicit spatial information.
+STELLAR extracts **spatio-temporal quintuples (Entity1, Relation, Entity2, Time, Location)** from unstructured text and builds a spatio-temporal knowledge graph. Existing LLM-based knowledge graph construction focuses on triples or temporal quadruples; STELLAR extends this to include explicit spatial information.
 
 ### Key Ideas
 
-- **Multi-stage CoT pipeline**: single-prompt extraction of five elements at once reaches only 2.0% exact match. Decomposing the task and adding Chain-of-Thought reasoning at each step raises it to 22.0%.
-- **No dictionary required**: rule-based coders such as PETRARCH depend on hand-built CAMEO dictionaries and only process text within their coverage. STELLAR works without any dictionary.
-- **Domain independent**: verified across 9 domains without prompt modification.
-- **Model independent**: swapping only the LLM raises exact match from 51.0% to 60.0%.
+- **Multi-stage CoT pipeline** — extracting five elements with a single prompt reaches only 2.0% exact match. Decomposing the task and adding Chain-of-Thought reasoning at each step raises it to 22.0%.
+- **No dictionary required** — rule-based coders such as PETRARCH depend on hand-built CAMEO dictionaries and only process text within their coverage. STELLAR works without any dictionary.
+- **Domain independent** — verified across 9 domains without prompt modification.
+- **Model independent** — swapping only the LLM raises exact match from 51.0% to 60.0%.
 
 ---
 
@@ -35,7 +35,7 @@ Evaluated on the 155 samples where both systems produced output. Location is exc
 
 **Extraction success rate (450 samples): PETRARCH 34.4%, STELLAR 99.8%**
 
-PETRARCH fails on 295 of 450 texts because the actors and verbs are not in the CAMEO dictionary. The largest accuracy gap appears in Entity2: PETRARCH takes the grammatical object from the parse tree, while STELLAR identifies the semantic target through CoT reasoning.
+PETRARCH fails on 295 of 450 texts because the actors and verbs are not in the CAMEO dictionary. The largest accuracy gap appears in Entity2: PETRARCH takes the grammatical object from the parse tree, while STELLAR identifies the semantic target through CoT reasoning. For example, in "The United States imposed sanctions on Iran", PETRARCH favors the grammatical object "sanctions", while STELLAR identifies "Iran".
 
 ### Component Contribution (n=50)
 
@@ -48,6 +48,8 @@ PETRARCH fails on 295 of 450 texts because the actors and verbs are not in the C
 | + Entity normalization | 38.0% | **+16.0%p** |
 
 Decomposition alone does not help. The gain comes from generating intermediate reasoning at each step.
+
+Self-consistency was also tested: 1 run 46.0%, 3 runs 52.0%, 5 runs 50.0%, 7 runs 50.0%. Three runs is used as the default.
 
 ### Domain Independence (9 domains, 450 samples, no prompt modification)
 
@@ -67,6 +69,8 @@ Decomposition alone does not help. The gain comes from generating intermediate r
 
 Time (99.8%) and Location (96.2%) are stable across all domains. Crime is limited by Entity1 accuracy (40%), as the LLM normalizes law-enforcement organizations to their parent countries.
 
+The contrast between exact match (50.7%) and text similarity (97.0%) indicates that quintuples judged incorrect under the strict criterion are still semantically close to the ground truth.
+
 ### Model Comparison (same framework, only `_call_llm` replaced)
 
 | Element | Qwen2.5-7B | GPT-4o-mini | GPT-4o |
@@ -78,7 +82,7 @@ Time (99.8%) and Location (96.2%) are stable across all domains. Crime is limite
 | Location | 89.7% | 94.0% | 86.0% |
 | Exact match | 51.0% ±0.8% | 60.0% | 60.0% |
 
-Qwen2.5-7B result is the mean of 3 runs.
+The Qwen2.5-7B result is the mean of 3 runs.
 
 ---
 
@@ -192,10 +196,29 @@ fused = fusion.fuse(all_quintuples)
 
 ### Graph Storage and Query
 
+Store the extracted quintuples in Neo4j and query them in natural language.
+
 ```bash
 python main.py --sample 100 --files 5   # build STKG in Neo4j
 python cli.py                            # natural language query
 ```
+
+```
+Query > What actions did Israel take?
+
+[Parsed Result] {'query_type': 'complex', 'entity': 'Israel',
+                 'time': None, 'location': None,
+                 'intent': 'actions of entity'}
+[STKG Search Results: 2 items]
+  Israel -> Sign Agreement -> Lebanon (2022-10-27, Israel and Lebanon)
+  Israel -> Conduct Raid -> Palestine (2023-07-03, Israel)
+
+[Answer]
+Israel signed an agreement with Lebanon on 2022-10-27 and
+conducted a raid in Palestine on 2023-07-03.
+```
+
+The interface parses the question into a structured query, searches the STKG, and generates an answer from the retrieved quintuples. Because time and location are stored as edge attributes, queries such as "what happened in country X during period Y" are supported, which triple-based knowledge graphs cannot express.
 
 ---
 
@@ -217,7 +240,7 @@ python evaluation/api_compare_eval.py     # model comparison (needs OpenAI key)
 python evaluation/bertscore_eval.py       # quintuple text similarity
 
 # Rule-based comparison
-python evaluation/compare_petrarch.py     # run PETRARCH (needs CoreNLP + PETRARCH3)
+python evaluation/compare_petrarch.py     # run PETRARCH
 python evaluation/reeval_petrarch4.py     # 4-element comparison
 
 # Figures
@@ -238,7 +261,7 @@ git clone https://github.com/oudalab/petrarch3
 cd petrarch3 && pip install -e .
 ```
 
-Note: PETRARCH3 contains several Python 2 to 3 conversion bugs that must be patched before running. See `evaluation/compare_petrarch.py` for details.
+PETRARCH3 contains several Python 2 to 3 conversion bugs that must be patched before running. See `evaluation/compare_petrarch.py` for the pipeline used in this work.
 
 ---
 
@@ -255,18 +278,23 @@ Note: PETRARCH3 contains several Python 2 to 3 conversion bugs that must be patc
 
 ### LLM-as-Judge Binary
 
-- **PASS**: semantically equivalent (e.g. "Putin" = "Vladimir Putin")
-- **FAIL**: semantically different, missing, or wrong type
+- **PASS** — semantically equivalent (e.g. "Putin" = "Vladimir Putin")
+- **FAIL** — semantically different, missing, or wrong type
 
 Exact string matching would reject correct extractions that differ only in surface form, so a binary LLM judge is used instead.
+
+### Dataset
+
+450 unstructured texts collected from international news articles (2022-2024), evenly distributed across 9 domains (50 each): politics, business, disaster, sports, science, health, culture, crime, environment. Ground truth was semi-automatically generated and then manually reviewed.
 
 ### Known Limitations
 
 - Judge and extractor use the same model in local experiments, introducing potential self-evaluation bias
-- Ground truth was semi-automatically generated and then manually reviewed
+- Ground truth was semi-automatically generated
 - 450 samples across 9 domains; larger-scale validation is future work
 - Quintuple exact match of 50.7% is not yet sufficient for fully automated deployment
 - Entity normalization granularity is not domain-adaptive (see Crime domain results)
+- Processing takes about 8 seconds per text due to multi-stage LLM calls; rule-based coders are faster but require pre-built dictionaries
 
 ---
 
@@ -311,7 +339,7 @@ stellar-stkg/
 @article{rhee2026stellar,
   title={Spatio-Temporal Quintuple Extraction Framework for
          Knowledge Graph Construction based on LLM-Automated Reasoning},
-  author={Rhee, Wang-Jae and Oh, Seo-Jin and Lee, Kwang-Il},
+  author={Rhee, Wang-Jae},
   year={2026}
 }
 ```
@@ -322,6 +350,8 @@ MIT License
 
 ## Authors
 
-Wang-Jae Rhee, Seo-Jin Oh, Kwang-Il Lee
+Wang-Jae Rhee
+
 Division of Artificial Intelligence Engineering, Korea Maritime and Ocean University
+
 Cybermarine System LAB
