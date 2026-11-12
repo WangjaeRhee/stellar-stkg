@@ -24,7 +24,7 @@ MAX_FILES = 10
 # ================================
 # 모듈 설정
 # ================================
-PROMPT_VERSION = "v11_timeloc_fix"
+PROMPT_VERSION = "v12_clean_examples"
 FUSION_SIMILARITY_THRESHOLD = 0.85
 SV_ENABLED = False
 SV_CONFIDENCE_THRESHOLD = 0.9

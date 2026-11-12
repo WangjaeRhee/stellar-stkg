@@ -2,6 +2,7 @@ import ollama
 import json
 from collections import Counter
 from config import LLM_MODEL, LLM_HOST
+from modules.llm_common import LLM_OPTIONS
 
 class STKGExtractor:
     """
@@ -13,17 +14,24 @@ class STKGExtractor:
     def __init__(self, model=LLM_MODEL, host=LLM_HOST):
         self.model = model
         self.client = ollama.Client(host=host)
-        self.prompt_version = "v11_timeloc_fix"
+        # v12: few-shot examples replaced so that none overlaps with the
+        # 450 test sentences; deterministic decoding (temperature 0, seed 42)
+        self.prompt_version = "v12_clean_examples"
+        self.last_error = None
+        self.error_count = 0
 
     def _call_llm(self, prompt):
-        """Common function for LLM API calls"""
+        """Common function for LLM API calls (deterministic options)"""
         try:
             response = self.client.chat(
                 model=self.model,
-                messages=[{"role": "user", "content": prompt}]
+                messages=[{"role": "user", "content": prompt}],
+                options=LLM_OPTIONS,
             )
             return response['message']['content']
         except Exception as e:
+            self.last_error = str(e)
+            self.error_count += 1
             print(f"LLM error: {e}")
             return ""
 
@@ -70,10 +78,10 @@ Think step by step:
 
 CRITICAL RULES for entity2:
 - entity2 must be a PERSON, COUNTRY, ORGANIZATION, or COMPANY
-- NOT a concept (inflation, democracy, climate, deforestation)
-- NOT a geographic feature (Amazon, East Sea, Noto Peninsula)
-- NOT an object (missiles, sanctions, agreement, package, headset)
-- NOT an event name (COP27, G20, CHIPS Act)
+- NOT a concept (unemployment, sovereignty, globalization, literacy)
+- NOT a geographic feature (Sahara Desert, Baltic Sea, Kamchatka Peninsula)
+- NOT an object (rockets, tariffs, treaty, loan, smartphone)
+- NOT an event name (Davos Forum, APEC summit, Clean Air Act)
 - If the action targets a CITY, entity2 = the COUNTRY it belongs to
 - If the action targets a SUB-ORGANIZATION, entity2 = the parent COUNTRY or ORG
 - If a government acts on its own people/economy, entity2 = that country itself
@@ -82,60 +90,60 @@ CRITICAL RULES for entity2:
 
 === POLITICS/MILITARY examples ===
 
-"Russia launched missiles at Mykolaiv"
-→ Mykolaiv is a city in Ukraine
-→ {{"entity1": "Russia", "entity2": "Ukraine"}}
+"Pakistan carried out airstrikes on Khost"
+→ Khost is a city in Afghanistan
+→ {{"entity1": "Pakistan", "entity2": "Afghanistan"}}
 
-"EU sanctioned Iran's IRGC"
-→ IRGC is part of Iran
-→ {{"entity1": "European Union", "entity2": "Iran"}}
+"United Kingdom sanctioned Myanmar's Tatmadaw"
+→ The Tatmadaw is part of Myanmar
+→ {{"entity1": "United Kingdom", "entity2": "Myanmar"}}
 
-"China condemned Pelosi's visit to Taiwan"
-→ Pelosi is a US official. China condemned the US action.
-→ {{"entity1": "China", "entity2": "United States"}}
+"Morocco condemned Sanchez's statement on Western Sahara"
+→ Sanchez is a Spanish official. Morocco condemned the Spanish position.
+→ {{"entity1": "Morocco", "entity2": "Spain"}}
 
-"Finland applied to join NATO"
-→ {{"entity1": "Finland", "entity2": "NATO"}}
+"Argentina applied to join BRICS"
+→ {{"entity1": "Argentina", "entity2": "BRICS"}}
 
-"South Korea and US conducted joint air drills"
-→ {{"entity1": "South Korea", "entity2": "United States"}}
+"Japan and Australia held joint naval exercises"
+→ {{"entity1": "Japan", "entity2": "Australia"}}
 
 === BUSINESS/TECHNOLOGY examples ===
 
-"Microsoft acquired Activision Blizzard"
-→ {{"entity1": "Microsoft", "entity2": "Activision Blizzard"}}
+"Salesforce acquired Slack"
+→ {{"entity1": "Salesforce", "entity2": "Slack"}}
 
-"Tesla announced construction of a new Gigafactory"
-→ {{"entity1": "Tesla", "entity2": "Tesla"}}
+"Netflix opened a new production studio"
+→ {{"entity1": "Netflix", "entity2": "Netflix"}}
 
-"Amazon laid off 18,000 employees"
-→ {{"entity1": "Amazon", "entity2": "Employees"}}
+"Spotify cut 1,500 jobs"
+→ {{"entity1": "Spotify", "entity2": "Employees"}}
 
-"Apple launched the Vision Pro headset"
-→ {{"entity1": "Apple", "entity2": "Vision Pro"}}
+"Sony unveiled the PlayStation 5 console"
+→ {{"entity1": "Sony", "entity2": "PlayStation 5"}}
 
-"Toyota partnered with Nvidia"
-→ {{"entity1": "Toyota", "entity2": "Nvidia"}}
+"Renault partnered with Qualcomm"
+→ {{"entity1": "Renault", "entity2": "Qualcomm"}}
 
-"OpenAI fired Sam Altman"
-→ {{"entity1": "OpenAI", "entity2": "Sam Altman"}}
+"WeWork ousted Adam Neumann"
+→ {{"entity1": "WeWork", "entity2": "Adam Neumann"}}
 
 === DISASTER/ENVIRONMENT examples ===
 
-"A magnitude 7.8 earthquake struck southern Turkey"
-→ {{"entity1": "Earthquake", "entity2": "Turkey"}}
+"A powerful earthquake hit Petrinja in Croatia"
+→ {{"entity1": "Earthquake", "entity2": "Croatia"}}
 
-"Hurricane Otis made landfall near Acapulco, Mexico"
-→ {{"entity1": "Hurricane Otis", "entity2": "Mexico"}}
+"Typhoon Haiyan made landfall near Tacloban, Philippines"
+→ {{"entity1": "Typhoon Haiyan", "entity2": "Philippines"}}
 
-"Canada declared emergency over wildfires in British Columbia"
-→ {{"entity1": "Canada", "entity2": "Canada"}}
+"Portugal mobilized firefighters against wildfires in Leiria"
+→ {{"entity1": "Portugal", "entity2": "Portugal"}}
 
-"United Nations launched emergency aid appeal for Afghanistan"
-→ {{"entity1": "United Nations", "entity2": "Afghanistan"}}
+"World Food Programme airlifted supplies to Somalia"
+→ {{"entity1": "World Food Programme", "entity2": "Somalia"}}
 
-"India rescued thousands from floods in Assam"
-→ {{"entity1": "India", "entity2": "Flood victims"}}
+"Thailand rescued villagers from floods in Chiang Rai"
+→ {{"entity1": "Thailand", "entity2": "Flood victims"}}
 
 Now extract from:
 "{fact}"
@@ -165,14 +173,14 @@ Rules:
 4. Return ONLY a JSON object
 
 Examples:
-"Russia launched missiles at Ukraine" → {{"relation": "Launch missiles"}}
-"EU sanctioned Iran" → {{"relation": "Impose sanctions"}}
-"Microsoft acquired Activision" → {{"relation": "Acquire"}}
-"Earthquake struck Turkey" → {{"relation": "Strike"}}
-"Canada declared emergency" → {{"relation": "Declare emergency"}}
-"UN launched aid appeal" → {{"relation": "Launch aid appeal"}}
-"Tesla announced construction" → {{"relation": "Announce construction"}}
-"Amazon laid off employees" → {{"relation": "Lay off employees"}}
+"Pakistan carried out airstrikes on Afghanistan" → {{"relation": "Conduct airstrikes"}}
+"United Kingdom froze the assets of Belarusian officials" → {{"relation": "Freeze assets"}}
+"Salesforce acquired Slack" → {{"relation": "Acquire"}}
+"Typhoon Haiyan battered the Philippines" → {{"relation": "Strike"}}
+"Portugal mobilized firefighters" → {{"relation": "Mobilize firefighters"}}
+"World Food Programme airlifted supplies" → {{"relation": "Deliver supplies"}}
+"Netflix opened a production studio" → {{"relation": "Open facility"}}
+"Spotify cut 1,500 jobs" → {{"relation": "Cut jobs"}}
 
 entity1: {entity1}
 entity2: {entity2}
@@ -202,10 +210,10 @@ Rules:
 4. Return ONLY a JSON object.
 
 Examples:
-"... on October 13, 2022 in Washington D.C." → {{"time": "2022-10-13", "location": "United States"}}
-"... on October 27, 2022 in Brussels" → {{"time": "2022-10-27", "location": "Belgium"}}
-"... in Kumamoto, Japan" → {{"time": "unknown", "location": "Japan"}}
-"... near Acapulco, Mexico" → {{"time": "unknown", "location": "Mexico"}}
+"... on November 30, 2015 in Lima, Peru" → {{"time": "2015-11-30", "location": "Peru"}}
+"... on September 3, 2017 in Vienna" → {{"time": "2017-09-03", "location": "Austria"}}
+"... in Chiang Mai, Thailand" → {{"time": "unknown", "location": "Thailand"}}
+"... near Petrinja, Croatia" → {{"time": "unknown", "location": "Croatia"}}
 
 Output:"""
 
@@ -219,12 +227,26 @@ Output:"""
         except:
             return {"time": "unknown", "location": "unknown"}
 
+    def extract_with_trace(self, text):
+        """
+        Multi-stage pipeline that also returns the intermediate atomic facts.
+        Returns {"atomic_facts": [...], "quintuples": [...]}.
+        """
+        atomic_facts = self.decompose_to_atomic_facts(text)
+        quintuples = self._extract_from_facts(text, atomic_facts)
+        return {"atomic_facts": atomic_facts, "quintuples": quintuples}
+
     def _extract_single(self, text):
         """Single extraction (internal use)"""
         atomic_facts = self.decompose_to_atomic_facts(text)
+        return self._extract_from_facts(text, atomic_facts)
 
+    def _extract_from_facts(self, text, atomic_facts):
+        """Steps 2-4 for each atomic fact"""
         quintuples = []
         for fact in atomic_facts:
+            if not isinstance(fact, str):
+                fact = str(fact)
             entities = self.extract_entities(fact)
             if not entities:
                 continue

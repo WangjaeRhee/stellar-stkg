@@ -21,15 +21,19 @@ config.py
 data/raw/*.tab
 data/raw/*.tsv
 
-# Results (reproducible)
-results/extracted/*.json
+# Results (reproducible; see README "Reproducing the paper results")
+results/*
+!results/petrarch/
+results/petrarch/*
+# PETRARCH output is kept: regenerating it needs PETRARCH3 + Stanford CoreNLP
+!results/petrarch/evts.petr_out.txt
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Figures (reproducible)
-results/figures/*.png
+# Figures (not part of the public repo)
+generate_figures.py
 
 # Paper drafts (not for public)
 experiment_log.md

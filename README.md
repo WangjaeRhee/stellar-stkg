@@ -8,81 +8,74 @@ A framework for automatically extracting spatio-temporal quintuples from unstruc
 
 ## Overview
 
-STELLAR extracts **spatio-temporal quintuples (Entity1, Relation, Entity2, Time, Location)** from unstructured text and builds a spatio-temporal knowledge graph. Existing LLM-based knowledge graph construction focuses on triples or temporal quadruples; STELLAR extends this to include explicit spatial information.
+STELLAR extracts **spatio-temporal quintuples (Entity1, Relation, Entity2, Time, Location)** from unstructured text and builds a spatio-temporal knowledge graph (STKG). Existing LLM-based knowledge graph construction focuses on triples or temporal quadruples; STELLAR extends this to include explicit spatial information.
 
 ### Key Ideas
 
-- **Multi-stage CoT pipeline** — extracting five elements with a single prompt reaches only 2.0% exact match. Decomposing the task and adding Chain-of-Thought reasoning at each step raises it to 22.0%.
+- **Multi-stage CoT pipeline** — extraction is decomposed into four stages (atomic fact decomposition, entity extraction, relation extraction, time/location extraction) with Chain-of-Thought reasoning at each stage, so that the subject and object are identified from the meaning of the sentence rather than its surface structure.
 - **No dictionary required** — rule-based coders such as PETRARCH depend on hand-built CAMEO dictionaries and only process text within their coverage. STELLAR works without any dictionary.
-- **Domain independent** — verified across 9 domains without prompt modification.
-- **Model independent** — swapping only the LLM raises exact match from 51.0% to 60.0%.
+- **Location included** — the spatial element is extracted together with the other four, so no separate geocoder is needed to form a quintuple.
+- **Domain independent** — evaluated on 9 domains without prompt modification.
 
 ---
 
 ## Results
 
+All numbers below are from the submitted manuscript: Qwen2.5-7B (Q4_K_M, Ollama), temperature 0, fixed seed, 450 texts.
+
 ### vs. Rule-based Method (PETRARCH)
 
-Evaluated on the 155 samples where both systems produced output. Location is excluded because PETRARCH does not output spatial information.
+Evaluated on the 155 texts for which PETRARCH produced an event (STELLAR produced a quintuple for all 155). Location is excluded because PETRARCH does not output it, and Time is excluded because PETRARCH takes the date as input.
 
-| Element | PETRARCH | STELLAR | Diff |
-|---------|----------|---------|------|
-| Entity1 | 59.4% | 78.7% | +19.4%p |
-| Relation | 76.1% | 72.9% | -3.2%p |
-| Entity2 | 43.2% | 89.0% | +45.8%p |
-| Time | 100.0% | 100.0% | 0.0%p |
-| Quadruple exact match | 27.7% | 52.3% | +24.5%p |
+| Element | PETRARCH | STELLAR | Diff. |
+|---------|----------|---------|-------|
+| Entity1 | 60.6 | 93.5 | +32.9 |
+| Relation | 75.5 | 80.6 | +5.1 |
+| Entity2 | 44.5 | 89.7 | +45.2 |
+| Exact match (3 elem.) | 29.0 | 69.7 | +40.7 |
 
-**Extraction success rate (450 samples): PETRARCH 34.4%, STELLAR 99.8%**
+The largest gap is in Entity2: PETRARCH takes the grammatical object from the parse tree, while STELLAR identifies the semantic target through CoT reasoning.
 
-PETRARCH fails on 295 of 450 texts because the actors and verbs are not in the CAMEO dictionary. The largest accuracy gap appears in Entity2: PETRARCH takes the grammatical object from the parse tree, while STELLAR identifies the semantic target through CoT reasoning. For example, in "The United States imposed sanctions on Iran", PETRARCH favors the grammatical object "sanctions", while STELLAR identifies "Iran".
+3-element exact match by domain (%):
 
-### Component Contribution (n=50)
+| Domain | n | PETRARCH | STELLAR |
+|--------|---|----------|---------|
+| Politics | 30 | 20.0 | 40.0 |
+| Business | 14 | 71.4 | 50.0 |
+| Disaster | 9 | 11.1 | 33.3 |
+| Sports | 12 | 66.7 | 100.0 |
+| Science | 9 | 44.4 | 77.8 |
+| Health | 23 | 4.3 | 69.6 |
+| Culture | 6 | 0.0 | 83.3 |
+| Crime | 33 | 9.1 | 84.8 |
+| Environment | 19 | 63.2 | 94.7 |
 
-| Configuration | Exact match | Contribution |
-|---------------|-------------|--------------|
-| Direct extraction | 2.0% | - |
-| + Atomic decomposition | 0.0% | -2.0%p |
-| + Multi-stage | 0.0% | 0.0%p |
-| + CoT reasoning | 22.0% | **+22.0%p** |
-| + Entity normalization | 38.0% | **+16.0%p** |
+The comparison uses data that was not written in the CAMEO schema, so PETRARCH's numbers may differ from its performance under the conditions it was designed for.
 
-Decomposition alone does not help. The gain comes from generating intermediate reasoning at each step.
+### Domain Generalization (9 domains, n=50 each, no prompt modification)
 
-Self-consistency was also tested: 1 run 46.0%, 3 runs 52.0%, 5 runs 50.0%, 7 runs 50.0%. Three runs is used as the default.
+| Element | Pol. | Bus. | Dis. | Spo. | Sci. | Hea. | Cul. | Cri. | Env. | All |
+|---------|------|------|------|------|------|------|------|------|------|-----|
+| Entity1 | 80 | 92 | 80 | 96 | 90 | 98 | 98 | 100 | 100 | 92.7 |
+| Relation | 70 | 72 | 68 | 94 | 74 | 80 | 88 | 92 | 72 | 78.9 |
+| Entity2 | 60 | 84 | 74 | 96 | 88 | 90 | 88 | 96 | 94 | 85.6 |
+| Time | 100 | 98 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 99.8 |
+| Location | 90 | 96 | 98 | 96 | 98 | 96 | 96 | 100 | 98 | 96.4 |
+| Exact match | 32 | 60 | 44 | 90 | 66 | 68 | 82 | 88 | 68 | 66.4 |
 
-### Domain Independence (9 domains, 450 samples, no prompt modification)
+**Element average accuracy 90.7% | Quintuple exact match 66.4% | Quintuple text similarity (BERTScore F1) 98.0%**
 
-| Domain | Exact match |
-|--------|-------------|
-| Sports | 88% |
-| Culture | 72% |
-| Health | 62% |
-| Politics | 56% |
-| Business | 56% |
-| Environment | 54% |
-| Science | 50% |
-| Disaster | 34% |
-| Crime | 20% |
+Politics is the lowest because its ground truth writes actors at country level ("Ukraine") while the extraction keeps the wording of the text ("Ukrainian troops"). BERTScore is inflated by the identically formatted time and location elements and should be read as an auxiliary metric.
 
-**Element average F1 87.0% | Quintuple text similarity F1 97.0% | Quintuple exact match 50.7%**
+### Knowledge Fusion and Graph Construction
 
-Time (99.8%) and Location (96.2%) are stable across all domains. Crime is limited by Entity1 accuracy (40%), as the LLM normalizes law-enforcement organizations to their parent countries.
+Applied to the 450 extracted quintuples:
 
-The contrast between exact match (50.7%) and text similarity (97.0%) indicates that quintuples judged incorrect under the strict criterion are still semantically close to the ground truth.
-
-### Model Comparison (same framework, only `_call_llm` replaced)
-
-| Element | Qwen2.5-7B | GPT-4o-mini | GPT-4o |
-|---------|------------|-------------|--------|
-| Entity1 | 94.7% | 94.0% | 90.0% |
-| Relation | 72.7% | 76.0% | 80.0% |
-| Entity2 | 79.7% | 78.0% | 84.0% |
-| Time | 97.7% | 100.0% | 100.0% |
-| Location | 89.7% | 94.0% | 86.0% |
-| Exact match | 51.0% ±0.8% | 60.0% | 60.0% |
-
-The Qwen2.5-7B result is the mean of 3 runs.
+| Step | Result |
+|------|--------|
+| Entity canonicalization (cosine sim >= 0.9) | 17 entity strings merged, 527 -> 510 distinct entities |
+| Duplicate removal (weighted cosine sim >= 0.85) | 44 quintuples removed, 450 -> 406 |
+| Graph | 497 nodes, 406 edges |
 
 ---
 
@@ -96,8 +89,7 @@ The Qwen2.5-7B result is the mean of 3 runs.
     Step 2: Entity Extraction (CoT reasoning)
     Step 3: Relation Extraction
     Step 4: Time / Location Extraction (from original text)
-    + LLM-based normalization (Entity / Relation / Location)
-    + Rule-based Entity2 correction
+    + Location normalization to country level (LLM)
     |
     Spatio-Temporal Quintuples
     |
@@ -105,10 +97,12 @@ The Qwen2.5-7B result is the mean of 3 runs.
     Entity Canonicalization (cosine sim >= 0.9)
     Duplicate Removal (weighted cosine sim >= 0.85)
     |
-[Output] Spatio-Temporal Knowledge Graph
+[Output] Spatio-Temporal Knowledge Graph (Neo4j)
 ```
 
 Location is defined as the country where the event physically occurred or was initiated. For example, in "France provided military aid to Ukraine", Location is France, not Ukraine.
+
+Entity1, Relation and Entity2 keep the wording of the source text; unifying different surface forms of the same entity is left to the fusion module.
 
 ---
 
@@ -151,38 +145,15 @@ extractor = STKGExtractor()
 text = "The United States imposed sanctions on Iran on March 15, 2023."
 
 quintuples = extractor.extract_quintuples(text)
+
+# Configuration used in the paper: location normalization only
 result = postprocess_quintuples(
     quintuples,
-    normalize_relation=True,
-    normalize_entity=True
+    normalize_relation=False,
+    normalize_entity=False,
+    apply_corrections=False,
 )
-
-print(result[0])
-# {'entity1': 'United States', 'relation': 'Impose sanctions',
-#  'entity2': 'Iran', 'time': '2023-03-15',
-#  'location': 'United States'}
-```
-
-### Using a Different LLM
-
-```python
-from modules.extractor import STKGExtractor
-import openai
-
-class GPTExtractor(STKGExtractor):
-    def __init__(self, api_key):
-        self.client = openai.OpenAI(api_key=api_key)
-        self.prompt_version = "v11_timeloc_fix"
-
-    def _call_llm(self, prompt):
-        r = self.client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0
-        )
-        return r.choices[0].message.content
-
-extractor = GPTExtractor(api_key="your-key")
+print(result[0])   # entity1, relation, entity2, time, location
 ```
 
 ### Knowledge Fusion
@@ -196,60 +167,54 @@ fused = fusion.fuse(all_quintuples)
 
 ### Graph Storage and Query
 
-Store the extracted quintuples in Neo4j and query them in natural language.
-
 ```bash
-python main.py --sample 100 --files 5   # build STKG in Neo4j
-python cli.py                            # natural language query
+# fuse the extracted quintuples and load them into Neo4j (clears the DB first)
+python scripts/load_graph_final.py --extract results/rerun/extract_qwen2.5-7b_final-loconly.jsonl
+
+python cli.py    # natural language query over the STKG
 ```
 
-```
-Query > What actions did Israel take?
-
-[Parsed Result] {'query_type': 'complex', 'entity': 'Israel',
-                 'time': None, 'location': None,
-                 'intent': 'actions of entity'}
-[STKG Search Results: 2 items]
-  Israel -> Sign Agreement -> Lebanon (2022-10-27, Israel and Lebanon)
-  Israel -> Conduct Raid -> Palestine (2023-07-03, Israel)
-
-[Answer]
-Israel signed an agreement with Lebanon on 2022-10-27 and
-conducted a raid in Palestine on 2023-07-03.
-```
-
-The interface parses the question into a structured query, searches the STKG, and generates an answer from the retrieved quintuples. Because time and location are stored as edge attributes, queries such as "what happened in country X during period Y" are supported, which triple-based knowledge graphs cannot express.
+Because time and location are stored as edge attributes, queries such as "what did entity X do, when and where" are supported, which triple-based knowledge graphs cannot express.
 
 ---
 
-## Evaluation
+## Reproducing the Paper Results
+
+Result files are not tracked; every script writes to `results/rerun/` and is resumable (ids already present in an output file are skipped). Run from the project root with Ollama serving `qwen2.5:7b`.
 
 ```bash
-# Core evaluation
-python evaluation/llm_judge_eval.py       # binary judge
-python evaluation/full_eval.py            # P/R/F1 + exact match
-python evaluation/repeat_eval.py          # 3-run reproducibility
+R=results/rerun
 
-# Component analysis
-python evaluation/ablation_eval.py        # component contribution
-python evaluation/sc_eval.py              # self-consistency
+# 0. prompt examples must not overlap the 450 test texts
+python scripts/check_leakage.py --json $R/leakage_report.json
 
-# Generalization
-python evaluation/domain_extra_eval.py    # 9 domains
-python evaluation/api_compare_eval.py     # model comparison (needs OpenAI key)
-python evaluation/bertscore_eval.py       # quintuple text similarity
+# 1. extraction (450 texts)
+python evaluation/run_extract.py --model qwen2.5:7b --no-show
 
-# Rule-based comparison
-python evaluation/compare_petrarch.py     # run PETRARCH
-python evaluation/reeval_petrarch4.py     # 4-element comparison
+# 2. final configuration (location normalization only) + judge + tables
+python evaluation/run_judge.py --extract $R/extract_qwen2.5-7b.jsonl \
+    --use-original entity1 relation entity2 \
+    --out $R/judge_qwen2.5-7b_norm-loc.jsonl --cache $R/judge_cache.json
+python evaluation/make_final_extract.py
+python evaluation/summarize.py --judge "$R/judge_qwen2.5-7b_norm-loc.jsonl=Final" \
+    --out $R/summary_final --title "Final configuration (450)"      # Table 4
 
-# Figures
-python generate_figures.py
+# 3. quintuple text similarity
+python evaluation/bertscore_rerun.py --extract $R/extract_qwen2.5-7b_final-loconly.jsonl
+
+# 4. PETRARCH comparison on the 155 PETRARCH-coded texts                # Tables 2, 3
+python evaluation/compare_petrarch_final.py
+
+# 5. knowledge fusion counts, then Neo4j load
+python evaluation/fusion_rerun.py --extract $R/extract_qwen2.5-7b_final-loconly.jsonl
+python scripts/load_graph_final.py --extract $R/extract_qwen2.5-7b_final-loconly.jsonl
 ```
 
-### Reproducing the PETRARCH comparison
+`scripts/rerun_all.ps1` chains the extraction and judging steps together with additional analyses that are not reported in the paper (component analysis on a fixed 90-text sample, model comparison, normalizer and rule on/off comparison, human-check sheet).
 
-PETRARCH requires additional setup:
+### PETRARCH output
+
+`results/petrarch/evts.petr_out.txt` is the PETRARCH3 output used in the paper and is kept in the repository, because regenerating it needs extra setup:
 
 ```bash
 # 1. Stanford CoreNLP server
@@ -261,7 +226,7 @@ git clone https://github.com/oudalab/petrarch3
 cd petrarch3 && pip install -e .
 ```
 
-PETRARCH3 contains several Python 2 to 3 conversion bugs that must be patched before running. See `evaluation/compare_petrarch.py` for the pipeline used in this work.
+PETRARCH3 contains several Python 2 to 3 conversion bugs that must be patched before running. `evaluation/compare_petrarch.py` builds the PETRARCH input from the 450 texts and runs it (set `PETRARCH_DIR` in the script to your checkout).
 
 ---
 
@@ -271,30 +236,30 @@ PETRARCH3 contains several Python 2 to 3 conversion bugs that must be patched be
 
 | Metric | Description |
 |--------|-------------|
-| Element accuracy | Each of the five elements evaluated independently |
+| Element accuracy | Each of the five elements judged independently |
 | Quintuple exact match | All five elements must pass simultaneously |
-| Element average F1 | Mean of the five element-level scores |
 | Quintuple text similarity | BERTScore between the serialized quintuple and ground truth |
+
+For each text, the first extracted quintuple is compared with the ground truth.
 
 ### LLM-as-Judge Binary
 
-- **PASS** — semantically equivalent (e.g. "Putin" = "Vladimir Putin")
+- **PASS** — semantically equivalent (a different spelling of the same person, country or organization; a different wording of the same action; a sub-entity of the same parent entity)
 - **FAIL** — semantically different, missing, or wrong type
 
-Exact string matching would reject correct extractions that differ only in surface form, so a binary LLM judge is used instead.
+All tables are produced by a single shared judge (`evaluation/judge.py`) with a verdict cache, so identical (ground truth, extracted) pairs receive identical verdicts across experiments.
 
 ### Dataset
 
-450 unstructured texts collected from international news articles (2022-2024), evenly distributed across 9 domains (50 each): politics, business, disaster, sports, science, health, culture, crime, environment. Ground truth was semi-automatically generated and then manually reviewed.
+450 English news-style texts, 50 per domain across 9 domains: politics, business, disaster, sports, science, health, culture, crime, environment. Texts and ground-truth quintuples were generated with an LLM from real events between 2018 and 2024, as single sentences of 20-40 words, with time in `YYYY-MM-DD` and location at country level. The few-shot examples in the prompts do not overlap the dataset (`scripts/check_leakage.py`).
 
 ### Known Limitations
 
-- Judge and extractor use the same model in local experiments, introducing potential self-evaluation bias
-- Ground truth was semi-automatically generated
-- 450 samples across 9 domains; larger-scale validation is future work
-- Quintuple exact match of 50.7% is not yet sufficient for fully automated deployment
-- Entity normalization granularity is not domain-adaptive (see Crime domain results)
-- Processing takes about 8 seconds per text due to multi-stage LLM calls; rule-based coders are faster but require pre-built dictionaries
+- The extractor and the judge use the same LLM
+- The dataset is LLM-generated, consists of short single sentences, and was not separately reviewed
+- Location is limited to country level
+- The fusion module sometimes merges distinct entities or events, because differences in time are not weighted strongly enough at the current thresholds
+- Accuracy drops where the ground truth follows a different naming convention from the source text (e.g. politics)
 
 ---
 
@@ -303,21 +268,36 @@ Exact string matching would reject correct extractions that differ only in surfa
 ```
 stellar-stkg/
 ├── config_example.py
-├── main.py                    # build STKG in Neo4j
-├── cli.py                     # natural language query
-├── generate_figures.py
+├── main.py                        # ICEWS-style structured data -> STKG in Neo4j
+├── cli.py                         # natural language query
 ├── requirements.txt
-├── modules/                   # STELLAR framework
-│   ├── extractor.py           # multi-stage CoT extraction
-│   ├── postprocessor.py       # normalization + rule correction
-│   ├── fusion.py              # canonicalization + deduplication
-│   ├── graph.py               # Neo4j storage
-│   └── query.py               # natural language query
-├── evaluation/                # reproducible evaluation scripts
-└── data/                      # 450 test samples, 9 domains
-    ├── raw_text_test.json
-    ├── domain_test.json
-    └── domain_extra_test.json
+├── modules/                       # STELLAR framework
+│   ├── extractor.py               # multi-stage CoT extraction
+│   ├── postprocessor.py           # location / entity / relation normalization
+│   ├── fusion.py                  # canonicalization + deduplication
+│   ├── graph.py                   # Neo4j storage
+│   ├── query.py                   # natural language query
+│   └── llm_common.py              # deterministic LLM options
+├── evaluation/
+│   ├── dataset.py                 # 450 test cases with stable ids, jsonl helpers
+│   ├── run_extract.py             # extraction only
+│   ├── judge.py / run_judge.py    # shared binary judge
+│   ├── summarize.py               # tables from judge files
+│   ├── make_final_extract.py      # final-configuration extraction file
+│   ├── bertscore_rerun.py         # quintuple text similarity
+│   ├── compare_petrarch.py        # build PETRARCH input and run it
+│   ├── compare_petrarch_final.py  # PETRARCH vs STELLAR on the 155-subset
+│   ├── fusion_rerun.py            # fusion and graph counts
+│   └── ...                        # additional analyses (ablation, sample90, human check)
+├── scripts/
+│   ├── check_leakage.py           # prompt example vs test set overlap
+│   ├── load_graph_final.py        # fusion -> Neo4j
+│   └── rerun_all.ps1              # chained pipeline (PowerShell)
+├── data/                          # 450 test samples, 9 domains
+│   ├── raw_text_test.json
+│   ├── domain_test.json
+│   └── domain_extra_test.json
+└── results/petrarch/evts.petr_out.txt
 ```
 
 ---
@@ -325,7 +305,6 @@ stellar-stkg/
 ## References
 
 - Wei et al. (NeurIPS 2022) — Chain-of-Thought
-- Wang et al. (ICLR 2023) — Self-Consistency
 - Lairgi et al. (EACL 2026) — Atomic Fact Decomposition
 - Zhang & Soh (EMNLP 2024) — Entity Canonicalization
 - Norris et al. (JOSS 2017) — PETRARCH2

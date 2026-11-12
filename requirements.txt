@@ -6,3 +6,4 @@ tqdm>=4.64.0
 neo4j>=5.0.0
 python-Levenshtein>=0.20.0
 sentence-transformers>=2.2.0
+bert-score>=0.3.13

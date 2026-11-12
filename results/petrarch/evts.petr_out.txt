@@ -1,0 +1,192 @@
+20221001	UKRMIL	RUS	192		CASE0000_1	AFP	Ukrainian troops	Russian	recaptured
+20221002	RUSJUD	UKR	010		CASE0001_1	AFP	Constitutional Court	Ukraine	declared
+20221007	NOR	BLROPP	060	ACTIVISM,1	CASE0005_1	AFP	Oslo	Belarusian activist	<BLROPP> ... awarded ... in ... Nor
+20221010	RUSGOV	UKR	100		CASE0007_1	AFP	Vladimir Putin	Kyiv	ordered
+20221010	RUSGOV	RUS	100		CASE0007_1	AFP	Vladimir Putin	Moscow	ordered
+20221012	---LEG	RUS	111		CASE0008_1	AFP	General Assembly	Russia	voted ... condemn
+20221013	SAU	USA	016		CASE0009_1	AFP	Saudi Arabia	the United States	denied responsibility
+20221028	USA	UKRMIL	070		CASE0013_1	AFP	The United States	---	provided ... aid
+20221028	USA	USAMIL	070		CASE0013_1	AFP	The United States	---	provided ... aid
+20221022	RUS	UKR	010		CASE0018_1	AFP	Russia	Ukraine	vetoed <&SOLUTION> ... declaring
+20221006	PRK	PRK	190		CASE0019_1	AFP	North Korea	North Korea	fired
+20221013	TURGOV	RUS	040		CASE0020_1	AFP	Turkey	Russian	met
+20221013	TURGOV	RUSGOV	040		CASE0020_1	AFP	Turkey	President ... Putin	met
+20221013	TURGOV	KAZ	040		CASE0020_1	AFP	Turkey	Astana	met
+20221019	KOR	---MIL	012		CASE0021_1	AFP	South Korea	bombers	conducted ... involving
+20221019	USA	---MIL	012		CASE0021_1	AFP	the United States	bombers	conducted ... involving
+20221001	VEN	USA	084		CASE0022_1	AFP	Venezuela	the United States	released
+20220801	CHN	TWN	111		CASE0024_1	AFP	China	Taiwan	<and> ... condemned
+20221007	JPN	RUS	163	SANCTIONS,1	CASE0025_1	AFP	Japan	Russia	imposed ... sanctions
+20221007	JPN	JPN	163	SANCTIONS,1	CASE0025_1	AFP	Japan	Japan	imposed ... sanctions
+20220801	IGOBUSIMF	PAK	08	INT_FINANCIAL_INST,1;BANKRUPTCY,1	CASE0026_1	AFP	International Monetary Fund	Pakistan	approved
+20221015	FRA	UKRMIL	060		CASE0028_1	AFP	France	military	provided
+20221014	AUS	RUS	163	SANCTIONS,1	CASE0029_1	AFP	Australia	Russia	announced ... sanctions
+20221018	IRN	RUSMIL	062	DRONE,1	CASE0031_1	AFP	Iran	---	sent <&AIRCRAFT> ... to
+20221018	IRN	UKRMIL	062	DRONE,1	CASE0031_1	AFP	Iran	---	sent <&AIRCRAFT> ... to
+20221012	IGOWSTNAT	RUS	130		CASE0032_1	AFP	NATO	Russia	warned
+20221106	`ISA_IBN_SULMAN_AL_KHALIFAH_	EGY	042		CASE0033_1	AFP	Sheikh	Egypt	hosted
+20221106	EGY	`ISA_IBN_SULMAN_AL_KHALIFAH_	043		CASE0033_1	AFP	Egypt	Sheikh	hosted
+20221005	MEXGOV	RUS	027		CASE0034_1	AFP	Mexico ... President	Russia	proposed ... plan
+20221005	MEXGOV	UKR	027		CASE0034_1	AFP	Mexico ... President	Ukraine	proposed ... plan
+20221005	MEXGOV	MEX	027		CASE0034_1	AFP	Mexico ... President	Mexico ... City	proposed ... plan
+20221010	GBR	RUS	174		CASE0035_1	AFP	United Kingdom	Russian	expelled
+20221018	RUSGOV	ZAFGOV	036		CASE0037_1	AFP	Putin	South Africa ... President	met ... at
+20221018	ZAFGOV	RUSGOV	036		CASE0037_1	AFP	South Africa ... President	Putin	met ... at
+20221018	RUS	ZAFGOV	036		CASE0037_1	AFP	Moscow	South Africa ... President	met ... at
+20221018	ZAFGOV	RUS	036		CASE0037_1	AFP	South Africa ... President	Moscow	met ... at
+20220518	FIN	IGOWSTNAT	040		CASE0038_1	AFP	Finland	NATO	applied ... join
+20220518	SWE	IGOWSTNAT	040		CASE0038_1	AFP	Sweden	NATO	applied ... join
+20221115	POL	DEU	020		CASE0040_1	AFP	Poland	German	requested
+20221115	IDN	IDN	042		CASE0042_1	AFP	Indonesia	Indonesia	hosted ... summit
+20221115	IDN	IDN	043		CASE0042_1	AFP	Indonesia	Indonesia	hosted ... summit
+20221008	CHNGOV	USA	111		CASE0045_1	AFP	China ... foreign ministry	the United States	criticized
+20221102	ETHGOVREB	ZAF	050		CASE0047_1	AFP	Ethiopia ... government ... rebels	Pretoria	agreed
+20221024	PHL	CHN	140		CASE0048_1	AFP	Philippines	China	protested
+20221024	PHL	PHL	140		CASE0048_1	AFP	Philippines	Philippines	protested
+20220809	USAGOV	USA	060		CASE0049_1	AFP	Joe Biden	Washington	signed ... boost
+20221102	MNCKOR	USA	061		CASE0052_1	AFP	Samsung	Texas	invested
+20231117	USA	---BUS	190		CASE0058_1	AFP	San Francisco	CEO	<~BUS> ... fired by <---> ... in <USA>
+20241120	MNCKOR	KOR	010		CASE0063_1	AFP	Hyundai	South Korea	announced
+20230818	CANGOV	CAN	1724	NATURAL_DISASTER,1	CASE0072_1	AFP	Canadian government	British Columbia	declared ... state of emergency
+20230620	IND	INDPPL	073	NATURAL_DISASTER,1	CASE0074_1	AFP	India	---	rescued
+20231015	IGOUNO	AFG	020	NATURAL_DISASTER,1	CASE0076_1	AFP	The United Nations	Afghanistan	launched ... appeal
+20230411	KOR	KORMIL	062	NATURAL_DISASTER,1	CASE0077_1	AFP	South Korea	---	deployed <&AIRCRAFT> ... to
+20240328	AUS	AUSCVL	070	NATURAL_DISASTER,1	CASE0079_1	AFP	Australia	---	evacuated
+20230524	MNCKOR	USA	010		CASE0092_1	AFP	Samsung	Indiana	announced
+20230517	ITA	---PPL	190	NATURAL_DISASTER,1	CASE0099_1	AFP	Italy	people	experienced ... killing
+20230410	KOR	KOR	190	NATURAL_DISASTER,1	CASE0103_1	AFP	South Korea	South Korea	experienced ... hit
+20240424	KEN	---PPL	073	NATURAL_DISASTER,1	CASE0107_1	AFP	Kenya	people	rescued
+20240424	NGOHLHIRC	---PPL	073	NATURAL_DISASTER,1	CASE0107_1	AFP	Red Cross	people	rescued
+20220705	---CVL	CHE	010		CASE0121_1	AFP	scientists	Geneva	announced
+20210902	CHN	---PPL	172		CASE0146_1	AFP	China	men	banned
+20221022	IGOCOPITP	COLCRM	173	DRUG_CARTEL,1	CASE0150_1	AFP	Interpol	drug trafficker	arrested
+20220808	USACOP	USA	190		CASE0151_1	AFP	FBI	Florida	raided
+20220715	MEX	USACRM	063	DRUG_CARTEL,1	CASE0153_1	AFP	Mexico	---	extradited
+20210204	---CRM	UGAREB	173	ID_ATROCITY,1	CASE0155_1	AFP	Criminal	Ugandan rebel commander	Court convicted
+20220327	SLVGOV	---CRM	173	ORGANIZED_CRIME,1	CASE0157_1	AFP	El Salvador ... President	gang	arrested
+20210301	FRA	FRAELI	173	CORRUPTION,1	CASE0158_1	AFP	France	Nicolas Sarkozy	convicted
+20180711	HRV	GBR	190		CASE0161_1	AFP	Croatia	England	defeated
+20190707	USA	NLD	190		CASE0168_1	AFP	The United States	Netherlands	defeated
+20190719	DZA	SEN	190		CASE0169_1	AFP	Algeria	Senegal	defeated
+20190601	GBR	ESP	190		CASE0170_1	AFP	Liverpool	Madrid	defeated
+20200821	ESP	ITA	190		CASE0173_1	AFP	Sevilla	Milan	defeated
+20210711	ITA	GBR	190		CASE0177_1	AFP	Italy	England	defeated
+20210710	ARG	BRA	190		CASE0178_1	AFP	Argentina	Brazil	defeated
+20220528	ESP	GBR	190		CASE0188_1	AFP	Madrid	Liverpool	defeated
+20230820	ESP	GBR	190		CASE0189_1	AFP	Spain	England	defeated
+20231028	ZAF	NZL	190		CASE0190_1	AFP	South Africa	New Zealand	defeated
+20240714	ESP	GBR	190		CASE0195_1	AFP	Spain	England	defeated
+20240601	ESP	DEU	190		CASE0196_1	AFP	Madrid	Dortmund	defeated
+20221116	USAGOV	USAGOV	045		CASE0225_1	AFP	NASA	NASA	launched ... mission
+20180718	IGOEUREEC	MNCUSAMED	172	EUROPEAN_UNION,1	CASE0230_1	AFP	European Commission	Google	<and> ... imposed ... fine
+20180718	IGOEUREEC	BEL	172	EUROPEAN_UNION,1	CASE0230_1	AFP	European Commission	Brussels	<and> ... imposed ... fine
+20190320	IGOEUREEC	MNCUSAMED	172	EUROPEAN_UNION,1	CASE0231_1	AFP	European Commission	Google	imposed ... fine
+20190320	IGOEUREEC	BEL	172	EUROPEAN_UNION,1	CASE0231_1	AFP	European Commission	Brussels	imposed ... fine
+20190717	IGOEUREEC	BEL	091	EUROPEAN_UNION,1	CASE0232_1	AFP	European Commission	Brussels	opened <&INVESTIGATION>
+20201217	IGOEUREEC	MNCUSAMED	08	EUROPEAN_UNION,1	CASE0234_1	AFP	European Commission	Google	approved
+20201217	IGOEUREEC	BEL	08	EUROPEAN_UNION,1	CASE0234_1	AFP	European Commission	Brussels	approved
+20220106	FRAGOV	MNCUSAMEDBUSMED	010		CASE0236_1	AFP	French ... Authority	---	announced
+20221208	USAGOVBUS	MNCUSA	170		CASE0237_1	AFP	Federal Trade Commission	Microsoft	sought ... block
+20240304	IGOEUREEC	BEL	172	EUROPEAN_UNION,1	CASE0239_1	AFP	European Commission	Brussels	imposed ... fine
+20180517	---GOV	USA	08		CASE0247_1	AFP	Administration	United States	approved
+20180625	---GOV	USA	08		CASE0248_1	AFP	Administration	United States	approved
+20190503	---GOV	MNCUSAHLH	08		CASE0249_1	AFP	Administration	Pfizer	approved
+20190503	---GOV	USA	08		CASE0249_1	AFP	Administration	United States	approved
+20201211	---GOV	MNCUSAHLH	08		CASE0252_1	AFP	Administration	Pfizer	authorized
+20201211	---GOV	USA	08		CASE0252_1	AFP	Administration	United States	authorized
+20201218	---GOV	USA	08		CASE0253_1	AFP	Administration	United States	authorized
+20210607	---GOV	USA	08		CASE0256_1	AFP	Administration	United States	approved
+20211220	---GOV	USA	08		CASE0257_1	AFP	Administration	United States	approved
+20220713	---GOV	USA	08		CASE0258_1	AFP	Administration	United States	authorized
+20230106	---GOV	USA	08		CASE0259_1	AFP	Administration	United States	approved
+20230503	---GOV	USA	08		CASE0260_1	AFP	Administration	United States	approved
+20231208	---GOV	MNCUSAHLH	08		CASE0261_1	AFP	Administration	Vertex Pharmaceuticals	approved
+20231208	---GOV	USA	08		CASE0261_1	AFP	Administration	United States	approved
+20240702	---GOV	MNCUSAHLH	08		CASE0262_1	AFP	Administration	Eli Lilly	approved
+20240702	---GOV	USA	08		CASE0262_1	AFP	Administration	United States	approved
+20240809	---GOV	USA	08		CASE0263_1	AFP	Administration	United States	approved
+20200216	IGOUNOHLHWHO	CHN	036	DISEASE,1	CASE0266_1	AFP	World Health Organization	China	sent ... mission
+20201231	IGOUNOHLHWHO	MNCUSAHLH	060	VACCINATION,1	CASE0268_1	AFP	World Health Organization	Pfizer	granted
+20201231	IGOUNOHLHWHO	CHE	060	VACCINATION,1	CASE0268_1	AFP	World Health Organization	Geneva	granted
+20210215	IGOUNOHLHWHO	MNCGBRHLH	060		CASE0269_1	AFP	World Health Organization	AstraZeneca	granted
+20210215	IGOUNOHLHWHO	CHE	060		CASE0269_1	AFP	World Health Organization	Geneva	granted
+20210312	IGOUNOHLHWHO	CHE	060	VACCINATION,1	CASE0272_1	AFP	World Health Organization	Geneva	granted
+20210430	IGOUNOHLHWHO	CHE	060	VACCINATION,1	CASE0273_1	AFP	World Health Organization	Geneva	granted
+20210507	IGOUNOHLHWHO	CHE	060	VACCINATION,1	CASE0274_1	AFP	World Health Organization	Geneva	granted
+20210601	IGOUNOHLHWHO	CHE	060	VACCINATION,1	CASE0276_1	AFP	World Health Organization	Geneva	granted
+20211006	IGOUNOHLHWHO	CHE	020	DISEASE,1;VACCINATION,2	CASE0277_1	AFP	World Health Organization	Geneva	recommended
+20220723	IGOUNOHLHWHO	CHE	012	DISEASE,1	CASE0278_1	AFP	World Health Organization	Geneva	declared ... emergency
+20231002	IGOUNOHLHWHO	CHE	020	DISEASE,1;VACCINATION,2	CASE0279_1	AFP	World Health Organization	Geneva	recommended
+20180218	GBRMED	GBR	060	SCHOOLS,1	CASE0315_1	AFP	British ... Television	London	awarded
+20190210	GBRMED	GBR	060	SCHOOLS,1	CASE0316_1	AFP	British ... Television	London	awarded
+20200202	GBRMED	GBR	060	SCHOOLS,1	CASE0317_1	AFP	British ... Television	London	awarded
+20210411	GBRMED	GBR	060	SCHOOLS,1	CASE0318_1	AFP	British ... Television	London	awarded
+20220313	GBRMED	GBRELI	060	SCHOOLS,1	CASE0319_1	AFP	British ... Television	---	awarded
+20180703	MYS	MYS	173	CORRUPTION,2	CASE0320_1	AFP	Malaysian	Malaysian	arrested
+20180713	USA	RUSSPY	112		CASE0321_1	AFP	The United States	Russian intelligence officers	charged
+20181101	USA	CHN	112		CASE0323_1	AFP	The United States	Fujian	charged
+20181119	---JUD	JPN	173		CASE0324_1	AFP	Prosecutors	Tokyo	arrested
+20190316	---COP	NZL	1121	SECURITY_SERVICES,1	CASE0327_1	AFP	Police	Christchurch	charged ... with murder
+20190706	USACOP	USA	173		CASE0329_1	AFP	Federal Bureau of Investigation	United States	arrested
+20190717	---JUD	USA	172		CASE0330_1	AFP	District Court	New York	sentenced
+20200516	FRA	FRA	173	SECURITY_SERVICES,1;ID_ATROCITY,1	CASE0332_1	AFP	French	French	police arrested
+20200615	PHL	PHL	173		CASE0333_1	AFP	Manila	Manila	Court convicted
+20200702	USACOP	USA	173		CASE0335_1	AFP	Federal Bureau of Investigation	New Hampshire	arrested
+20201003	ESP	ESP	173	SECURITY_SERVICES,1	CASE0337_1	AFP	Spanish	Spanish	Police arrested
+20210117	RUS	RUS	173	SECURITY_SERVICES,1	CASE0338_1	AFP	Russian	Russian	police arrested
+20210122	NLD	NLD	173		CASE0339_1	AFP	Dutch	Dutch	police arrested
+20210122	NLD	AUSCRM	173		CASE0339_1	AFP	Dutch	Australian	police arrested
+20210201	MMRMIL	MMR	173		CASE0340_1	AFP	Myanmar military	Myanmar	detained
+20210420	USA	USA	173		CASE0341_1	AFP	Minneapolis	Minneapolis	convicted ... on ... charges
+20220208	USACOP	LIE	173		CASE0343_1	AFP	Federal Bureau of Investigation	Lichtenstein	arrested
+20220429	---JUD	GBR	172	BANKRUPTCY,1	CASE0344_1	AFP	Court	London	sentenced
+20220629	---JUD	USACOP	172	ORGANIZED_CRIME,1	CASE0345_1	AFP	federal court	---	sentenced
+20220708	JPN	JPN	173	SECURITY_SERVICES,1	CASE0346_1	AFP	Japanese	Japanese	police arrested
+20220708	JPN	JPNELI	173	SECURITY_SERVICES,1	CASE0346_1	AFP	Japanese	Shinzo Abe	police arrested
+20220810	NLDGOV	NLD	173	NATURAL_DISASTER,1	CASE0347_1	AFP	Dutch authorities	Amsterdam	arrested
+20221118	USAJUD	USACOP	172		CASE0348_1	AFP	California federal court	---	sentenced
+20221217	IRNGOV	IRN	173		CASE0350_1	AFP	Iranian authorities	Tehran	arrested
+20230413	USACOP	USAMIL	173		CASE0352_1	AFP	Federal Bureau of Investigation	---	arrested
+20230915	MEX	USA	063		CASE0354_1	AFP	Mexico	the United States	extradited
+20230915	MEX	MEX	063		CASE0354_1	AFP	Mexico	Mexico	extradited
+20240226	DEU	DEU	173	SECURITY_SERVICES,1;NAMED_TERROR_GROUP,1	CASE0356_1	AFP	German	German	police arrested
+20240725	---GOV	USACRM	173	DRUG_CARTEL,1	CASE0358_1	AFP	authorities	---	arrested
+20240824	FRAGOV	FRA	173		CASE0359_1	AFP	French authorities	France	arrested
+20180620	IGOBUSIMF	ARG	08	INT_FINANCIAL_INST,1	CASE0360_1	AFP	International Monetary Fund	Argentina	approved
+20180620	IGOBUSIMF	USA	08	INT_FINANCIAL_INST,1	CASE0360_1	AFP	International Monetary Fund	Washington	approved
+20181207	IGOBUSIMF	AGO	08	INT_FINANCIAL_INST,1	CASE0361_1	AFP	International Monetary Fund	Angola	approved
+20190703	IGOBUSIMF	PAK	08	INT_FINANCIAL_INST,1	CASE0362_1	AFP	International Monetary Fund	Pakistan	approved
+20191220	IGOBUSIMF	ETH	08	INT_FINANCIAL_INST,1	CASE0363_1	AFP	International Monetary Fund	Ethiopia	<and> ... approved
+20200416	IGOBUSIMF	PAK	08	INT_FINANCIAL_INST,1	CASE0364_1	AFP	International Monetary Fund	Pakistan	approved
+20200626	IGOBUSIMF	EGY	08	INT_FINANCIAL_INST,1	CASE0365_1	AFP	International Monetary Fund	Egypt	approved
+20210402	IGOBUSIMF	KEN	08	INT_FINANCIAL_INST,1;ID_PANDEMIC,1	CASE0366_1	AFP	International Monetary Fund	Kenya	approved
+20210402	IGOBUSIMF	USA	08	INT_FINANCIAL_INST,1;ID_PANDEMIC,1	CASE0366_1	AFP	International Monetary Fund	Washington	approved
+20220309	IGOBUSIMF	UKR	08	INT_FINANCIAL_INST,1	CASE0367_1	AFP	International Monetary Fund	Ukraine	approved
+20220309	IGOBUSIMF	USA	08	INT_FINANCIAL_INST,1	CASE0367_1	AFP	International Monetary Fund	Washington	approved
+20220831	IGOBUSIMF	ZMB	08	INT_FINANCIAL_INST,1	CASE0368_1	AFP	International Monetary Fund	Zambia	approved
+20220831	IGOBUSIMF	USA	08	INT_FINANCIAL_INST,1	CASE0368_1	AFP	International Monetary Fund	Washington	approved
+20230320	IGOBUSIMF	LKA	08	INT_FINANCIAL_INST,1	CASE0369_1	AFP	International Monetary Fund	Sri Lanka	approved
+20230320	IGOBUSIMF	USA	08	INT_FINANCIAL_INST,1	CASE0369_1	AFP	International Monetary Fund	Washington	approved
+20181112	USA	USA	010	NATURAL_DISASTER,1	CASE0380_1	AFP	United States	United States	declared
+20190503	IGOUNODEVWBK	MOZ	051	INT_FINANCIAL_INST,1;NATURAL_DISASTER,1	CASE0381_1	AFP	World Bank	Mozambique	announced ... support
+20200807	MUS	MUS	012		CASE0383_1	AFP	Mauritius	Mauritius	declared ... emergency
+20210714	DEU	DEU	154		CASE0384_1	AFP	Germany	Germany	deployed <&MILITARY>
+20210814	HTI	HTI	012	NATURAL_DISASTER,1	CASE0385_1	AFP	Haiti	Haiti	declared emergency
+20220117	NZL	TON	062	NATURAL_DISASTER,2	CASE0386_1	AFP	New Zealand	Tonga	deployed <&AIRCRAFT> ... to
+20220929	USA	USA	010	NATURAL_DISASTER,1	CASE0387_1	AFP	United States	United States	declared
+20230207	TUR	TUR	012	NATURAL_DISASTER,1	CASE0388_1	AFP	Turkey	Turkey	declared emergency
+20230130	DEU	BRA	030		CASE0396_1	AFP	Germany	Brazil	pledged
+20230130	DEU	BRACVL	030		CASE0396_1	AFP	Germany	Brazil ... communities	pledged
+20231114	USA	CHN	060		CASE0399_1	AFP	United States	China	issued
+20231114	USA	USA	060		CASE0399_1	AFP	United States	United States	issued
+20180716	IGOEUREEC	CHN	057		CASE0403_1	AFP	The European Union	China	signed ... memorandum
+20191107	---LEG	NZL	08		CASE0407_1	AFP	Parliament	New Zealand	passed
+20201118	GBR	---GOV	032		CASE0410_1	AFP	United Kingdom	government	announced ... plan
+20201118	---GOV	GBR	032		CASE0410_1	AFP	government	United Kingdom	announced ... plan
+20210629	CANLEG	CAN	060		CASE0413_1	AFP	Canadian Parliament	Canada	enacted
+20211110	USA	CHN	060		CASE0415_1	AFP	The United States	China	issued
+20220728	---LEG	IGOUNO	057		CASE0419_1	AFP	General Assembly	The United Nations	adopted <&SOLUTION>
+20220816	USAGOV	USA	057		CASE0420_1	AFP	Joe Biden	the United States	signed ... law
+20230329	---LEG	IGOUNOJUDICJ	020		CASE0424_1	AFP	General Assembly	International Court of Justice	requested
+20240430	---GOV	ITA	050	COAL,1	CASE0427_1	AFP	ministers	Turin	agreed
+20210814	HTI	HTI	190	NATURAL_DISASTER,1	CASE0440_1	AFP	Haiti	Haiti	devastated
