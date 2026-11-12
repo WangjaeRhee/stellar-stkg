@@ -332,5 +332,3 @@ MIT License
 Wang-Jae Rhee
 
 Division of Artificial Intelligence Engineering, Korea Maritime and Ocean University
-
-Cybermarine System LAB
